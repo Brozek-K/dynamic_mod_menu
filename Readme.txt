@@ -1,0 +1,66 @@
+[h1]FAQ[/h1]
+
+[i]What's the reasoning behind this?[/i]
+Reasoning is that I wanted a "dynamic" mod GUI but couldn't find one. 
+
+The only way for modders to create their own mod options menus are:
+1. Using edict screen
+2. Creating a custom button by overwritting a .gui file
+3. Using Mod Menu mod
+
+The only rather "dynamic" approach is using the edict screen. Others either have mod conflicts or require additional steps to be performed by third party developers.
+
+[i]We already have a mod menu?[/i]
+Yes, but it's not "dynamic".
+
+[i]Is it trully a "dynamic" mod menu?[/i]
+Nothing in this game can be trully "dynamic" but this mod menu gives an appeareance of being "dynamic".
+
+[i]What the hell do you mean "dynamic"?[/i]
+This mod menu exposes 100 "slots" for other mods to "inject" as a button into this mod. 
+
+Developers get to pick one unique Id (list will be kept somewhere which mods use which Id) and then:
+1. Overwrite localization files related to this unique mod Id
+2. Overwrite events related to this unique mod Id
+3. Set a global flag related to this unique Id (in the event that is overwritten)
+4. Create own mod icon for the mod menu by overwritting a GFX resource related to this unique Id
+
+[i]Only 100 slots?[/i]
+Don't worry the code is auto generated (via script). If the limit is ever hit we can create more ids obviously.
+
+[i]What's the advantage of this approach?[/i]
+- Mod developers don't have to message back and forth (Mod Menu maintainer and XYZ mod developer)
+- Create compatibility patches for custom buttons
+- Mods don't clutter the edicts menu
+
+Almost zero communication between myself and mod developers is necessary (only if you require support probably). I don't need to do anything in order for your mod menu button to show here. Only thing mod developers need to do is let everyone know which mod Id they've taken.
+
+[i]What files are overwritten?[/i]
+main_bottom.gui
+
+[i]Some other mod that I use already overwrites main_bottom.gui[/i]
+Let me know which so I can create a patch. Other developers are welcome to create patches themselves as well.
+
+[i]Menu icon is not showing[/i]
+It's probably a mod conflict. See above.
+
+[i]Mod icon is terrible[/i]
+I know and that's not a question.
+
+[i]Can I create my own mod icon for this[/i]
+Yes of course. You can send it to me to include in the mod (credits will be given) or create your own mod override. Whatever suits you is fine by me.
+
+[i]I found a typ0 or grammar error[/i]
+Great. Let me know what the error is and where exactly and post a correction so I can update the localization file.
+
+[i]I don't like this mod.[/i]
+Don't install it then.
+
+[i]Is this mod required to be installed?[/i]
+If the mod developer who pointed you here implemented the overrides as I recommended in the tutorial then it should not be a dependency. You can use what ever alternate method is present to launch the mod UI that you installed.
+
+[i]Help, Mod Id conflicts with another mod.[/i]
+Please ask the mod author to change the selected mod Id.
+
+[i]Achievements compatible? Ironman compatible?[/]
+I don't care about Achievements or Ironman so assume all my mods are not compatible.

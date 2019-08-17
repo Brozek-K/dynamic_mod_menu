@@ -1,0 +1,27 @@
+namespace = dynamic_mod_menu
+
+country_event = {
+    id = dynamic_mod_menu.1
+    title = "dynamic_mod_menu.1.title"
+    desc = "dynamic_mod_menu.1.desc"
+    is_triggered_only = yes
+    diplomatic = yes
+
+    trigger = {
+        is_ai = no
+    }
+
+    immediate = {
+        hidden_effect = {
+            set_global_flag = dynamic_mod_menu_opened
+        }
+    }
+
+    option = {
+        name = "dynamic_mod_menu.1.close"
+
+        hidden_effect = {
+            remove_global_flag = dynamic_mod_menu_opened
+        }
+    }
+}

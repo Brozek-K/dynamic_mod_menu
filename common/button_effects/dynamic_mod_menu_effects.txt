@@ -1,0 +1,13 @@
+dynamic_mod_menu_open = {
+    potential = {
+        always = yes
+    }
+    allow = {
+        NOT = {
+            has_global_flag = dynamic_mod_menu_opened
+        }
+    }
+    effect = {
+        
+    }
+}
