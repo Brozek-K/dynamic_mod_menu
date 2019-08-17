@@ -3,12 +3,12 @@ __end_id = "### END TEMPLATE ###"
 
 
 def process_file(path, mod_lines):
-    lines = []
-    mod_lines = []
+    lines = []    
     with open(path, "r") as file:
         write = True
         for line in file.readlines():
             if __begin_id in line:
+                lines.append(line)
                 write = False
             if __end_id in line:
                 write = True
