@@ -3,7 +3,7 @@ __end_id = "### END TEMPLATE ###"
 
 
 def process_file(path, mod_lines):
-    lines = []    
+    lines = []
     with open(path, "r") as file:
         write = True
         for line in file.readlines():

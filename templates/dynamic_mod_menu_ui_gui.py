@@ -1,5 +1,4 @@
-import settings
-import templater
+from templates.utils import settings, templater
 
 template = """
         effectButtonType = {{
@@ -18,7 +17,7 @@ default_x = 25
 default_y = 120
 
 
-def process():
+def process(publish_dir):
     mod_lines = []
     pos = {
         'x': default_x,
@@ -35,8 +34,5 @@ def process():
             pos['x'] = default_x
             pos['y'] = default_y
 
-    templater.process_file("interface/dynamic_mod_menu_ui.gui", mod_lines)
-
-
-if __name__ == "__main__":
-    process()
+    templater.process_file(
+        publish_dir + "/interface/dynamic_mod_menu_ui.gui", mod_lines)

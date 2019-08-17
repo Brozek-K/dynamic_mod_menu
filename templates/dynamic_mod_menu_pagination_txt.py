@@ -1,5 +1,4 @@
-import settings
-import templater
+from templates.utils import settings, templater
 
 template = """
             if = {{
@@ -39,7 +38,7 @@ template_mod = """
                     }}"""
 
 
-def process():
+def process(publish_dir):
     mod_lines = []
     for i in range(1, settings.total + 1):
         mod_text = ""
@@ -49,7 +48,5 @@ def process():
             mod_lines.append(template.format(i, mod_text))
         else:
             mod_lines.append(template_else.format(i, mod_text))
-    templater.process_file("events/dynamic_mod_menu_pagination.txt", mod_lines)            
-
-if __name__ == "__main__":
-    process()
+    templater.process_file(
+        publish_dir + "/events/dynamic_mod_menu_pagination.txt", mod_lines)
