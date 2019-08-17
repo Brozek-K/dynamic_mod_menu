@@ -1,3 +1,5 @@
+@max_mods = 100
+
 dynamic_mod_menu_open = {
     potential = {
         always = yes
@@ -27,5 +29,17 @@ dynamic_mod_menu_close = {
         hidden_effect = {
             remove_global_flag = dynamic_mod_menu_opened
         }
+    }
+}
+
+dynamic_mod_menu_next_page = {
+    potential = {
+        always = yes
+    }
+    allow = {
+        always = yes
+    }
+    effect = {
+        
     }
 }

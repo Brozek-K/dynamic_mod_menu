@@ -1,0 +1,60 @@
+namespace = dynamic_mod_menu_pagination
+
+@max_mods = 100
+@items_per_page = 20
+
+country_event = {
+    id = dynamic_mod_menu_pagination.1
+    is_triggered_only = yes
+    hide_window = yes
+
+    immediate = {
+        while = {
+            limit = {
+                check_variable = {
+                    which = dynamic_mod_menu_items_shown
+                    value < @items_per_page
+                }
+                check_variable = {
+                    which = dynamic_mod_menu_items_processed
+                    value < @max_mods
+                }
+            }
+
+            change_variable = {
+                which = dynamic_mod_menu_items_processed
+                value = 1
+            }
+
+            # BEGIN #
+            # END #
+
+            if = {
+                limit = {
+                    check_variable = {
+                        which = dynamic_mod_menu_items_processed
+                        value = 1
+                    }
+                }
+                switch = {
+                    trigger = has_global_flag
+
+                    dmm_mod_1 = {
+                        change_variable = {
+                            which = dynamic_mod_menu_items_shown
+                            value = 1
+                        }
+                        set_global_flag = dmm_mod_id_1_1
+                    }
+                    dmm_mod_2 = {
+                        change_variable = {
+                            which = dynamic_mod_menu_items_shown
+                            value = 1
+                        }
+                        set_global_flag = dmm_mod_id_1_2
+                    }
+                }
+            }
+        }
+    }
+}

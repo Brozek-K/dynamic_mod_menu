@@ -70,6 +70,33 @@ guiTypes = {
 			scrollbartype = "standardtext_slider"            
 		}  
 		
+        # Mods list
+
+        effectButtonType = {
+            name = "dmm_mod_1_1"
+            quadTextureSprite = "GFX_dmm_mod_id_1"
+            position = { x = 25 y = 120 }
+            size = { x = 100 y = 50 }
+            buttonFont = "cg_16b"
+            buttonText = "dmm_mod_1"
+            clicksound = no_sound
+            oversound = no_sound
+            effect = "dmm_mod_1_1"
+        }
+
+        effectButtonType = {
+            name = "dmm_mod_2_1"
+            quadTextureSprite = "GFX_dmm_mod_id_2"
+            position = { x = 105 y = 120 }
+            size = { x = 100 y = 50 }
+            buttonFont = "cg_16b"
+            buttonText = "dmm_mod_2"
+            clicksound = no_sound
+            oversound = no_sound
+            effect = "dmm_mod_2_2"
+        }        
+
+        # End most list
     
         # Game crashes if these are not present, so use the old trick of moving them off the screen to "hide" them.
         # Reference file: diplomacy_artist_event_view.gui
