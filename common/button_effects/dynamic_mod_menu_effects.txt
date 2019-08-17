@@ -8,6 +8,24 @@ dynamic_mod_menu_open = {
         }
     }
     effect = {
-        
+        hidden_effect = {
+            country_event = {
+                id = dynamic_mod_menu.1
+            }
+        }
+    }
+}
+
+dynamic_mod_menu_close = {
+    potential = {
+        always = yes
+    }
+    allow = {
+        always = yes
+    }
+    effect = {
+        hidden_effect = {
+            remove_global_flag = dynamic_mod_menu_opened
+        }
     }
 }

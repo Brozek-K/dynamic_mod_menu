@@ -2,13 +2,16 @@ namespace = dynamic_mod_menu
 
 country_event = {
     id = dynamic_mod_menu.1
-    title = "dynamic_mod_menu.1.title"
-    desc = "dynamic_mod_menu.1.desc"
+    title = "dmm_options.1.title"
+    desc = "dmm_options.1.desc"
     is_triggered_only = yes
     diplomatic = yes
+    custom_gui = "dynamic_mod_menu_ui"
 
     trigger = {
-        is_ai = no
+        NOT = {
+            has_global_flag = dynamic_mod_menu_opened
+        }
     }
 
     immediate = {
@@ -18,7 +21,7 @@ country_event = {
     }
 
     option = {
-        name = "dynamic_mod_menu.1.close"
+        name = "dmm_options.1.close"
 
         hidden_effect = {
             remove_global_flag = dynamic_mod_menu_opened

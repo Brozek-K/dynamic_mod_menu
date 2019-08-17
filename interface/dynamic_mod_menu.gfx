@@ -4,4 +4,9 @@ spriteTypes = {
 		texturefile = "gfx/interface/buttons/topbar_dynamic_mod_menu_button.dds"
 		noOfFrames = 1
 	}
+	spriteType = {
+		name = "GFX_dynamic_mod_menu_text_button"
+		texturefile = "gfx/interface/buttons/dynamic_mod_menu_text_button.dds"
+		noOfFrames = 1
+	}	
 }
