@@ -1,5 +1,6 @@
 import glob
 import os
+import importlib
 
 
 def get_modules():
@@ -8,5 +9,5 @@ def get_modules():
     for file in glob.glob(__path + "/" + "*.py"):
         if not "__init__.py" in file:
             module = __path + "." + os.path.splitext(os.path.basename(file))[0]
-            modules.append(__import__(module, fromlist=[None]))
+            modules.append(importlib.import_module(module))
     return modules

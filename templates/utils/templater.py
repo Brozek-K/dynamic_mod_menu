@@ -2,7 +2,7 @@ __begin_id = "### BEGIN TEMPLATE ###"
 __end_id = "### END TEMPLATE ###"
 
 
-def process_file(path, mod_lines):
+def process_file(path, *args):
     lines = []
     with open(path, "r") as file:
         write = True
@@ -19,5 +19,6 @@ def process_file(path, mod_lines):
         for line in lines:
             file.write(line)
             if __begin_id in line:
-                for mod_line in mod_lines:
-                    file.write(mod_line + "\n")
+                for mod_lines in args:
+                    for mod_line in mod_lines:
+                        file.write(mod_line + "\n")

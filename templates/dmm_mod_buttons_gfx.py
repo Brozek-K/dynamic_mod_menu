@@ -1,4 +1,4 @@
-from templates.utils import settings
+from templates.utils import settings, templater
 
 template = """
     spriteType = {{
@@ -9,8 +9,8 @@ template = """
 
 
 def process(publish_dir):
-    with open(publish_dir + "/interface/dmm_mod_buttons.gfx", "w+") as file:
-        file.write("spriteTypes = {\n")
-        for i in range(1, settings.total + 1):
-            file.write(template.format(i))
-        file.write("}")
+    mod_lines = []
+    mod_lines.append("spriteTypes = {\n")
+    for i in range(1, settings.total + 1):
+        mod_lines.append(template.format(i))
+    mod_lines.append("}")
