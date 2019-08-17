@@ -26,35 +26,8 @@ country_event = {
                 value = 1
             }
 
-            # BEGIN #
-            # END #
-
-            if = {
-                limit = {
-                    check_variable = {
-                        which = dynamic_mod_menu_items_processed
-                        value = 1
-                    }
-                }
-                switch = {
-                    trigger = has_global_flag
-
-                    dmm_mod_1 = {
-                        change_variable = {
-                            which = dynamic_mod_menu_items_shown
-                            value = 1
-                        }
-                        set_global_flag = dmm_mod_id_1_1
-                    }
-                    dmm_mod_2 = {
-                        change_variable = {
-                            which = dynamic_mod_menu_items_shown
-                            value = 1
-                        }
-                        set_global_flag = dmm_mod_id_1_2
-                    }
-                }
-            }
+            ### BEGIN TEMPLATE ###
+            ### END TEMPLATE ###
         }
     }
 }

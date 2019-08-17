@@ -1,4 +1,5 @@
 import settings
+import templater
 
 template = """
             if = {{
@@ -27,7 +28,7 @@ template_else = """
 
                     {1}
                 }}
-            }}"""            
+            }}"""
 template_mod = """
                     dmm_mod_{1} = {{
                         change_variable = {{
@@ -37,11 +38,18 @@ template_mod = """
                         set_global_flag = dmm_mod_id_{0}_{1}
                     }}"""
 
-for i in range(1, settings.total + 1):
-    mod_text = ""
-    for j in range(i, settings.total + 1):
-        mod_text += template_mod.format(i, j)
-    if (i == 1):
-        print(template.format(i, mod_text))
-    else:
-        print(template_else.format(i, mod_text))
+
+def process():
+    mod_lines = []
+    for i in range(1, settings.total + 1):
+        mod_text = ""
+        for j in range(i, settings.total + 1):
+            mod_text += template_mod.format(i, j)
+        if (i == 1):
+            mod_lines.append(template.format(i, mod_text))
+        else:
+            mod_lines.append(template_else.format(i, mod_text))
+    templater.process_file("events/dynamic_mod_menu_pagination.txt", mod_lines)            
+
+if __name__ == "__main__":
+    process()
