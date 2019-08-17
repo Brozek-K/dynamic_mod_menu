@@ -44,40 +44,6 @@ country_event = {
 
     immediate = {
         ### BEGIN TEMPLATE ###
-        set_global_flag = dmm_mod_id_1
-        set_global_flag = dmm_mod_id_4
-        set_global_flag = dmm_mod_id_7
-        set_global_flag = dmm_mod_id_10
-        set_global_flag = dmm_mod_id_13
-        set_global_flag = dmm_mod_id_16
-        set_global_flag = dmm_mod_id_19
-        set_global_flag = dmm_mod_id_22
-        set_global_flag = dmm_mod_id_25
-        set_global_flag = dmm_mod_id_28
-        set_global_flag = dmm_mod_id_31
-        set_global_flag = dmm_mod_id_34
-        set_global_flag = dmm_mod_id_37
-        set_global_flag = dmm_mod_id_40
-        set_global_flag = dmm_mod_id_43
-        set_global_flag = dmm_mod_id_46
-        set_global_flag = dmm_mod_id_49
-        set_global_flag = dmm_mod_id_52
-        set_global_flag = dmm_mod_id_55
-        set_global_flag = dmm_mod_id_58
-        set_global_flag = dmm_mod_id_61
-        set_global_flag = dmm_mod_id_64
-        set_global_flag = dmm_mod_id_67
-        set_global_flag = dmm_mod_id_70
-        set_global_flag = dmm_mod_id_73
-        set_global_flag = dmm_mod_id_76
-        set_global_flag = dmm_mod_id_79
-        set_global_flag = dmm_mod_id_82
-        set_global_flag = dmm_mod_id_85
-        set_global_flag = dmm_mod_id_88
-        set_global_flag = dmm_mod_id_91
-        set_global_flag = dmm_mod_id_94
-        set_global_flag = dmm_mod_id_97
-        set_global_flag = dmm_mod_id_100
         ### END TEMPLATE ###
     }
 }
