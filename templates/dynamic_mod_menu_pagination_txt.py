@@ -42,6 +42,7 @@ template_remove_flag = """
 
 def process(publish_dir):
     event_1_mod_lines = []
+    event_2_mod_lines = []
     event_3_mod_lines = []
     for i in range(1, settings.total + 1):
         mod_text = ""
@@ -53,6 +54,17 @@ def process(publish_dir):
         else:
             event_1_mod_lines.append(template_else.format(i, mod_text))
 
-        
+    for i in range(settings.total, 0, -1):
+        mod_text = ""
+        for j in range(settings.total, i - 1, -1):
+            mod_text += template_mod.format(i, j)            
+        if (i == settings.total):
+            event_2_mod_lines.append(template.format(i, mod_text))
+        else:
+            event_2_mod_lines.append(template_else.format(i, mod_text))
+
     templater.process_file(
-        publish_dir + "/events/dynamic_mod_menu_pagination.txt", event_1_mod_lines, event_3_mod_lines)
+        publish_dir + "/events/dynamic_mod_menu_pagination.txt",
+        event_1_mod_lines,
+        event_2_mod_lines,
+        event_3_mod_lines)

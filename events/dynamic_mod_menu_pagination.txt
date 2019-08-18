@@ -48,6 +48,50 @@ country_event = {
 }
 
 country_event = {
+    id = dynamic_mod_menu_pagination.2
+    is_triggered_only = yes
+    hide_window = yes
+
+    immediate = {
+        country_event = {
+            id = dynamic_mod_menu_pagination.3
+        }
+        if = {
+            limit = {
+                check_variable = {
+                    which = dynamic_mod_menu_items_processed
+                    value < 0
+                }
+            }
+            set_variable = {
+                which = dynamic_mod_menu_items_processed
+                value = @max_mods
+            }
+        }
+        while = {
+            limit = {
+                check_variable = {
+                    which = dynamic_mod_menu_items_shown
+                    value < @items_per_page
+                }
+                check_variable = {
+                    which = dynamic_mod_menu_items_processed
+                    value > 0
+                }
+            }
+
+            subtract_variable = {
+                which = dynamic_mod_menu_items_processed
+                value = 1
+            }
+
+            ### BEGIN TEMPLATE ###
+            ### END TEMPLATE ###
+        }
+    }
+}
+
+country_event = {
     id = dynamic_mod_menu_pagination.3
     is_triggered_only = yes
     hide_window = yes
