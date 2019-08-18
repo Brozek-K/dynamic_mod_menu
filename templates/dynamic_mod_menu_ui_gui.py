@@ -26,10 +26,10 @@ def process(publish_dir):
     for i in range(1, settings.total + 1):
         for j in range(i, settings.total + 1):
             mod_lines.append(template.format(i, j, pos['x'], pos['y']))
-        pos['x'] += 180
+        pos['x'] += 220
         if i % settings.items_per_line == 0:
             pos['x'] = default_x
-            pos['y'] += 60
+            pos['y'] += 54
         if i % settings.items_per_page == 0:
             pos['x'] = default_x
             pos['y'] = default_y
