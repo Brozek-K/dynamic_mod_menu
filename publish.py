@@ -5,7 +5,7 @@ from templates import get_modules
 copy_directories = ["common", "events", "gfx", "interface", "localisation"]
 copy_files = ["Readme.txt", "descriptor.mod", "1.jpg", "2.jpg", "3.jpg"]
 
-destination = "publish"
+destination = "publish/dynamic_mod_menu"
 
 
 def copy():

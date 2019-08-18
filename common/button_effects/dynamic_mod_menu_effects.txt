@@ -47,3 +47,19 @@ dynamic_mod_menu_next_page = {
         }
     }
 }
+
+dynamic_mod_menu_prev_page = {
+    potential = {
+        always = yes
+    }
+    allow = {
+        always = yes
+    }
+    effect = {
+        hidden_effect = {
+            country_event = {
+                id = dynamic_mod_menu_pagination.2
+            }
+        }
+    }
+}

@@ -4,7 +4,7 @@ guiTypes = {
 		orientation = center
 		origo = center
 		moveable = yes		
-		size = { width = 600 height = 500 }    
+		size = { width = 800 height = 450 }    
 
         background = {
             name = "background"	
@@ -45,7 +45,7 @@ guiTypes = {
 				name = "action_title"
 				font = "malgun_goth_24"
 				position = { x = 10 y = 8 }
-				maxWidth = 500
+				maxWidth = 700
 				alwaysTransparent = yes
 			}
 			
@@ -63,7 +63,7 @@ guiTypes = {
 			name = "alien_message"
 			font = "cg_16b"
 			position = { x = 10 y = 68 }
-			maxWidth = 520
+			maxWidth = 720
 			maxHeight = 100
 			format = left
 			scrollbartype = "standardtext_slider"            

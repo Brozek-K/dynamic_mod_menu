@@ -1,6 +1,6 @@
 from templates.utils import settings, templater
 
-template = "        set_global_flag = dmm_mod_id_{0}"
+template = "        set_global_flag = dmm_mod_{0}"
 
 
 def process(publish_dir):

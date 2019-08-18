@@ -26,6 +26,12 @@ country_event = {
                 value = 0
             }
         }
+        country_event = {
+            id = dynamic_mod_menu_pagination.4
+        }
+        country_event = {
+            id = dynamic_mod_menu_pagination.1
+        }
     }
 
     option = {

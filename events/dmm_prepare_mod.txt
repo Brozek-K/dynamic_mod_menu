@@ -1,0 +1,4 @@
+namespace = dmm_prepare_mod
+
+### BEGIN TEMPLATE ###
+### END TEMPLATE ###

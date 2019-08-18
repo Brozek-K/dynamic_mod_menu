@@ -101,3 +101,14 @@ country_event = {
         ### END TEMPLATE ###
     }
 }
+
+country_event = {
+    id = dynamic_mod_menu_pagination.4
+    is_triggered_only = yes
+    hide_window = yes
+
+    immediate = {
+        ### BEGIN TEMPLATE ###
+        ### END TEMPLATE ###
+    }
+}
