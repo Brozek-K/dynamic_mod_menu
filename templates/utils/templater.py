@@ -16,9 +16,10 @@ def process_file(path, *args):
                 lines.append(line)
 
     with open(path, "w+") as file:
+        id = 0
         for line in lines:
             file.write(line)
             if __begin_id in line:
-                for mod_lines in args:
-                    for mod_line in mod_lines:
-                        file.write(mod_line + "\n")
+                for mod_line in args[id]:
+                    file.write(mod_line + "\n")
+                id += 1

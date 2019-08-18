@@ -40,6 +40,10 @@ dynamic_mod_menu_next_page = {
         always = yes
     }
     effect = {
-        
+        hidden_effect = {
+            country_event = {
+                id = dynamic_mod_menu_pagination.1
+            }
+        }
     }
 }

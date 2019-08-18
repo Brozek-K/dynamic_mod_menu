@@ -9,6 +9,21 @@ country_event = {
     hide_window = yes
 
     immediate = {
+        country_event = {
+            id = dynamic_mod_menu_pagination.3
+        }
+        if = {
+            limit = {
+                check_variable = {
+                    which = dynamic_mod_menu_items_processed
+                    value > @max_mods
+                }
+            }
+            set_variable = {
+                which = dynamic_mod_menu_items_processed
+                value = 0
+            }
+        }
         while = {
             limit = {
                 check_variable = {
@@ -29,5 +44,16 @@ country_event = {
             ### BEGIN TEMPLATE ###
             ### END TEMPLATE ###
         }
+    }
+}
+
+country_event = {
+    id = dynamic_mod_menu_pagination.3
+    is_triggered_only = yes
+    hide_window = yes
+
+    immediate = {
+        ### BEGIN TEMPLATE ###
+        ### END TEMPLATE ###
     }
 }
