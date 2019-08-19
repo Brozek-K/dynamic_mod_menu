@@ -16,6 +16,12 @@ country_event = {
 
     immediate = {
         hidden_effect = {
+            if = {
+                NOT = {
+                    has_global_flag = dynamic_mod_menu_installed
+                }
+                set_global_flag = dynamic_mod_menu_installed
+            }
             set_global_flag = dynamic_mod_menu_opened
             set_variable = {
                 which = dynamic_mod_menu_processed_id
