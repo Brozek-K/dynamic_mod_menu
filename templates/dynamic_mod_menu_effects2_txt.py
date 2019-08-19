@@ -22,7 +22,7 @@ dmm_mod_{0}_{1} = {{
 
 def process(publish_dir):
     mod_lines = []
-    for i in range(1, settings.total + 1):
+    for i in range(1, settings.items_per_page + 1):
         for j in range(i, settings.total + 1):
             mod_lines.append(template.format(i, j))
 

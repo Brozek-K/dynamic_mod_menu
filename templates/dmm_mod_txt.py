@@ -12,8 +12,11 @@ country_event = {{
         has_global_flag = dmm_mod_{0}
     }}
 
-    option = {{
+    after = {{
         remove_global_flag = dmm_mod_{0}_opened
+    }}
+
+    option = {{        
         name = "dmm_options.1.close"
     }}
 }}"""

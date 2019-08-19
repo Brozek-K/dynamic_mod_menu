@@ -3,7 +3,7 @@ import os
 from templates import get_modules
 
 copy_directories = ["common", "events", "gfx", "interface", "localisation"]
-copy_files = ["Readme.txt", "descriptor.mod", "1.jpg", "2.jpg", "3.jpg"]
+copy_files = ["Readme.txt", "descriptor.mod", "1.jpg"]
 
 destination = "publish/dynamic_mod_menu"
 

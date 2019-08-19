@@ -68,6 +68,28 @@ guiTypes = {
 			format = left
 			scrollbartype = "standardtext_slider"            
 		}  
+
+        effectButtonType = {
+            name = "dmm_options_next"
+            quadTextureSprite = "GFX_button_animated_110_34"
+            position = { x = 750 y = 400 }            
+            buttonFont = "cg_16b"
+            buttonText = "dmm_options_next"
+            clicksound = no_sound
+            oversound = no_sound
+            effect = "dynamic_mod_menu_next_page"
+        }		
+
+        effectButtonType = {
+            name = "dmm_options_prev"
+            quadTextureSprite = "GFX_button_animated_110_34"
+            position = { x = 20 y = 400 }            
+            buttonFont = "cg_16b"
+            buttonText = "dmm_options_prev"
+            clicksound = no_sound
+            oversound = no_sound
+            effect = "dynamic_mod_menu_prev_page"
+        }		
 		
         ### BEGIN TEMPLATE ###
         ### END TEMPLATE ###

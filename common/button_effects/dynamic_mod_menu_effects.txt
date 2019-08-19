@@ -1,8 +1,12 @@
-@max_mods = 100
+@first_empty_id = 0
+@items_per_page = 20
 
 dynamic_mod_menu_open = {
     potential = {
-        always = yes
+        OR = {
+            ### BEGIN TEMPLATE ###
+            ### END TEMPLATE ###
+        }
     }
     allow = {
         NOT = {
@@ -34,7 +38,15 @@ dynamic_mod_menu_close = {
 
 dynamic_mod_menu_next_page = {
     potential = {
-        always = yes
+        NOT = {
+            OR = {
+                has_global_flag = dynamic_mod_menu_no_new_pages
+                check_variable = {
+                    which = dynamic_mod_menu_items_shown
+                    value < @items_per_page
+                }
+            }
+        }
     }
     allow = {
         always = yes
@@ -50,7 +62,15 @@ dynamic_mod_menu_next_page = {
 
 dynamic_mod_menu_prev_page = {
     potential = {
-        always = yes
+        NOT = {
+            OR = {
+                has_global_flag = dynamic_mod_menu_no_prev_pages
+                check_variable = {
+                    which = dynamic_mod_menu_last_processed_id
+                    value = @first_empty_id
+                }
+            }
+        }
     }
     allow = {
         always = yes

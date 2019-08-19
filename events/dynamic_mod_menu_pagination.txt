@@ -1,6 +1,7 @@
 namespace = dynamic_mod_menu_pagination
 
-@max_mods = 100
+@last_empty_id = 101
+@first_empty_id = 0
 @items_per_page = 20
 
 country_event = {
@@ -12,17 +13,11 @@ country_event = {
         country_event = {
             id = dynamic_mod_menu_pagination.3
         }
-        if = {
-            limit = {
-                check_variable = {
-                    which = dynamic_mod_menu_items_processed
-                    value > @max_mods
-                }
-            }
-            set_variable = {
-                which = dynamic_mod_menu_items_processed
-                value = 0
-            }
+        country_event = {
+            id = dynamic_mod_menu_pagination.7
+        }
+        country_event = {
+            id = dynamic_mod_menu_pagination.5
         }
         while = {
             limit = {
@@ -31,18 +26,19 @@ country_event = {
                     value < @items_per_page
                 }
                 check_variable = {
-                    which = dynamic_mod_menu_items_processed
-                    value < @max_mods
+                    which = dynamic_mod_menu_processed_id
+                    value < @last_empty_id
                 }
-            }
-
-            change_variable = {
-                which = dynamic_mod_menu_items_processed
-                value = 1
             }
 
             ### BEGIN TEMPLATE ###
             ### END TEMPLATE ###
+        }
+        country_event = {
+            id = dynamic_mod_menu_pagination.8
+        }
+        country_event = {
+            id = dynamic_mod_menu_pagination.9
         }
     }
 }
@@ -56,17 +52,11 @@ country_event = {
         country_event = {
             id = dynamic_mod_menu_pagination.3
         }
-        if = {
-            limit = {
-                check_variable = {
-                    which = dynamic_mod_menu_items_processed
-                    value < 0
-                }
-            }
-            set_variable = {
-                which = dynamic_mod_menu_items_processed
-                value = @max_mods
-            }
+        country_event = {
+            id = dynamic_mod_menu_pagination.6
+        }
+        country_event = {
+            id = dynamic_mod_menu_pagination.5
         }
         while = {
             limit = {
@@ -75,18 +65,19 @@ country_event = {
                     value < @items_per_page
                 }
                 check_variable = {
-                    which = dynamic_mod_menu_items_processed
-                    value > 0
+                    which = dynamic_mod_menu_processed_id
+                    value > @first_empty_id
                 }
-            }
-
-            subtract_variable = {
-                which = dynamic_mod_menu_items_processed
-                value = 1
             }
 
             ### BEGIN TEMPLATE ###
             ### END TEMPLATE ###
+        }
+        country_event = {
+            id = dynamic_mod_menu_pagination.8
+        }
+        country_event = {
+            id = dynamic_mod_menu_pagination.9
         }
     }
 }
@@ -97,6 +88,12 @@ country_event = {
     hide_window = yes
 
     immediate = {
+        set_variable = {
+            which = dynamic_mod_menu_items_shown
+            value = 0
+        }
+        remove_global_flag = dynamic_mod_menu_no_new_pages
+        remove_global_flag = dynamic_mod_menu_no_prev_pages
         ### BEGIN TEMPLATE ###
         ### END TEMPLATE ###
     }
@@ -104,6 +101,61 @@ country_event = {
 
 country_event = {
     id = dynamic_mod_menu_pagination.4
+    is_triggered_only = yes
+    hide_window = yes
+
+    immediate = {
+        ### BEGIN TEMPLATE ###
+        ### END TEMPLATE ###
+    }
+}
+
+country_event = {
+    id = dynamic_mod_menu_pagination.5
+    is_triggered_only = yes
+    hide_window = yes
+
+    immediate = {
+        ### BEGIN TEMPLATE ###
+        ### END TEMPLATE ###
+    }
+}
+
+country_event = {
+    id = dynamic_mod_menu_pagination.6
+    is_triggered_only = yes
+    hide_window = yes
+
+    immediate = {
+        ### BEGIN TEMPLATE ###
+        ### END TEMPLATE ###
+    }
+}
+
+country_event = {
+    id = dynamic_mod_menu_pagination.7
+    is_triggered_only = yes
+    hide_window = yes
+
+    immediate = {
+        ### BEGIN TEMPLATE ###
+        ### END TEMPLATE ###
+    }
+}
+
+country_event = {
+    id = dynamic_mod_menu_pagination.8
+    is_triggered_only = yes
+    hide_window = yes
+
+    immediate = {
+        ### BEGIN TEMPLATE ###
+        ### END TEMPLATE ###
+    }
+}
+
+country_event = {
+    id = dynamic_mod_menu_pagination.9
     is_triggered_only = yes
     hide_window = yes
 

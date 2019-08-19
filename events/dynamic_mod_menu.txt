@@ -18,13 +18,27 @@ country_event = {
         hidden_effect = {
             set_global_flag = dynamic_mod_menu_opened
             set_variable = {
-                which = dynamic_mod_menu_items_shown
+                which = dynamic_mod_menu_processed_id
                 value = 0
             }
             set_variable = {
-                which = dynamic_mod_menu_items_processed
+                which = dynamic_mod_menu_last_processed_id
                 value = 0
             }
+            set_variable = {
+                which = dynamic_mod_menu_last_id
+                value = 0
+            }
+            set_variable = {
+                which = dynamic_mod_menu_first_id
+                value = 0
+            }
+        }
+        country_event = {
+            id = dynamic_mod_menu.2
+        }
+        country_event = {
+            id = dynamic_mod_menu.3
         }
         country_event = {
             id = dynamic_mod_menu_pagination.4
@@ -49,6 +63,168 @@ country_event = {
     hide_window = yes
 
     immediate = {
+        ### BEGIN TEMPLATE ###
+        ### END TEMPLATE ###
+    }
+}
+
+country_event = {
+    id = dynamic_mod_menu.3
+    is_triggered_only = yes
+    hide_window = yes
+
+    immediate = {
+        ### BEGIN TEMPLATE ###
+        ### END TEMPLATE ###
+    }
+}
+
+country_event = {
+    id = dynamic_mod_menu.100
+    is_triggered_only = yes
+    hide_window = yes
+
+    immediate = {
+        ### BEGIN TEMPLATE ###
+        ### END TEMPLATE ###
+    }
+}
+
+country_event = {
+    id = dynamic_mod_menu.101
+    is_triggered_only = yes
+    hide_window = yes
+
+    immediate = {
+        country_event = {
+            id = dynamic_mod_menu.100
+        }
+        ### BEGIN TEMPLATE ###
+        ### END TEMPLATE ###
+    }
+}
+
+country_event = {
+    id = dynamic_mod_menu.102
+    is_triggered_only = yes
+    hide_window = yes
+
+    immediate = {
+        country_event = {
+            id = dynamic_mod_menu.100
+        }
+        ### BEGIN TEMPLATE ###
+        ### END TEMPLATE ###
+    }
+}
+
+country_event = {
+    id = dynamic_mod_menu.103
+    is_triggered_only = yes
+    hide_window = yes
+
+    immediate = {
+        country_event = {
+            id = dynamic_mod_menu.100
+        }
+        ### BEGIN TEMPLATE ###
+        ### END TEMPLATE ###
+    }
+}
+
+country_event = {
+    id = dynamic_mod_menu.104
+    is_triggered_only = yes
+    hide_window = yes
+
+    immediate = {
+        country_event = {
+            id = dynamic_mod_menu.100
+        }
+        ### BEGIN TEMPLATE ###
+        ### END TEMPLATE ###
+    }
+}
+
+country_event = {
+    id = dynamic_mod_menu.105
+    is_triggered_only = yes
+    hide_window = yes
+
+    immediate = {
+        country_event = {
+            id = dynamic_mod_menu.100
+        }
+        ### BEGIN TEMPLATE ###
+        ### END TEMPLATE ###
+    }
+}
+
+country_event = {
+    id = dynamic_mod_menu.106
+    is_triggered_only = yes
+    hide_window = yes
+
+    immediate = {
+        country_event = {
+            id = dynamic_mod_menu.100
+        }
+        ### BEGIN TEMPLATE ###
+        ### END TEMPLATE ###
+    }
+}
+
+country_event = {
+    id = dynamic_mod_menu.107
+    is_triggered_only = yes
+    hide_window = yes
+
+    immediate = {
+        country_event = {
+            id = dynamic_mod_menu.100
+        }
+        ### BEGIN TEMPLATE ###
+        ### END TEMPLATE ###
+    }
+}
+
+country_event = {
+    id = dynamic_mod_menu.108
+    is_triggered_only = yes
+    hide_window = yes
+
+    immediate = {
+        country_event = {
+            id = dynamic_mod_menu.100
+        }
+        ### BEGIN TEMPLATE ###
+        ### END TEMPLATE ###
+    }
+}
+
+country_event = {
+    id = dynamic_mod_menu.109
+    is_triggered_only = yes
+    hide_window = yes
+
+    immediate = {
+        country_event = {
+            id = dynamic_mod_menu.100
+        }
+        ### BEGIN TEMPLATE ###
+        ### END TEMPLATE ###
+    }
+}
+
+country_event = {
+    id = dynamic_mod_menu.110
+    is_triggered_only = yes
+    hide_window = yes
+
+    immediate = {
+        country_event = {
+            id = dynamic_mod_menu.100
+        }
         ### BEGIN TEMPLATE ###
         ### END TEMPLATE ###
     }

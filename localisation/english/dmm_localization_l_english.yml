@@ -1,6 +1,8 @@
 ﻿l_english:  
  dmm_options.1.title:0 "Dynamic Mod Menu"
- dmm_options.1.desc:0 "Please select mod to launch options"
+ dmm_options.1.desc:0 "Please select mod to launch options."
  dmm_options.1.close:0 "Close"
+ dmm_options_next:0 "Next"
+ dmm_options_prev:0 "Prev"
  ### BEGIN TEMPLATE ###
  ### END TEMPLATE ###
