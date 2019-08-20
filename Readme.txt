@@ -5,7 +5,7 @@ Reasoning is that I wanted a "dynamic" mod GUI but couldn't find one.
 
 The only way for modders to create their own mod options menus are:
 1. Using edict screen
-2. Creating a custom button by overwritting a .gui file
+2. Creating a custom button by overwriting a .gui file
 3. Using Mod Menu mod
 
 The only rather "dynamic" approach is using the edict screen. Others either have mod conflicts or require additional steps to be performed by third party developers.
@@ -13,8 +13,8 @@ The only rather "dynamic" approach is using the edict screen. Others either have
 [i]We already have a mod menu?[/i]
 Yes, but it's not "dynamic".
 
-[i]Is it trully a "dynamic" mod menu?[/i]
-Nothing in this game can be trully "dynamic" but this mod menu gives an appeareance of being "dynamic".
+[i]Is it truly a "dynamic" mod menu?[/i]
+Nothing in this game can be truly "dynamic" but this mod menu gives an appearance of being "dynamic".
 
 [i]What the hell do you mean "dynamic"?[/i]
 This mod menu exposes 100 "slots" for other mods to "inject" as a button into this mod. 
@@ -23,7 +23,7 @@ Developers get to pick one unique Id (list will be kept somewhere which mods use
 1. Overwrite localization files related to this unique mod Id
 2. Overwrite events related to this unique mod Id
 3. Set a global flag related to this unique Id (in the event that is overwritten)
-4. Create own mod icon for the mod menu by overwritting a GFX resource related to this unique Id
+4. Create own mod icon for the mod menu by overwriting a GFX resource related to this unique Id
 
 [i]Only 100 slots?[/i]
 Don't worry the code is auto generated (via script). If the limit is ever hit we can create more ids obviously.
@@ -57,7 +57,7 @@ Great. Let me know what the error is and where exactly and post a correction so 
 Don't install it then.
 
 [i]Is this mod required to be installed?[/i]
-If the mod developer who pointed you here implemented the overrides as I recommended in the tutorial then it should not be a dependency. You can use what ever alternate method is present to launch the mod UI that you installed.
+If the mod developer who pointed you here implemented the overrides as I recommended in the tutorial then it should not be a dependency. You can use whatever alternate method is present to launch the mod UI that you installed.
 
 [i]Help, Mod Id conflicts with another mod.[/i]
 Please ask the mod author to change the selected mod Id.
