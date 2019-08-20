@@ -17,8 +17,10 @@ country_event = {
     immediate = {
         hidden_effect = {
             if = {
-                NOT = {
-                    has_global_flag = dynamic_mod_menu_installed
+                limit = {
+                    NOT = {
+                        has_global_flag = dynamic_mod_menu_installed
+                    }
                 }
                 set_global_flag = dynamic_mod_menu_installed
             }
