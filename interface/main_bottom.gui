@@ -306,7 +306,7 @@ guiTypes = {
 		containerWindowType = {
 			name = "mapmodes"
 			size = { width = 240 height = 100 }
-			position = { x = -204 y = -133 }
+			position = { x = -277 y = -136 }
 			orientation = lower_right
 			#verticalScrollBar = "right_vertical_slider"
 
@@ -464,15 +464,15 @@ guiTypes = {
 			iconType = {
 				name = "toggle_mapmode_icon_sectors"
 				spriteType = "GFX_map_mode_sectors"
-				position = { x = -377 y = -67 }
+				position = { x = -379 y = -70 }
 				orientation = "LOWER_RIGHT"
 				alwaystransparent = yes
 			}
 
-			buttonType = {
+ 			buttonType = {
 				name = "toggle_mapmode_sectors"
 				quadTextureSprite = "GFX_button_29_animated"
-				position = { x= -389 y = -79 }
+				position = { x= -391 y = -82  }
 				pdx_tooltip = "TOGGLE_MAPMODE_SECTORS_INFO"
 				pdx_tooltip_anchor_offset = { x= 0 y = @tt_offset_y }
 				pdx_tooltip_anchor_orientation = lower_left
@@ -482,7 +482,7 @@ guiTypes = {
 			iconType = {
 				name = "toggle_mapmode_icon_hyperlanes"
 				spriteType = "GFX_map_mode_hyperlanes"
-				position = { x = -343 y = -67 }
+				position = { x = -346 y = -70 }
 				orientation = "LOWER_RIGHT"
 				alwaystransparent = yes
 			}
@@ -490,7 +490,7 @@ guiTypes = {
 			buttonType = {
 				name = "toggle_mapmode_hyperlanes"
 				quadTextureSprite = "GFX_button_29_animated"
-				position = { x= -355 y = -79  }
+				position = { x= -358 y = -82  }
 				pdx_tooltip = "TOGGLE_MAPMODE_HYPERLANES_INFO"
 				pdx_tooltip_anchor_offset = { x= 0 y = @tt_offset_y }
 				pdx_tooltip_anchor_orientation = lower_left
@@ -500,15 +500,15 @@ guiTypes = {
 			iconType = {
 				name = "toggle_mapmode_icon_trade_routes"
 				spriteType = "GFX_map_mode_trade_routes"
-				position = { x = -309 y = -67 }
+				position = { x = -346 y = -103 }
 				orientation = "LOWER_RIGHT"
 				alwaystransparent = yes
 			}
 
-			buttonType = {
+ 			buttonType = {
 				name = "toggle_mapmode_trade_routes"
 				quadTextureSprite = "GFX_button_29_animated"
-				position = { x= -321 y = -79  }
+				position = { x= -358 y = -115  }
 				pdx_tooltip = "TOGGLE_MAPMODE_TRADE_ROUTES_INFO"
 				pdx_tooltip_anchor_offset = { x= 0 y = @tt_offset_y }
 				pdx_tooltip_anchor_orientation = lower_left
@@ -518,15 +518,15 @@ guiTypes = {
 			iconType = {
 				name = "toggle_mapmode_icon_unions"
 				spriteType = "GFX_map_mode_unions"
-				position = { x = -275 y = -67 }
+				position = { x = -313 y = -70 }
 				orientation = "LOWER_RIGHT"
 				alwaystransparent = yes
 			}
 
-			buttonType = {
+ 			buttonType = {
 				name = "toggle_mapmode_unions"
 				quadTextureSprite = "GFX_button_29_animated"
-				position = { x= -287 y = -79  }
+				position = { x= -325 y = -82  }
 				pdx_tooltip = "TOGGLE_MAPMODE_UNIONS_INFO"
 				pdx_tooltip_anchor_offset = { x= 0 y = @tt_offset_y }
 				pdx_tooltip_anchor_orientation = lower_left
@@ -536,7 +536,7 @@ guiTypes = {
 			iconType = {
 				name = "toggle_mapmode_icon_players"
 				spriteType = "GFX_map_mode_players"
-				position = { x = -241 y = -67 }
+				position = { x = -379 y = -103 }
 				orientation = "LOWER_RIGHT"
 				alwaystransparent = yes
 			}
@@ -544,7 +544,7 @@ guiTypes = {
 			buttonType = {
 				name = "toggle_mapmode_players"
 				quadTextureSprite = "GFX_button_29_animated"
-				position = { x = -253 y = -79 }
+				position = { x = -391 y = -115 }
 				pdx_tooltip = "TOGGLE_MAPMODE_PLAYERS_INFO"
 				pdx_tooltip_anchor_offset = { x= 0 y = @tt_offset_y }
 				pdx_tooltip_anchor_orientation = lower_left
@@ -563,44 +563,6 @@ guiTypes = {
 				oversound = no_sound
 			}
 		}
-
-		# Dynamic Mod Menu
-		containerWindowType = {
-			name = "dynamic_mod_menu_toolbar"
-			position = { x = -480 y = -36 }
-			size = { width = 80 height = 36 }
-			orientation = lower_right
-			clipping = yes
-
-			background = {
-				name = "dynamic_mod_menu_bg"
-				quadTextureSprite = "GFX_topbar_background"
-				position = { x = 0 y = 0  }
-			}
-
-			iconType = {
-				name = "dynamic_mod_menu_bottombar_details"
-				spriteType = "GFX_bottombar_details"
-				position = { x= 0 y = -5 }
-			}			
-			
-			iconType = {
-				name = "toggle_dynamic_mod_menu"
-				spriteType = "GFX_topbar_dynamic_mod_menu_button"				
-				position = { x = -67 y = -37 }
-				orientation = "LOWER_RIGHT"
-				alwaystransparent = yes
-			}			
-
-			effectButtonType = {
-				name = "mod_menu_button"
-				quadTextureSprite = "GFX_button_60_29"
-				position = { x = -82 y = -46 }
-				orientation = lower_right
-				effect = "dynamic_mod_menu_open"				
-			} 				
-		}		
-		# End Dynamic Mod Menu		
 	}
 
 	containerWindowType = {
@@ -655,13 +617,14 @@ guiTypes = {
 			format = center
 		}
 	}
-	#map mode neighbours
+#map mode neighbours
 	containerWindowType = {
 		name = "main_gui_map_mode_entry"
 		position = { x= 0 y = 0 }
 		size = { width=32 height=32 }
 
-		buttonType = {
+		buttonType =
+		{
 			name = "button"
 			quadTextureSprite = "GFX_button_29_animated"
 			position = { x = -12 y = -12 }
