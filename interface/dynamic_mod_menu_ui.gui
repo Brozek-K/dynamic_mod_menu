@@ -20,7 +20,7 @@ guiTypes = {
 
         iconType = {
             name = "empire_header_line"
-            spriteType = "GFX_line"
+            spriteType = "GFX_line_long"
             position = { x = 6 y = 30 }
             alwaysTransparent = yes
         }  
