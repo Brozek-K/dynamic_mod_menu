@@ -33,7 +33,7 @@ guiTypes = {
 			orientation = center_down
 			origo = center_up
 
-			###	BACKGROUND FOR AVOIDED SYSTEMS					
+			###	BACKGROUND FOR AVOIDED SYSTEMS
 			iconType = {
 				name = "starsystem_panel_avoid_bg"
 				spriteType = "GFX_starsystem_panel_avoid"
@@ -56,14 +56,14 @@ guiTypes = {
 			iconType = {
 				name = "claims_button_bg"
 				spriteType = "GFX_starsystem_panel_left"
-				position = { x = -205 y = 38 }				
+				position = { x = -205 y = 38 }
 			}
 
 			### BACKGROUND FOR AVOID SYSTEM BUTTON VISIBLE WHEN ENABLED
 			iconType = {
 				name = "restricted_button_bg"
 				spriteType = "GFX_starsystem_panel_right"
-				position = { x = -112 y = 46 }				
+				position = { x = -112 y = 46 }
 			}
 
 			buttonType = {
@@ -74,7 +74,7 @@ guiTypes = {
 				clicksound = interface
 				oversound = no_sound
 			}
-	
+
 
 			buttonType = {
 				name = "button"
@@ -123,7 +123,7 @@ guiTypes = {
 				fixedsize = yes
 				#text_color_code = "E"
 			}
-			
+
 			instantTextBoxType={
 				name = "system_type"
 				font = "cg_16b"
@@ -136,7 +136,7 @@ guiTypes = {
 				alwaystransparent = yes
 				fixedsize = yes
 				text_color_code = "E"
-			}			
+			}
 
 			buttonType = {
 				name = "system_rename_button"
@@ -147,24 +147,24 @@ guiTypes = {
 				pdx_tooltip = "RENAME_SYSTEM_TOOLTIP"
 				oversound = no_sound
 			}
-			
+
 			iconType = {
 				name = "environmental_effects_icon"
 				spriteType = "GFX_system_hazards_icon"
-				position = { x = 252 y = 49 }				
+				position = { x = 252 y = 49 }
 			}
 
 			buttonType = {
 				name = "claim_system_button"
 				quadTextureSprite = "GFX_claim_system_icon"
-				position = { x = -204 y = 43 }		
-			}			
+				position = { x = -204 y = 43 }
+			}
 
 			buttonType = {
 				name = "restricted_system_button"
 				quadTextureSprite = "GFX_restricted_system_icon"
-				position = { x = -112 y = 43 }		
-			}			
+				position = { x = -112 y = 43 }
+			}
 		}
 
 		### LEAVE GALAXY WINDOW
@@ -469,7 +469,7 @@ guiTypes = {
 				alwaystransparent = yes
 			}
 
- 			buttonType = {
+			buttonType = {
 				name = "toggle_mapmode_sectors"
 				quadTextureSprite = "GFX_button_29_animated"
 				position = { x= -391 y = -82  }
@@ -478,7 +478,7 @@ guiTypes = {
 				pdx_tooltip_anchor_orientation = lower_left
 				orientation = lower_right
 			}
-			
+
 			iconType = {
 				name = "toggle_mapmode_icon_hyperlanes"
 				spriteType = "GFX_map_mode_hyperlanes"
@@ -505,7 +505,7 @@ guiTypes = {
 				alwaystransparent = yes
 			}
 
- 			buttonType = {
+			buttonType = {
 				name = "toggle_mapmode_trade_routes"
 				quadTextureSprite = "GFX_button_29_animated"
 				position = { x= -358 y = -115  }
@@ -523,7 +523,7 @@ guiTypes = {
 				alwaystransparent = yes
 			}
 
- 			buttonType = {
+			buttonType = {
 				name = "toggle_mapmode_unions"
 				quadTextureSprite = "GFX_button_29_animated"
 				position = { x= -325 y = -82  }
@@ -582,25 +582,26 @@ guiTypes = {
 				name = "dynamic_mod_menu_bottombar_details"
 				spriteType = "GFX_bottombar_details"
 				position = { x= 0 y = -5 }
-			}			
-			
+			}
+
 			iconType = {
 				name = "toggle_dynamic_mod_menu"
-				spriteType = "GFX_topbar_dynamic_mod_menu_button"				
+				spriteType = "GFX_topbar_dynamic_mod_menu_button"
 				position = { x = -67 y = -37 }
 				orientation = "LOWER_RIGHT"
 				alwaystransparent = yes
-			}			
+			}
 
 			effectButtonType = {
 				name = "mod_menu_button"
 				quadTextureSprite = "GFX_button_60_29"
 				position = { x = -82 y = -46 }
 				orientation = lower_right
-				effect = "dynamic_mod_menu_open"				
-			} 				
-		}		
-		# End Dynamic Mod Menu		
+				effect = "dynamic_mod_menu_open"
+				shortcut="alt+m"
+			}
+		}
+		# End Dynamic Mod Menu
 	}
 
 	containerWindowType = {
@@ -655,7 +656,7 @@ guiTypes = {
 			format = center
 		}
 	}
-#map mode neighbours
+	#map mode neighbours
 	containerWindowType = {
 		name = "main_gui_map_mode_entry"
 		position = { x= 0 y = 0 }
