@@ -71,8 +71,8 @@ country_event = {
     hide_window = yes
 
     immediate = {
-        ### BEGIN TEMPLATE ###
-        ### END TEMPLATE ###
+        ### BEGIN TEMPLATE:event_2 ###
+        ### END TEMPLATE:event_2 ###
     }
 }
 
@@ -82,8 +82,8 @@ country_event = {
     hide_window = yes
 
     immediate = {
-        ### BEGIN TEMPLATE ###
-        ### END TEMPLATE ###
+        ### BEGIN TEMPLATE:event_3 ###
+        ### END TEMPLATE:event_3 ###
     }
 }
 
@@ -93,8 +93,8 @@ country_event = {
     hide_window = yes
 
     immediate = {
-        ### BEGIN TEMPLATE ###
-        ### END TEMPLATE ###
+        ### BEGIN TEMPLATE:event_100 ###
+        ### END TEMPLATE:event_100 ###
     }
 }
 
@@ -107,8 +107,8 @@ country_event = {
         country_event = {
             id = dynamic_mod_menu.100
         }
-        ### BEGIN TEMPLATE ###
-        ### END TEMPLATE ###
+        ### BEGIN TEMPLATE:event_101 ###
+        ### END TEMPLATE:event_101 ###
     }
 }
 
@@ -121,8 +121,8 @@ country_event = {
         country_event = {
             id = dynamic_mod_menu.100
         }
-        ### BEGIN TEMPLATE ###
-        ### END TEMPLATE ###
+        ### BEGIN TEMPLATE:event_102 ###
+        ### END TEMPLATE:event_102 ###
     }
 }
 
@@ -135,8 +135,8 @@ country_event = {
         country_event = {
             id = dynamic_mod_menu.100
         }
-        ### BEGIN TEMPLATE ###
-        ### END TEMPLATE ###
+        ### BEGIN TEMPLATE:event_103 ###
+        ### END TEMPLATE:event_103 ###
     }
 }
 
@@ -149,8 +149,8 @@ country_event = {
         country_event = {
             id = dynamic_mod_menu.100
         }
-        ### BEGIN TEMPLATE ###
-        ### END TEMPLATE ###
+        ### BEGIN TEMPLATE:event_104 ###
+        ### END TEMPLATE:event_104 ###
     }
 }
 
@@ -163,8 +163,8 @@ country_event = {
         country_event = {
             id = dynamic_mod_menu.100
         }
-        ### BEGIN TEMPLATE ###
-        ### END TEMPLATE ###
+        ### BEGIN TEMPLATE:event_105 ###
+        ### END TEMPLATE:event_105 ###
     }
 }
 
@@ -177,8 +177,8 @@ country_event = {
         country_event = {
             id = dynamic_mod_menu.100
         }
-        ### BEGIN TEMPLATE ###
-        ### END TEMPLATE ###
+        ### BEGIN TEMPLATE:event_106 ###
+        ### END TEMPLATE:event_106 ###
     }
 }
 
@@ -191,8 +191,8 @@ country_event = {
         country_event = {
             id = dynamic_mod_menu.100
         }
-        ### BEGIN TEMPLATE ###
-        ### END TEMPLATE ###
+        ### BEGIN TEMPLATE:event_107 ###
+        ### END TEMPLATE:event_107 ###
     }
 }
 
@@ -205,8 +205,8 @@ country_event = {
         country_event = {
             id = dynamic_mod_menu.100
         }
-        ### BEGIN TEMPLATE ###
-        ### END TEMPLATE ###
+        ### BEGIN TEMPLATE:event_108 ###
+        ### END TEMPLATE:event_108 ###
     }
 }
 
@@ -219,8 +219,8 @@ country_event = {
         country_event = {
             id = dynamic_mod_menu.100
         }
-        ### BEGIN TEMPLATE ###
-        ### END TEMPLATE ###
+        ### BEGIN TEMPLATE:event_109 ###
+        ### END TEMPLATE:event_109 ###
     }
 }
 
@@ -233,7 +233,7 @@ country_event = {
         country_event = {
             id = dynamic_mod_menu.100
         }
-        ### BEGIN TEMPLATE ###
-        ### END TEMPLATE ###
+        ### BEGIN TEMPLATE:event_110 ###
+        ### END TEMPLATE:event_110 ###
     }
 }

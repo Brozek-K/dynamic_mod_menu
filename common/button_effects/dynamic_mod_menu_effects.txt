@@ -4,8 +4,8 @@
 dynamic_mod_menu_open = {
     potential = {
         OR = {
-            ### BEGIN TEMPLATE ###
-            ### END TEMPLATE ###
+            ### BEGIN TEMPLATE:open_flags ###
+            ### END TEMPLATE:open_flags ###
         }
     }
     allow = {

@@ -1,2 +1,2 @@
-### BEGIN TEMPLATE ###
-### END TEMPLATE ###
+### BEGIN TEMPLATE:effects ###
+### END TEMPLATE:effects ###

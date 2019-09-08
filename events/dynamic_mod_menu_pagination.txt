@@ -31,8 +31,8 @@ country_event = {
                 }
             }
 
-            ### BEGIN TEMPLATE ###
-            ### END TEMPLATE ###
+            ### BEGIN TEMPLATE:event_1 ###
+            ### END TEMPLATE:event_1 ###
         }
         country_event = {
             id = dynamic_mod_menu_pagination.8
@@ -70,8 +70,8 @@ country_event = {
                 }
             }
 
-            ### BEGIN TEMPLATE ###
-            ### END TEMPLATE ###
+            ### BEGIN TEMPLATE:event_2 ###
+            ### END TEMPLATE:event_2 ###
         }
         country_event = {
             id = dynamic_mod_menu_pagination.8
@@ -94,8 +94,8 @@ country_event = {
         }
         remove_global_flag = dynamic_mod_menu_no_new_pages
         remove_global_flag = dynamic_mod_menu_no_prev_pages
-        ### BEGIN TEMPLATE ###
-        ### END TEMPLATE ###
+        ### BEGIN TEMPLATE:event_3 ###
+        ### END TEMPLATE:event_3 ###
     }
 }
 
@@ -105,8 +105,8 @@ country_event = {
     hide_window = yes
 
     immediate = {
-        ### BEGIN TEMPLATE ###
-        ### END TEMPLATE ###
+        ### BEGIN TEMPLATE:event_4 ###
+        ### END TEMPLATE:event_4 ###
     }
 }
 
@@ -116,8 +116,8 @@ country_event = {
     hide_window = yes
 
     immediate = {
-        ### BEGIN TEMPLATE ###
-        ### END TEMPLATE ###
+        ### BEGIN TEMPLATE:event_5 ###
+        ### END TEMPLATE:event_5 ###
     }
 }
 
@@ -127,8 +127,8 @@ country_event = {
     hide_window = yes
 
     immediate = {
-        ### BEGIN TEMPLATE ###
-        ### END TEMPLATE ###
+        ### BEGIN TEMPLATE:event_6 ###
+        ### END TEMPLATE:event_6 ###
     }
 }
 
@@ -138,8 +138,8 @@ country_event = {
     hide_window = yes
 
     immediate = {
-        ### BEGIN TEMPLATE ###
-        ### END TEMPLATE ###
+        ### BEGIN TEMPLATE:event_7 ###
+        ### END TEMPLATE:event_7 ###
     }
 }
 
@@ -149,8 +149,8 @@ country_event = {
     hide_window = yes
 
     immediate = {
-        ### BEGIN TEMPLATE ###
-        ### END TEMPLATE ###
+        ### BEGIN TEMPLATE:event_8 ###
+        ### END TEMPLATE:event_8 ###
     }
 }
 
@@ -160,7 +160,7 @@ country_event = {
     hide_window = yes
 
     immediate = {
-        ### BEGIN TEMPLATE ###
-        ### END TEMPLATE ###
+        ### BEGIN TEMPLATE:event_9 ###
+        ### END TEMPLATE:event_9 ###
     }
 }

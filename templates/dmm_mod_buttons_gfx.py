@@ -2,7 +2,7 @@ from templates.utils import settings, templater
 
 template = """
 	spriteType = {{
-		name = "GFX_dmm_mod_{0}"
+		name = "GFX_dmm_mod_{count}"
 		texturefile = "gfx/interface/buttons/button_200_34_animated.dds"
 		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
 		noOfFrames = 3
@@ -27,7 +27,7 @@ def process(publish_dir):
     mod_lines = []
     mod_lines.append("spriteTypes = {")
     for i in range(1, settings.total + 1):
-        mod_lines.append(template.format(i))
+        mod_lines.append(template.format(count=i))
     mod_lines.append("}")
     templater.process_file(
-        publish_dir + "/interface/dmm_mod_buttons.gfx", mod_lines)
+        publish_dir + "/interface/dmm_mod_buttons.gfx", buttons=mod_lines)

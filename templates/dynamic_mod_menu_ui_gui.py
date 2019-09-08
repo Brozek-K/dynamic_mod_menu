@@ -2,14 +2,14 @@ from templates.utils import settings, templater
 
 template = """
         effectButtonType = {{
-            name = "dmm_mod_{0}_{1}"
-            quadTextureSprite = "GFX_dmm_mod_{1}"
-            position = {{ x = {2} y = {3} }}            
+            name = "dmm_mod_{count}_{secondary_count}"
+            quadTextureSprite = "GFX_dmm_mod_{secondary_count}"
+            position = {{ x = {pos_x} y = {pos_y} }}            
             buttonFont = "cg_16b"
-            buttonText = "dmm_mod_{1}"
+            buttonText = "dmm_mod_{secondary_count}"
             clicksound = no_sound
             oversound = no_sound
-            effect = "dmm_mod_{0}_{1}"
+            effect = "dmm_mod_{count}_{secondary_count}"
         }}"""
 
 default_x = 10
@@ -24,11 +24,12 @@ def process(publish_dir):
     }
     for i in range(1, settings.items_per_page + 1):
         for j in range(i, settings.total + 1):
-            mod_lines.append(template.format(i, j, pos['x'], pos['y']))
+            mod_lines.append(template.format(
+                count=i, secondary_count=j, pos_x=pos['x'], pos_y=pos['y']))
         pos['x'] += 220
         if i % settings.items_per_line == 0:
             pos['x'] = default_x
             pos['y'] += 54
 
     templater.process_file(
-        publish_dir + "/interface/dynamic_mod_menu_ui.gui", mod_lines)
+        publish_dir + "/interface/dynamic_mod_menu_ui.gui", buttons=mod_lines)
