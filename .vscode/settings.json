@@ -1,0 +1,23 @@
+{
+    "files.associations": {
+        "*.txt": "stellaris",
+        "*.gui": "stellaris",
+        "*.gfx": "stellaris",
+        "*.asset": "stellaris",
+        "*.cwt": "stellaris",
+        "*.mod": "paradox",
+        "*.yml": "yaml",
+    },
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+    "window.zoomLevel": 0,
+    "breadcrumbs.enabled": true,
+    "editor.minimap.enabled": true,
+    "workbench.enableExperiments": false,
+    "workbench.settings.enableNaturalLanguageSearch": false,
+    "theme-by-language.themes": {
+        "stellaris": "Stellaris Theme",
+        "paradox": "Paradox Theme",
+        "yaml": "Paradox Theme"
+    }
+}

@@ -4,7 +4,7 @@ guiTypes = {
 		orientation = center
 		origo = center
 		moveable = yes
-		size = { width = 920 height = 450 }
+		size = { width = 920 height = 460 }
 
 		background = {
 			name = "background"
