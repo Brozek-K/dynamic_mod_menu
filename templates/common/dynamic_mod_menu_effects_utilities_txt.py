@@ -1,7 +1,7 @@
 from templates.utils import settings, templater
 
 template = """
-dmm_mod_utilities_main_event_{secondary_event} = {{
+dmm_mod_utilities_{main_event}_{secondary_event} = {{
     potential = {{
         has_global_flag = dmm_mod_utilities_{main_event}_{secondary_event}_active
     }}

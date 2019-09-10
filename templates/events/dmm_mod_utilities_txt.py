@@ -17,7 +17,7 @@ country_event = {{
     }}
 
     option = {{        
-        name = "dmm_options.1.close"
+        name = "dmm_options.close"
     }}
 }}"""
 

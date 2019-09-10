@@ -1,0 +1,186 @@
+namespace = dynamic_mod_menu_launcher
+
+country_event = {
+	id = dynamic_mod_menu_launcher.1
+	hide_window = yes
+	trigger = {
+		NOT = {
+			has_global_flag = dynamic_mod_menu_opened_launcher
+		}
+	}
+
+	is_triggered_only = yes
+	immediate = {
+		country_event = {
+			id = dynamic_mod_menu.2
+		}
+		country_event = {
+			id = dynamic_mod_menu_events.2
+		}
+		country_event = {
+			id = dynamic_mod_menu_gfx.2
+		}
+		country_event = {
+			id = dynamic_mod_menu_other.2
+		}
+		country_event = {
+			id = dynamic_mod_menu_utilities.2
+		}
+
+		set_variable = {
+			which = dynamic_mod_menu_active_categories
+			value = 0
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = dynamic_mod_menu_first_id
+					value > 0
+				}
+			}
+			change_variable = {
+				which = dynamic_mod_menu_active_categories
+				value = 1
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = dynamic_mod_menu_events_first_id
+					value > 0
+				}
+			}
+			change_variable = {
+				which = dynamic_mod_menu_active_categories
+				value = 1
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = dynamic_mod_menu_gfx_first_id
+					value > 0
+				}
+			}
+			change_variable = {
+				which = dynamic_mod_menu_active_categories
+				value = 1
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = dynamic_mod_menu_other_first_id
+					value > 0
+				}
+			}
+			change_variable = {
+				which = dynamic_mod_menu_active_categories
+				value = 1
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = dynamic_mod_menu_utilities_first_id
+					value > 0
+				}
+			}
+			change_variable = {
+				which = dynamic_mod_menu_active_categories
+				value = 1
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = dynamic_mod_menu_active_categories
+					value > 1
+				}
+			}
+			country_event = {
+				id = dynamic_mod_menu_launcher.2
+			}
+		}
+		else = {
+			if = {
+				limit = {
+					check_variable = {
+						which = dynamic_mod_menu_first_id
+						value > 0
+					}
+				}
+				country_event = {
+					id = dynamic_mod_menu.1
+				}
+			}
+			if = {
+				limit = {
+					check_variable = {
+						which = dynamic_mod_menu_events_first_id
+						value > 0
+					}
+				}
+				country_event = {
+					id = dynamic_mod_menu_events.1
+				}
+			}
+			if = {
+				limit = {
+					check_variable = {
+						which = dynamic_mod_menu_gfx_first_id
+						value > 0
+					}
+				}
+				country_event = {
+					id = dynamic_mod_menu_gfx.1
+				}
+			}
+			if = {
+				limit = {
+					check_variable = {
+						which = dynamic_mod_menu_other_first_id
+						value > 0
+					}
+				}
+				country_event = {
+					id = dynamic_mod_menu_other.1
+				}
+			}
+			if = {
+				limit = {
+					check_variable = {
+						which = dynamic_mod_menu_utilities_first_id
+						value > 0
+					}
+				}
+				country_event = {
+					id = dynamic_mod_menu_utilities.1
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = dynamic_mod_menu_launcher.2
+	title = "dmm_options.title"
+	desc = "dmm_options.desc"
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "dynamic_mod_menu_ui_launcher"
+
+	trigger = {
+		NOT = {
+			has_global_flag = dynamic_mod_menu_opened_launcher
+		}
+	}
+
+	option = {
+		name = "dmm_options.close"
+
+		hidden_effect = {
+			remove_global_flag = dynamic_mod_menu_opened_launcher
+		}
+	}
+}
