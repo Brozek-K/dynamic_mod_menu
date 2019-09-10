@@ -32,7 +32,7 @@ guiTypes = {
 			Orientation = "UPPER_RIGHT"
 			shortcut = "ESCAPE"
 			clicksound = "back_click"
-			effect = "dynamic_mod_menu_close"
+			effect = "dynamic_mod_menu_close_general"
 		}
 
 		# Custom title
@@ -77,7 +77,7 @@ guiTypes = {
 			buttonText = "dmm_options_next"
 			clicksound = no_sound
 			oversound = no_sound
-			effect = "dynamic_mod_menu_next_page"
+			effect = "dynamic_mod_menu_next_page_general"
 		}
 
 		effectButtonType = {
@@ -88,7 +88,7 @@ guiTypes = {
 			buttonText = "dmm_options_prev"
 			clicksound = no_sound
 			oversound = no_sound
-			effect = "dynamic_mod_menu_prev_page"
+			effect = "dynamic_mod_menu_prev_page_general"
 		}
 
 		### BEGIN TEMPLATE:buttons ###

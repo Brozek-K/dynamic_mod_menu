@@ -597,7 +597,7 @@ guiTypes = {
 				quadTextureSprite = "GFX_button_60_29"
 				position = { x = -82 y = -46 }
 				orientation = lower_right
-				effect = "dynamic_mod_menu_open"
+				effect = "dynamic_mod_menu_open_launcher"
 				shortcut="alt+m"
 			}
 		}
