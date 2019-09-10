@@ -97,7 +97,9 @@ def pick_id():
     id = 0
     while id == 0:
         try:
-            user_id = int(input("Pick an number id from 1-251: "))
+            value = input("Pick an number id from 1-251: ")
+            eval_exit_requested(value)
+            user_id = int(value)
             if user_id < 251:
                 id = user_id
         except ValueError:
@@ -109,13 +111,19 @@ def pick_category():
     category = None
     while category == None:
         try:
-            text = input(
+            value = input(
                 "Type a desired category, valid categories are: \"general\", \"events\", \"gfx\", \"utilities\" and \"other\": ")
-            if text in categories:
-                category = {text: categories[text]}
+            eval_exit_requested(value)
+            if value in categories:
+                category = {'name': value, 'value': categories[value]}
         except ValueError:
             pass
     return category
+
+
+def eval_exit_requested(command):
+    if command.lower() == "exit" or command.lower() == "quit":
+        exit()
 
 
 def save(path, template, bomEncoding=False):
@@ -128,9 +136,10 @@ def save(path, template, bomEncoding=False):
 
 
 if __name__ == "__main__":
+    print("When propmted type \"exit\" or \"quit\" to kill the script.")
     category = pick_category()
-    cat_name = list(category.keys())[0]
-    cat_value = list(category.values())[0]
+    cat_name = category['name']
+    cat_value = category['value']
     id = pick_id()
     if not os.path.exists("events"):
         os.mkdir("events")
