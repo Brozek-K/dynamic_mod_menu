@@ -268,7 +268,7 @@ country_event = {
 					id = dynamic_mod_menu.1
 				}
 			}
-			if = {
+			else_if = {
 				limit = {
 					check_variable = {
 						which = dynamic_mod_menu_events_first_id
@@ -279,7 +279,7 @@ country_event = {
 					id = dynamic_mod_menu_events.1
 				}
 			}
-			if = {
+			else_if = {
 				limit = {
 					check_variable = {
 						which = dynamic_mod_menu_gfx_first_id
@@ -290,7 +290,7 @@ country_event = {
 					id = dynamic_mod_menu_gfx.1
 				}
 			}
-			if = {
+			else_if = {
 				limit = {
 					check_variable = {
 						which = dynamic_mod_menu_other_first_id
@@ -301,7 +301,7 @@ country_event = {
 					id = dynamic_mod_menu_other.1
 				}
 			}
-			if = {
+			else_if = {
 				limit = {
 					check_variable = {
 						which = dynamic_mod_menu_utilities_first_id
