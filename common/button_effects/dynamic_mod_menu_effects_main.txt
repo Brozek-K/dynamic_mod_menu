@@ -24,12 +24,12 @@ dynamic_mod_menu_open_launcher = {
 
 dynamic_mod_menu_open_general_1 = {
     potential = {
-        has_global_flag = dynamic_mod_menu_category_general_1        
+        has_global_flag = dynamic_mod_menu_category_general_1
     }
     allow = {
         NOT = {
             has_global_flag = dynamic_mod_menu_opened
-        }        
+        }
     }
     effect = {
         hidden_effect = {
@@ -42,12 +42,12 @@ dynamic_mod_menu_open_general_1 = {
 
 dynamic_mod_menu_open_events_1 = {
     potential = {
-        has_global_flag = dynamic_mod_menu_category_events_1        
+        has_global_flag = dynamic_mod_menu_category_events_1
     }
     allow = {
         NOT = {
             has_global_flag = dynamic_mod_menu_events_opened
-        }        
+        }
     }
     effect = {
         hidden_effect = {
@@ -60,12 +60,12 @@ dynamic_mod_menu_open_events_1 = {
 
 dynamic_mod_menu_open_gfx_1 = {
     potential = {
-        has_global_flag = dynamic_mod_menu_category_gfx_1        
+        has_global_flag = dynamic_mod_menu_category_gfx_1
     }
     allow = {
         NOT = {
             has_global_flag = dynamic_mod_menu_gfx_opened
-        }        
+        }
     }
     effect = {
         hidden_effect = {
@@ -78,12 +78,12 @@ dynamic_mod_menu_open_gfx_1 = {
 
 dynamic_mod_menu_open_utilities_1 = {
     potential = {
-        has_global_flag = dynamic_mod_menu_category_utilities_1        
+        has_global_flag = dynamic_mod_menu_category_utilities_1
     }
     allow = {
         NOT = {
             has_global_flag = dynamic_mod_menu_utilities_opened
-        }        
+        }
     }
     effect = {
         hidden_effect = {
@@ -96,12 +96,12 @@ dynamic_mod_menu_open_utilities_1 = {
 
 dynamic_mod_menu_open_other_1 = {
     potential = {
-        has_global_flag = dynamic_mod_menu_category_other_1        
+        has_global_flag = dynamic_mod_menu_category_other_1
     }
     allow = {
         NOT = {
             has_global_flag = dynamic_mod_menu_other_opened
-        }        
+        }
     }
     effect = {
         hidden_effect = {
@@ -116,10 +116,10 @@ dynamic_mod_menu_open_events_2 = {
     potential = {
         has_global_flag = dynamic_mod_menu_category_events_2
     }
-    allow = {        
+    allow = {
         NOT = {
             has_global_flag = dynamic_mod_menu_events_opened
-        }        
+        }
     }
     effect = {
         hidden_effect = {
@@ -132,12 +132,12 @@ dynamic_mod_menu_open_events_2 = {
 
 dynamic_mod_menu_open_gfx_2 = {
     potential = {
-        has_global_flag = dynamic_mod_menu_category_gfx_2        
+        has_global_flag = dynamic_mod_menu_category_gfx_2
     }
     allow = {
         NOT = {
             has_global_flag = dynamic_mod_menu_gfx_opened
-        }        
+        }
     }
     effect = {
         hidden_effect = {
@@ -150,12 +150,12 @@ dynamic_mod_menu_open_gfx_2 = {
 
 dynamic_mod_menu_open_utilities_2 = {
     potential = {
-        has_global_flag = dynamic_mod_menu_category_utilities_2        
+        has_global_flag = dynamic_mod_menu_category_utilities_2
     }
     allow = {
         NOT = {
             has_global_flag = dynamic_mod_menu_utilities_opened
-        }        
+        }
     }
     effect = {
         hidden_effect = {
@@ -168,12 +168,12 @@ dynamic_mod_menu_open_utilities_2 = {
 
 dynamic_mod_menu_open_other_2 = {
     potential = {
-        has_global_flag = dynamic_mod_menu_category_other_2        
+        has_global_flag = dynamic_mod_menu_category_other_2
     }
     allow = {
         NOT = {
             has_global_flag = dynamic_mod_menu_other_opened
-        }        
+        }
     }
     effect = {
         hidden_effect = {
@@ -186,12 +186,12 @@ dynamic_mod_menu_open_other_2 = {
 
 dynamic_mod_menu_open_gfx_3 = {
     potential = {
-        has_global_flag = dynamic_mod_menu_category_gfx_3        
+        has_global_flag = dynamic_mod_menu_category_gfx_3
     }
     allow = {
         NOT = {
             has_global_flag = dynamic_mod_menu_gfx_opened
-        }        
+        }
     }
     effect = {
         hidden_effect = {
@@ -204,12 +204,12 @@ dynamic_mod_menu_open_gfx_3 = {
 
 dynamic_mod_menu_open_utilities_3 = {
     potential = {
-        has_global_flag = dynamic_mod_menu_category_utilities_3        
+        has_global_flag = dynamic_mod_menu_category_utilities_3
     }
     allow = {
         NOT = {
             has_global_flag = dynamic_mod_menu_utilities_opened
-        }        
+        }
     }
     effect = {
         hidden_effect = {
@@ -222,12 +222,12 @@ dynamic_mod_menu_open_utilities_3 = {
 
 dynamic_mod_menu_open_other_3 = {
     potential = {
-        has_global_flag = dynamic_mod_menu_category_other_3        
+        has_global_flag = dynamic_mod_menu_category_other_3
     }
     allow = {
         NOT = {
             has_global_flag = dynamic_mod_menu_other_opened
-        }        
+        }
     }
     effect = {
         hidden_effect = {
@@ -240,12 +240,12 @@ dynamic_mod_menu_open_other_3 = {
 
 dynamic_mod_menu_open_utilities_4 = {
     potential = {
-        has_global_flag = dynamic_mod_menu_category_utilities_4        
+        has_global_flag = dynamic_mod_menu_category_utilities_4
     }
     allow = {
         NOT = {
             has_global_flag = dynamic_mod_menu_utilities_opened
-        }        
+        }
     }
     effect = {
         hidden_effect = {
@@ -258,12 +258,12 @@ dynamic_mod_menu_open_utilities_4 = {
 
 dynamic_mod_menu_open_other_4 = {
     potential = {
-        has_global_flag = dynamic_mod_menu_category_other_4        
+        has_global_flag = dynamic_mod_menu_category_other_4
     }
     allow = {
         NOT = {
             has_global_flag = dynamic_mod_menu_other_opened
-        }        
+        }
     }
     effect = {
         hidden_effect = {
@@ -276,12 +276,12 @@ dynamic_mod_menu_open_other_4 = {
 
 dynamic_mod_menu_open_other_5 = {
     potential = {
-        has_global_flag = dynamic_mod_menu_category_other_5        
+        has_global_flag = dynamic_mod_menu_category_other_5
     }
     allow = {
         NOT = {
             has_global_flag = dynamic_mod_menu_other_opened
-        }        
+        }
     }
     effect = {
         hidden_effect = {
@@ -348,7 +348,7 @@ dynamic_mod_menu_gfx = {
     }
 }
 
-dynamic_mod_menu_utilities = {
+dynamic_mod_menu_close_utilities = {
     potential = {
         always = yes
     }

@@ -14,6 +14,12 @@ country_event = {{
 
     after = {{
         remove_global_flag = dmm_mod_{count}_opened
+        # Uninstall mod, should be overwritten by an actual mod
+        set_global_flag = dmm_mod_{count}_disabled
+        country_event = {{
+            id = dmm_mod_clear.{count}
+            days = 2
+        }}     
     }}
 
     option = {{        

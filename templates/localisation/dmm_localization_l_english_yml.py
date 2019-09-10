@@ -1,8 +1,8 @@
 from templates.utils import settings, templater
 
 template_button = ' dmm_mod{category}_{count}:0 "Dynamic Mod Menu{category_name} {count}"'
-template_title = ' dmm_mod{category}.{count}.title:0 "Dynamic Mod Menu{category_name} {count}"'
-template_desc = ' dmm_mod{category}.{count}.desc:0 "Dynamic Mod Menu{category_name} {count}"'
+template_title = ' dmm_mod{category}.{count}.title:0 "Slot Cleared"'
+template_desc = ' dmm_mod{category}.{count}.desc:0 "Dynamic Mod Menu{category_name} {count} slot will been cleared from your game in 2 game days."'
 
 categories = ["events", "gfx", "utilities", "other"]
 

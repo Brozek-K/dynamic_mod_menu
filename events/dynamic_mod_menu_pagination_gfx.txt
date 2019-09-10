@@ -22,7 +22,7 @@ country_event = {
         while = {
             limit = {
                 check_variable = {
-                    which = dynamic_mod_menu_gfx_pagination_gfx
+                    which = dynamic_mod_menu_gfx_items_shown
                     value < @items_per_page
                 }
                 check_variable = {
@@ -61,7 +61,7 @@ country_event = {
         while = {
             limit = {
                 check_variable = {
-                    which = dynamic_mod_menu_gfx_pagination_gfx
+                    which = dynamic_mod_menu_gfx_items_shown
                     value < @items_per_page
                 }
                 check_variable = {
@@ -89,7 +89,7 @@ country_event = {
 
     immediate = {
         set_variable = {
-            which = dynamic_mod_menu_gfx_pagination_gfx
+            which = dynamic_mod_menu_gfx_items_shown
             value = 0
         }
         remove_global_flag = dynamic_mod_menu_gfx_no_new_pages

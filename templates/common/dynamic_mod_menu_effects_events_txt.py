@@ -6,8 +6,9 @@ dmm_mod_events_{main_event}_{secondary_event} = {{
         has_global_flag = dmm_mod_events_{main_event}_{secondary_event}_active
     }}
     allow = {{
-        NOT = {{
+        NOR = {{
             has_global_flag = dmm_mod_events_{secondary_event}_opened
+            has_global_flag = dmm_mod_events_{secondary_event}_disabled
         }}
     }}
     effect = {{

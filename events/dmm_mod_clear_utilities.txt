@@ -1,0 +1,4 @@
+namespace = dmm_mod_clear_utilities
+
+### BEGIN TEMPLATE:events ###
+### END TEMPLATE:events ###
