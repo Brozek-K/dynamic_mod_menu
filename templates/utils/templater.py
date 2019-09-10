@@ -16,12 +16,19 @@ def process_file(path, **args):
                 lines.append(line)
 
     with open(path, "w+") as file:
+        matching_item = 0
+        ending_item = 0
         for line in lines:
             file.write(line)
             mod_lines = __get_starting_matching_item(line, args)
             if mod_lines:
+                matching_item += 1
                 for mod_line in mod_lines:
                     file.write(mod_line + "\n")
+            if __get_ending_matching_item(line, args):
+                ending_item += 1
+        if matching_item != ending_item:
+            raise AttributeError("There is an error in template tags.")
 
 
 def __get_starting_matching_item(line, args):

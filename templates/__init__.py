@@ -15,7 +15,6 @@ def get_modules():
         files.extend(glob.glob(__path + "/" + path + "/" + "*.py"))
     for file in files:
         if not "__init__.py" in file:
-            path = os.path.relpath(file)
             name = os.path.splitext(os.path.basename(file))[0]
             module = SourceFileLoader(name, file).load_module()
             modules.append(module)
