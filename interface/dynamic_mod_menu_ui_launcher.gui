@@ -4,7 +4,7 @@ guiTypes = {
 		orientation = center
 		origo = center
 		moveable = yes
-		size = { width = 500 height = 220 }
+		size = { width = 500 height = 240 }
 
 		background = {
 			name = "background"
@@ -20,7 +20,7 @@ guiTypes = {
 
 		iconType = {
 			name = "empire_header_line"
-			spriteType = "GFX_line_long"
+			spriteType = "GFX_line"
 			position = { x = 6 y = 30 }
 			alwaysTransparent = yes
 		}
@@ -69,6 +69,7 @@ guiTypes = {
 			scrollbartype = "standardtext_slider"
 		}
 
+		### BEGIN TEMPLATE:buttons ###
 		effectButtonType = {
 			name = "dmm_options_general"
 			quadTextureSprite = "GFX_button_animated_110_34"
@@ -123,6 +124,7 @@ guiTypes = {
 			oversound = no_sound
 			effect = "dynamic_mod_menu_open_other"
 		}
+		### END TEMPLATE:buttons ###
 
 		# Game crashes if these are not present, so use the old trick of moving them off the screen to "hide" them.
 		# Reference file: diplomacy_artist_event_view.gui
