@@ -11,6 +11,15 @@ country_event = {
 
 	is_triggered_only = yes
 	immediate = {
+		if = {
+			limit = {
+				NOT = {
+					has_global_flag = dynamic_mod_menu_installed
+				}
+			}
+			set_global_flag = dynamic_mod_menu_installed
+		}
+
 		country_event = {
 			id = dynamic_mod_menu.2
 		}

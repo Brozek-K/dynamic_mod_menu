@@ -1,3 +1,6 @@
+[h1]Menu in action[/h1]
+[img]https://media.giphy.com/media/LPlPcdqY1UsW0k8UII/giphy.gif[/img]
+
 [h1]FAQ[/h1]
 
 [i]What's the reasoning behind this?[/i]
@@ -10,7 +13,7 @@ The only way for modders to create their own mod options menus are:
 
 The only rather "dynamic" approach is using the edict screen. Others either have mod conflicts or require additional steps to be performed by third party developers.
 
-[i]We already have a mod menu?[/i]
+[i]We already have a mod menu.[/i]
 Yes, but it's not "dynamic".
 
 [i]Is it truly a "dynamic" mod menu?[/i]
@@ -22,7 +25,7 @@ This mod menu exposes 100 "slots" for other mods to "inject" as a button into th
 Developers get to pick one unique Id (list will be kept somewhere which mods use which Id) and then:
 1. Overwrite localization files related to this unique mod Id
 2. Overwrite events related to this unique mod Id
-3. Set a global flag related to this unique Id (in the event that is overwritten)
+3. Set a global flag related to this unique Id (comes via generated code)
 4. Create own mod icon for the mod menu by overwriting a GFX resource related to this unique Id
 
 [i]Only 100 slots?[/i]
@@ -38,33 +41,45 @@ Almost zero communication between myself and mod developers is necessary (only i
 [i]What files are overwritten?[/i]
 main_bottom.gui
 
-[i]Some other mod that I use already overwrites main_bottom.gui[/i]
+[i]Some other mod that I use already overwrites main_bottom.gui.[/i]
 Let me know which so I can create a patch. Other developers are welcome to create patches themselves as well.
 
-[i]Menu icon is not showing[/i]
+[i]Menu icon is not showing.[/i]
 It's probably a mod conflict. See above.
 
-[i]Mod icon is terrible[/i]
+[i]Mod icon is terrible.[/i]
 I know and that's not a question.
 
-[i]Can I create my own mod icon for this[/i]
+[i]Can I create my own mod icon for this?[/i]
 Yes of course. You can send it to me to include in the mod (credits will be given) or create your own mod override. Whatever suits you is fine by me.
 
-[i]I found a typ0 or grammar error[/i]
+[i]I found a typo or grammar error.[/i]
 Great. Let me know what the error is and where exactly and post a correction so I can update the localization file.
 
-[i]I don't like this mod.[/i]
+[i]I don't like this mod![/i]
 Don't install it then.
 
 [i]Is this mod required to be installed?[/i]
-If the mod developer who pointed you here implemented the overrides as I recommended in the tutorial then it should not be a dependency. You can use whatever alternate method is present to launch the mod UI that you installed.
+If the mod developer who pointed you here implemented the overrides via provided python script then it should not be a dependency. You can use whatever alternate method is present to launch the mod UI that you installed.
 
 [i]Help, Mod Id conflicts with another mod.[/i]
 Please ask the mod author to change the selected mod Id.
 
-[i]Achievements compatible? Ironman compatible?[/]
+[i]Achievements compatible? Ironman compatible?[/i]
 I don't care about Achievements or Ironman so assume all my mods are not compatible.
 
 [i]I want to make a menu for my mod.[/i]
-Here's a python script which can generate bare bones code for you: https://pastebin.com/0dWMj1ha
+Here's a python script which can generate bare bones code for you: https://pastebin.com/V6Vsnwgs
 If you need an actual sample message me and I'll use the following tool to generate one for you.
+
+[i]As a mod developer what can I customize?[/i]
+Button look on the menu, text on the menu. 
+
+Once the menu button is clicked control is transferred to your own dmm event. You can do what you want with it (in the override). Relaunch your own menu, replace whole code. 
+
+I only recommend that you add somewhere 
+[code]remove_global_flag = dmm_mod_<mod_id>_opened[/code]
+in your close options event code. In the sample it is added in after block.
+
+[i]How can I check if DMM is installed?[/i]
+[code]has_global_flag = dynamic_mod_menu_installed[/code]
