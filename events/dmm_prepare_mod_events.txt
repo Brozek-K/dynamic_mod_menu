@@ -1,0 +1,4 @@
+namespace = dmm_prepare_mod_events
+
+### BEGIN TEMPLATE:events ###
+### END TEMPLATE:events ###

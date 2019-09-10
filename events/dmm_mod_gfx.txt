@@ -1,0 +1,4 @@
+namespace = dmm_mod_gfx
+
+### BEGIN TEMPLATE:events ###
+### END TEMPLATE:events ###
