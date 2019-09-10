@@ -2,21 +2,21 @@ import os
 import codecs
 
 event_template = """
-namespace = dmm_mod
+namespace = dmm_mod{1}
 
 country_event = {{
-    id = dmm_mod.{0}
-    title = "dmm_mod.{0}.title"
-    desc = "dmm_mod.{0}.desc"
+    id = dmm_mod{1}.{0}
+    title = "dmm_mod{1}.{0}.title"
+    desc = "dmm_mod{1}.{0}.desc"
     picture = GFX_evt_psionics
     is_triggered_only = yes
 
     trigger = {{
-        has_global_flag = dmm_mod_{0}
+        has_global_flag = dmm_mod{1}_{0}
     }}
 
     after = {{
-        remove_global_flag = dmm_mod_{0}_opened
+        remove_global_flag = dmm_mod{1}_{0}_opened
     }}
 
     option = {{
@@ -27,7 +27,7 @@ country_event = {{
 button_template = """
 spriteTypes = {{
 	spriteType = {{
-		name = "GFX_dmm_mod_{0}"
+		name = "GFX_dmm_mod{1}_{0}"
 		texturefile = "gfx/interface/buttons/button_200_34_animated.dds"
 		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
 		noOfFrames = 3
@@ -50,38 +50,47 @@ spriteTypes = {{
 
 localization_template = """
 l_english:
- dmm_mod_{0}:0 \"Dynamic Mod Menu {0}\"
- dmm_mod.{0}.title:0 \"Dynamic Mod Menu {0}\"
- dmm_mod.{0}.desc:0 \"Dynamic Mod Menu {0}\""""
+ dmm_mod{1}_{0}:0 \"Dynamic Mod Menu {2} {0}\"
+ dmm_mod{1}.{0}.title:0 \"Dynamic Mod Menu {2} {0}\"
+ dmm_mod{1}.{0}.desc:0 \"Dynamic Mod Menu {2} {0}\""""
 
 
 on_actions_template = """
 on_game_start = {{
 	events = {{
-		    dmm_mod_{0}_flag.1
+		    dmm_mod{1}_{0}_flag.1
         }}
 }}
 """
 
 global_flag_template = """
-namespace = dmm_mod_{0}_flag
+namespace = dmm_mod{1}_{0}_flag
 
 event = {{
-	id = dmm_mod_{0}_flag.1
+	id = dmm_mod{1}_{0}_flag.1
 	hide_window = yes
 	fire_only_once = yes
 	is_triggered_only = yes
 
 	trigger = {{
         NOT = {{
-            has_global_flag = dmm_mod_{0}
+            has_global_flag = dmm_mod{1}_{0}
         }}
     }}
 
 	immediate = {{
-		set_global_flag = dmm_mod_{0}
+		set_global_flag = dmm_mod{1}_{0}
 	}}
 }}"""
+
+
+categories = {
+    "general": "",
+    "events": "_events",
+    "gfx": "_gfx",
+    "utilities": "_utilities",
+    "other": "_other"
+}
 
 
 def pick_id():
@@ -96,6 +105,19 @@ def pick_id():
     return id
 
 
+def pick_category():
+    category = None
+    while category == None:
+        try:
+            text = input(
+                "Type a desired category, valid categories are: \"general\", \"events\", \"gfx\", \"utilities\" and \"other\": ")
+            if text in categories:
+                category = {text: categories[text]}
+        except ValueError:
+            pass
+    return category
+
+
 def save(path, template, bomEncoding=False):
     if bomEncoding:
         with codecs.open(path, "w+", "utf-8-sig") as file:
@@ -106,6 +128,9 @@ def save(path, template, bomEncoding=False):
 
 
 if __name__ == "__main__":
+    category = pick_category()
+    cat_name = list(category.keys())[0]
+    cat_value = list(category.values())[0]
     id = pick_id()
     if not os.path.exists("events"):
         os.mkdir("events")
@@ -121,12 +146,13 @@ if __name__ == "__main__":
         os.mkdir("common")
     if not os.path.exists("common/on_actions"):
         os.mkdir("common/on_actions")
-    save("events/000_dmm_mod_" + str(id) + ".txt", event_template.format(id))
-    save("events/dmm_mod_flag_" + str(id) +
-         ".txt", global_flag_template.format(id))
-    save("interface/zzz_dmm_mod_" + str(id) +
-         ".gfx", button_template.format(id))
-    save("localisation/english/replace/dmm_mod_" +
-         str(id) + "_l_english.yml", localization_template.format(id), 1)
-    save("common/on_actions/dmm_mod_" +
-         str(id) + ".txt", on_actions_template.format(id))
+    save("events/000_dmm_mod{0}_".format(cat_value) + str(id) +
+         ".txt", event_template.format(id, cat_value))
+    save("events/dmm_mod{0}_flag_".format(cat_value) + str(id) +
+         ".txt", global_flag_template.format(id, cat_value))
+    save("interface/zzz_dmm_mod{0}_".format(cat_value) + str(id) +
+         ".gfx", button_template.format(id, cat_value))
+    save("localisation/english/replace/dmm_mod{0}_".format(cat_value) +
+         str(id) + "_l_english.yml", localization_template.format(id, cat_value, cat_name.capitalize()), 1)
+    save("common/on_actions/dmm_mod{0}_".format(cat_value) +
+         str(id) + ".txt", on_actions_template.format(id, cat_value))
