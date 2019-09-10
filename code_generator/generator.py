@@ -88,8 +88,8 @@ def pick_id():
     id = 0
     while id == 0:
         try:
-            user_id = int(input("Pick an number id from 1-100: "))
-            if user_id < 101:
+            user_id = int(input("Pick an number id from 1-251: "))
+            if user_id < 251:
                 id = user_id
         except ValueError:
             pass

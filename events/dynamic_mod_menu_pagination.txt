@@ -1,6 +1,6 @@
 namespace = dynamic_mod_menu_pagination
 
-@last_empty_id = 101
+@last_empty_id = 251
 @first_empty_id = 0
 @items_per_page = 20
 
