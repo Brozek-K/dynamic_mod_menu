@@ -12,7 +12,9 @@ event_2_3_template = """
                 value = {count}
             }}
         }}"""
-event_100_template = "        remove_global_flag = dmm_mod_gfx_{count}"
+event_100_template = """
+        remove_global_flag = dmm_mod_gfx_{count}
+        remove_global_flag = dmm_mod_gfx_{count}_disabled"""
 event_101_110_template = "        set_global_flag = dmm_mod_gfx_{count}"
 
 

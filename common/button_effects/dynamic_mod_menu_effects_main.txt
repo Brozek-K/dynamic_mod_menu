@@ -334,7 +334,7 @@ dynamic_mod_menu_close_events = {
     }
 }
 
-dynamic_mod_menu_gfx = {
+dynamic_mod_menu_close_gfx = {
     potential = {
         always = yes
     }
