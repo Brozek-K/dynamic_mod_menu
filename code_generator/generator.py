@@ -97,7 +97,7 @@ def pick_id():
     id = 0
     while id == 0:
         try:
-            value = input("Pick an number id from 1-251: ")
+            value = input("Pick an number id from 1-250: ")
             eval_exit_requested(value)
             user_id = int(value)
             if user_id < 251:

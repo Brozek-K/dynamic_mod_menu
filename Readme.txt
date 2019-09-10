@@ -69,7 +69,7 @@ Please ask the mod author to change the selected mod Id.
 I don't care about Achievements or Ironman so assume all my mods are not compatible.
 
 [i]I want to make a menu for my mod.[/i]
-Here's a python script which can generate bare bones code for you: https://pastebin.com/V6Vsnwgs
+Here's a python script which can generate bare bones code for you: https://pastebin.com/5ZTRhHd0
 If you need an actual sample message me and I'll use the following tool to generate one for you.
 
 [i]As a mod developer what can I customize?[/i]
