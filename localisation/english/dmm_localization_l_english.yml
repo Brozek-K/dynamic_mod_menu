@@ -1,7 +1,13 @@
 ﻿l_english:  
- dmm_options.1.title:0 "Dynamic Mod Menu"
- dmm_options.1.desc:0 "Please select mod to launch options."
- dmm_options.1.close:0 "Close"
+ dmm_options.title:0 "Dynamic Mod Menu"
+ dmm_options.desc:0 "Please select category."
+ dmm_options.general.title:0 "$dmm_options.title$: General"
+ dmm_options.events.title:0 "$dmm_options.title$: Events"
+ dmm_options.gfx.title:0 "$dmm_options.title$: GFX"
+ dmm_options.other.title:0 "$dmm_options.title$: Other"
+ dmm_options.utilities.title:0 "$dmm_options.title$: Utilities"
+ dmm_options.categories.desc:0 "Please select mod to launch its options."
+ dmm_options.close:0 "Close"
  dmm_options_next:0 "Next"
  dmm_options_prev:0 "Prev"
  ### BEGIN TEMPLATE:localisation ###

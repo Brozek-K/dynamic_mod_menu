@@ -2,8 +2,8 @@ namespace = dynamic_mod_menu
 
 country_event = {
     id = dynamic_mod_menu.1
-    title = "dmm_options.1.title"
-    desc = "dmm_options.1.desc"
+    title = "dmm_options.general.title"
+    desc = "dmm_options.categories.desc"
     is_triggered_only = yes
     diplomatic = yes
     custom_gui = "dynamic_mod_menu_ui"
