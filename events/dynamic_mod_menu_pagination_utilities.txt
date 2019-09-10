@@ -1,0 +1,166 @@
+namespace = dynamic_mod_menu_pagination_utilities
+
+@last_empty_id = 251
+@first_empty_id = 0
+@items_per_page = 20
+
+country_event = {
+    id = dynamic_mod_menu_pagination_utilities.1
+    is_triggered_only = yes
+    hide_window = yes
+
+    immediate = {
+        country_event = {
+            id = dynamic_mod_menu_pagination_utilities.3
+        }
+        country_event = {
+            id = dynamic_mod_menu_pagination_utilities.7
+        }
+        country_event = {
+            id = dynamic_mod_menu_pagination_utilities.5
+        }
+        while = {
+            limit = {
+                check_variable = {
+                    which = dynamic_mod_menu_utilities_items_shown
+                    value < @items_per_page
+                }
+                check_variable = {
+                    which = dynamic_mod_menu_utilities_processed_id
+                    value < @last_empty_id
+                }
+            }
+
+            ### BEGIN TEMPLATE:event_1 ###
+            ### END TEMPLATE:event_1 ###
+        }
+        country_event = {
+            id = dynamic_mod_menu_pagination_utilities.8
+        }
+        country_event = {
+            id = dynamic_mod_menu_pagination_utilities.9
+        }
+    }
+}
+
+country_event = {
+    id = dynamic_mod_menu_pagination_utilities.2
+    is_triggered_only = yes
+    hide_window = yes
+
+    immediate = {
+        country_event = {
+            id = dynamic_mod_menu_pagination_utilities.3
+        }
+        country_event = {
+            id = dynamic_mod_menu_pagination_utilities.6
+        }
+        country_event = {
+            id = dynamic_mod_menu_pagination_utilities.5
+        }
+        while = {
+            limit = {
+                check_variable = {
+                    which = dynamic_mod_menu_utilities_items_shown
+                    value < @items_per_page
+                }
+                check_variable = {
+                    which = dynamic_mod_menu_utilities_processed_id
+                    value > @first_empty_id
+                }
+            }
+
+            ### BEGIN TEMPLATE:event_2 ###
+            ### END TEMPLATE:event_2 ###
+        }
+        country_event = {
+            id = dynamic_mod_menu_pagination_utilities.8
+        }
+        country_event = {
+            id = dynamic_mod_menu_pagination_utilities.9
+        }
+    }
+}
+
+country_event = {
+    id = dynamic_mod_menu_pagination_utilities.3
+    is_triggered_only = yes
+    hide_window = yes
+
+    immediate = {
+        set_variable = {
+            which = dynamic_mod_menu_utilities_items_shown
+            value = 0
+        }
+        remove_global_flag = dynamic_mod_menu_utilities_no_new_pages
+        remove_global_flag = dynamic_mod_menu_utilities_no_prev_pages
+        ### BEGIN TEMPLATE:event_3 ###
+        ### END TEMPLATE:event_3 ###
+    }
+}
+
+country_event = {
+    id = dynamic_mod_menu_pagination_utilities.4
+    is_triggered_only = yes
+    hide_window = yes
+
+    immediate = {
+        ### BEGIN TEMPLATE:event_4 ###
+        ### END TEMPLATE:event_4 ###
+    }
+}
+
+country_event = {
+    id = dynamic_mod_menu_pagination_utilities.5
+    is_triggered_only = yes
+    hide_window = yes
+
+    immediate = {
+        ### BEGIN TEMPLATE:event_5 ###
+        ### END TEMPLATE:event_5 ###
+    }
+}
+
+country_event = {
+    id = dynamic_mod_menu_pagination_utilities.6
+    is_triggered_only = yes
+    hide_window = yes
+
+    immediate = {
+        ### BEGIN TEMPLATE:event_6 ###
+        ### END TEMPLATE:event_6 ###
+    }
+}
+
+country_event = {
+    id = dynamic_mod_menu_pagination_utilities.7
+    is_triggered_only = yes
+    hide_window = yes
+
+    immediate = {
+        ### BEGIN TEMPLATE:event_7 ###
+        ### END TEMPLATE:event_7 ###
+    }
+}
+
+country_event = {
+    id = dynamic_mod_menu_pagination_utilities.8
+    is_triggered_only = yes
+    hide_window = yes
+
+    immediate = {
+        ### BEGIN TEMPLATE:event_8 ###
+        ### END TEMPLATE:event_8 ###
+    }
+}
+
+country_event = {
+    id = dynamic_mod_menu_pagination_utilities.9
+    is_triggered_only = yes
+    hide_window = yes
+
+    immediate = {
+        ### BEGIN TEMPLATE:event_9 ###
+        ### END TEMPLATE:event_9 ###
+    }
+}

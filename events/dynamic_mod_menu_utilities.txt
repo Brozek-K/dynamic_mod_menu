@@ -1,0 +1,239 @@
+namespace = dynamic_mod_menu_utilities
+
+country_event = {
+    id = dynamic_mod_menu_utilities.1
+    title = "dmm_options.1.title"
+    desc = "dmm_options.1.desc"
+    is_triggered_only = yes
+    diplomatic = yes
+    custom_gui = "dynamic_mod_menu_utilities_ui"
+
+    trigger = {
+        NOT = {
+            has_global_flag = dynamic_mod_menu_utilities_opened
+        }
+    }
+
+    immediate = {
+        hidden_effect = {
+            if = {
+                limit = {
+                    NOT = {
+                        has_global_flag = dynamic_mod_menu_utilities_installed
+                    }
+                }
+                set_global_flag = dynamic_mod_menu_utilities_installed
+            }
+            set_global_flag = dynamic_mod_menu_utilities_opened
+            set_variable = {
+                which = dynamic_mod_menu_utilities_processed_id
+                value = 0
+            }
+            set_variable = {
+                which = dynamic_mod_menu_utilities_last_processed_id
+                value = 0
+            }
+            set_variable = {
+                which = dynamic_mod_menu_utilities_last_id
+                value = 0
+            }
+            set_variable = {
+                which = dynamic_mod_menu_utilities_first_id
+                value = 0
+            }
+        }
+        country_event = {
+            id = dynamic_mod_menu_utilities.2
+        }
+        country_event = {
+            id = dynamic_mod_menu_utilities.3
+        }
+        country_event = {
+            id = dynamic_mod_menu_utilities_pagination.4
+        }
+        country_event = {
+            id = dynamic_mod_menu_utilities_pagination.1
+        }
+    }
+
+    option = {
+        name = "dmm_options.1.close"
+
+        hidden_effect = {
+            remove_global_flag = dynamic_mod_menu_utilities_opened
+        }
+    }
+}
+
+country_event = {
+    id = dynamic_mod_menu_utilities.2
+    is_triggered_only = yes
+    hide_window = yes
+
+    immediate = {
+        ### BEGIN TEMPLATE:event_2 ###
+        ### END TEMPLATE:event_2 ###
+    }
+}
+
+country_event = {
+    id = dynamic_mod_menu_utilities.3
+    is_triggered_only = yes
+    hide_window = yes
+
+    immediate = {
+        ### BEGIN TEMPLATE:event_3 ###
+        ### END TEMPLATE:event_3 ###
+    }
+}
+
+country_event = {
+    id = dynamic_mod_menu_utilities.100
+    is_triggered_only = yes
+    hide_window = yes
+
+    immediate = {
+        ### BEGIN TEMPLATE:event_100 ###
+        ### END TEMPLATE:event_100 ###
+    }
+}
+
+country_event = {
+    id = dynamic_mod_menu_utilities.101
+    is_triggered_only = yes
+    hide_window = yes
+
+    immediate = {
+        country_event = {
+            id = dynamic_mod_menu_utilities.100
+        }
+        ### BEGIN TEMPLATE:event_101 ###
+        ### END TEMPLATE:event_101 ###
+    }
+}
+
+country_event = {
+    id = dynamic_mod_menu_utilities.102
+    is_triggered_only = yes
+    hide_window = yes
+
+    immediate = {
+        country_event = {
+            id = dynamic_mod_menu_utilities.100
+        }
+        ### BEGIN TEMPLATE:event_102 ###
+        ### END TEMPLATE:event_102 ###
+    }
+}
+
+country_event = {
+    id = dynamic_mod_menu_utilities.103
+    is_triggered_only = yes
+    hide_window = yes
+
+    immediate = {
+        country_event = {
+            id = dynamic_mod_menu_utilities.100
+        }
+        ### BEGIN TEMPLATE:event_103 ###
+        ### END TEMPLATE:event_103 ###
+    }
+}
+
+country_event = {
+    id = dynamic_mod_menu_utilities.104
+    is_triggered_only = yes
+    hide_window = yes
+
+    immediate = {
+        country_event = {
+            id = dynamic_mod_menu_utilities.100
+        }
+        ### BEGIN TEMPLATE:event_104 ###
+        ### END TEMPLATE:event_104 ###
+    }
+}
+
+country_event = {
+    id = dynamic_mod_menu_utilities.105
+    is_triggered_only = yes
+    hide_window = yes
+
+    immediate = {
+        country_event = {
+            id = dynamic_mod_menu_utilities.100
+        }
+        ### BEGIN TEMPLATE:event_105 ###
+        ### END TEMPLATE:event_105 ###
+    }
+}
+
+country_event = {
+    id = dynamic_mod_menu_utilities.106
+    is_triggered_only = yes
+    hide_window = yes
+
+    immediate = {
+        country_event = {
+            id = dynamic_mod_menu_utilities.100
+        }
+        ### BEGIN TEMPLATE:event_106 ###
+        ### END TEMPLATE:event_106 ###
+    }
+}
+
+country_event = {
+    id = dynamic_mod_menu_utilities.107
+    is_triggered_only = yes
+    hide_window = yes
+
+    immediate = {
+        country_event = {
+            id = dynamic_mod_menu_utilities.100
+        }
+        ### BEGIN TEMPLATE:event_107 ###
+        ### END TEMPLATE:event_107 ###
+    }
+}
+
+country_event = {
+    id = dynamic_mod_menu_utilities.108
+    is_triggered_only = yes
+    hide_window = yes
+
+    immediate = {
+        country_event = {
+            id = dynamic_mod_menu_utilities.100
+        }
+        ### BEGIN TEMPLATE:event_108 ###
+        ### END TEMPLATE:event_108 ###
+    }
+}
+
+country_event = {
+    id = dynamic_mod_menu_utilities.109
+    is_triggered_only = yes
+    hide_window = yes
+
+    immediate = {
+        country_event = {
+            id = dynamic_mod_menu_utilities.100
+        }
+        ### BEGIN TEMPLATE:event_109 ###
+        ### END TEMPLATE:event_109 ###
+    }
+}
+
+country_event = {
+    id = dynamic_mod_menu_utilities.110
+    is_triggered_only = yes
+    hide_window = yes
+
+    immediate = {
+        country_event = {
+            id = dynamic_mod_menu_utilities.100
+        }
+        ### BEGIN TEMPLATE:event_110 ###
+        ### END TEMPLATE:event_110 ###
+    }
+}
