@@ -1,12 +1,14 @@
 import shutil
 import os
 from templates import get_modules
+from compatibility_patches import publish_patches
 
 copy_directories = ["common", "events", "gfx", "interface", "localisation"]
 copy_files = ["Readme.txt", "descriptor.mod", "1.jpg", "2.jpg", "3.jpg"]
 
 mod_name = "dynamic_mod_menu"
-destination = "publish/" + mod_name
+publish_path = "publish"
+destination = publish_path + "/" + mod_name
 
 
 def copy():
@@ -33,3 +35,4 @@ if __name__ == "__main__":
     clean_up()
     copy()
     process_templates()
+    publish_patches(publish_path, "1.jpg")
