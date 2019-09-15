@@ -1,5 +1,5 @@
 ﻿name="!Dynamic Mod Menu & UI Overhaul Dynamic Compatibility Patch"
-path="mod/!ui_overhaul_qhd"
+path="mod/dmm_ui_overhaul_qhd"
 tags={
 	"Fixes"
 }

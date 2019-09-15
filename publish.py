@@ -22,8 +22,8 @@ def copy():
 
 
 def clean_up():
-    if os.path.exists(destination):
-        shutil.rmtree(destination)
+    if os.path.exists(publish_path):
+        shutil.rmtree(publish_path, True)
 
 
 def process_templates():

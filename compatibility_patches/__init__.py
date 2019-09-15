@@ -12,10 +12,12 @@ def publish_patches(publish_path, image):
     for package in packages:
         new_package = publish_path + "/" + \
             package.replace(path + os.path.sep, "")
-        __copy(package, new_package)
+        package_name = package.replace(
+            path + os.path.sep, "").split(os.path.sep)[0]
+        full_publish_path = publish_path + "/" + package_name
+        __copy(path + "/" + package_name, full_publish_path)
         __process_template(new_package)
-        __copy_image(image, publish_path + "/" +
-                     package.replace(path + os.path.sep, "").split(os.path.sep)[0])
+        __copy_image(image, full_publish_path)
 
 
 def __copy_image(image, destination):
@@ -26,11 +28,8 @@ def __process_template(destination):
     interface_appender.process_file(destination, "maingui_bottombar", template)
 
 
-def __copy(file, destination):
-    dir_name = os.path.dirname(destination)
-    if not os.path.exists(dir_name):
-        os.makedirs(dir_name)
-    shutil.copy(file, destination)
+def __copy(source, destination):
+    shutil.copytree(source, destination)
 
 
 def __get_packages():
