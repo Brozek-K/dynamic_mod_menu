@@ -9,10 +9,10 @@ paths = ["common", "events", "interface", "localisation"]
 
 def get_modules():
     modules = []
-    __path = os.path.relpath(os.path.dirname(__file__))
-    files = glob.glob(__path + "/" + "*.py")
+    curr_path = os.path.relpath(os.path.dirname(__file__))
+    files = glob.glob(curr_path + "/" + "*.py")
     for path in paths:
-        files.extend(glob.glob(__path + "/" + path + "/" + "*.py"))
+        files.extend(glob.glob(curr_path + "/" + path + "/" + "*.py"))
     for file in files:
         if not "__init__.py" in file:
             name = os.path.splitext(os.path.basename(file))[0]

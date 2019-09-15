@@ -20,6 +20,8 @@ def process_file(path, **args):
         ending_item = 0
         for line in lines:
             file.write(line)
+            if not line.endswith("\n"):
+                file.write("\n")
             mod_lines = __get_starting_matching_item(line, args)
             if mod_lines:
                 matching_item += 1
