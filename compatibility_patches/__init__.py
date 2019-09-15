@@ -16,7 +16,7 @@ def publish_patches(publish_path, image):
             path + os.path.sep, "").split(os.path.sep)[0]
         full_publish_path = publish_path + "/" + package_name
         __copy(path + "/" + package_name, full_publish_path)
-        __process_template(new_package)
+        __process_template(full_publish_path, new_package)
         __copy_image(image, full_publish_path)
 
 
@@ -24,8 +24,15 @@ def __copy_image(image, destination):
     shutil.copy(image, destination)
 
 
-def __process_template(destination):
-    interface_appender.process_file(destination, "maingui_bottombar", template)
+def __process_template(root, destination):
+    override_template_path = root + "/template_override.txt"
+    if os.path.exists(override_template_path):
+        with open(override_template_path, "r") as file:
+            template_text = file.read()
+    else:
+        template_text = template
+    interface_appender.process_file(
+        destination, "maingui_bottombar", template_text)
 
 
 def __copy(source, destination):

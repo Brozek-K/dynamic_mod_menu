@@ -1,10 +1,7 @@
-from templates.utils import interface_appender
-
-template = """
 		# Dynamic Mod Menu
 		containerWindowType = {
 			name = "dynamic_mod_menu_toolbar"
-			position = { x = -480 y = -36 }
+			position = { x = -377 y = -72 }
 			size = { width = 70 height = 36 }
 			orientation = lower_right
 			clipping = yes
@@ -38,9 +35,4 @@ template = """
 				shortcut="alt+m"
 			}
 		}
-		# End Dynamic Mod Menu"""
-
-
-def process(publish_dir):
-    interface_appender.process_file(
-        publish_dir + "/interface/main_bottom.gui", "maingui_bottombar", template)
+		# End Dynamic Mod Menu
