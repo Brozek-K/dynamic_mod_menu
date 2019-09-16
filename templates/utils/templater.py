@@ -26,7 +26,9 @@ def process_file(path, **args):
             if mod_lines:
                 matching_item += 1
                 for mod_line in mod_lines:
-                    file.write(mod_line + "\n")
+                    file.write(mod_line)
+                    if not mod_line.endswith("\n"):
+                        file.write("\n")
             if __get_ending_matching_item(line, args):
                 ending_item += 1
         if matching_item != ending_item:
