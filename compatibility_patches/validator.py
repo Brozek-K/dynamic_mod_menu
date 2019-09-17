@@ -35,7 +35,7 @@ def __update_local_content(path, content):
 
 
 def __clean__content(content):
-    return content.replace(" ", "")
+    return content.replace(" ", "").replace("\t", "")
 
 
 def __get_steam_package_content(package, steam_package_path):
