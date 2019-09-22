@@ -15,7 +15,7 @@ guiTypes = {
 			position = { x = 4 y = -46 }
 			size = { x = 700 y = 13 }
 			spacing = 2
-			Orientation = "LOWER_LEFT"
+			orientation = "LOWER_LEFT"
 			format = left
 		}
 		### LEAVE SYSTEM WINDOW
@@ -521,7 +521,7 @@ guiTypes = {
 				position = { x = -110 y = -68 }
 				text = "ERROR"
 				buttonFont = "cg_16b"
-				Orientation = "LOWER_RIGHT"
+				orientation = "LOWER_RIGHT"
 				oversound = no_sound
 			}
 		}
