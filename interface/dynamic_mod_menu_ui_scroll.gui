@@ -91,7 +91,7 @@ guiTypes = {
 		}
 		iconType = { 
 			name = "empire_header_line"
-			spriteType = "GFX_line_long"
+			spriteType = "GFX_line"
 			position = { 
 				x = 6
 				y = 30

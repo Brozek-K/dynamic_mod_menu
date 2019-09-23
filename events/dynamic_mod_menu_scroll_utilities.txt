@@ -1,0 +1,31 @@
+namespace = dynamic_mod_menu_scroll_utilities
+country_event = { 
+	id = dynamic_mod_menu_scroll_utilities.1
+	title = "dmm_options.utilities.title"
+	desc = "dmm_options.categories.desc"
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "dynamic_mod_menu_ui_scroll_utilities"
+	trigger = { 
+		NOT = { 
+			has_global_flag = dynamic_mod_menu_opened_utilities
+		}
+	}
+	immediate = { 
+		hidden_effect = { 
+			set_global_flag = dynamic_mod_menu_opened_utilities
+		}
+	}
+	after = { 
+		remove_global_flag = dynamic_mod_menu_opened_utilities
+	}
+	option = { 
+		name = "dmm_options.close"
+		custom_gui = "dynamic_mod_menu_ui_options_scroll_utilities_dummy"
+		country_event = { 
+			id = dynamic_mod_menu_scroll_utilities.1
+		}
+	}
+	### BEGIN TEMPLATE:options ###
+	### END TEMPLATE:options ###
+}
