@@ -15,10 +15,10 @@
  dmm_options.close:0 "§RClose§!"
  dmm_options_next:0 "Next"
  dmm_options_prev:0 "Prev"
- dmm_mod_options.title:0 "$dmm_options.title$: Options"
- dmm_mod_options.desc:0 "Please reopen Dynamic Mod Menu screen(s) to allow changes to take effect."
- dmm_mod_options.scroll:0 "Enable Scroll"
- dmm_mod_options.no_scroll:0 "Disable Scroll"
- dmm_mod_options.uninstall:0 "Uninstall Dynamic Mod Menu"
+ dynamic_mod_menu_options.title:0 "$dmm_options.title$: Options"
+ dynamic_mod_menu_options.desc:0 "Please reopen Dynamic Mod Menu screen(s) to allow changes to take effect."
+ dynamic_mod_menu_options.scroll:0 "Enable Scroll"
+ dynamic_mod_menu_options.no_scroll:0 "Disable Scroll"
+ dynamic_mod_menu_options.uninstall:0 "Uninstall Dynamic Mod Menu"
  ### BEGIN TEMPLATE:localisation ###
  ### END TEMPLATE:localisation ###
