@@ -1,0 +1,27 @@
+namespace = dynamic_mod_menu_scroll_other
+country_event = { 
+	id = dynamic_mod_menu_scroll_other.1
+	title = "dmm_options.other.title"
+	desc = "dmm_options.categories.desc"
+	is_triggered_only = yes
+	diplomatic = yes
+	custom_gui = "dynamic_mod_menu_ui_scroll_other"
+	trigger = { 
+		NOT = { 
+			has_global_flag = dynamic_mod_menu_opened_other
+		}
+	}
+	immediate = { 
+		hidden_effect = { 
+			set_global_flag = dynamic_mod_menu_opened_other
+		}
+	}
+	option = { 
+		name = "dmm_options.close"
+		custom_gui = "dynamic_mod_menu_ui_options_scroll_other_dummy"
+		is_dialog_only = yes
+		response_text = dmm_options.categories.desc
+	}
+	### BEGIN TEMPLATE:options ###
+	### END TEMPLATE:options ###
+}

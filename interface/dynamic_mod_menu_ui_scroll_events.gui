@@ -1,12 +1,80 @@
 guiTypes = { 
 	containerWindowType = { 
-		name = "dynamic_mod_menu_ui_utilities"
+		name = "dynamic_mod_menu_ui_options_scroll_events_dummy"
+		position = { 
+			x = -5000
+			y = -5000
+		}
+		size = { 
+			width = 200
+			height = 40
+		}
+		moveable = no
+		buttonType = { 
+			name = "option_button"
+			quadTextureSprite = "GFX_button_animated_110_34"
+			position = { 
+				x = -5000
+				y = -5000
+			}
+			font = "cg_16b"
+			text = "OPTION_TEXT"
+		}
+		OverlappingElementsBoxType = { 
+			name = "trigger_icons"
+			position = { 
+				x = -5000
+				y = -5000
+			}
+			size = { 
+				x = 200
+				y = 38
+			}
+		}
+	}
+	### BEGIN TEMPLATE:buttons ###
+	containerWindowType = { 
+		name = "dynamic_mod_menu_ui_options_scroll_events_1"
+		position = { 
+			x = 0
+			y = 0
+		}
+		size = { 
+			width = 200
+			height = 40
+		}
+		moveable = no
+		buttonType = { 
+			name = "option_button"
+			quadTextureSprite = "GFX_dmm_mod_1"
+			position = { 
+				x = 0
+				y = 8
+			}
+			font = "cg_16b"
+			text = "OPTION_TEXT"
+		}
+		OverlappingElementsBoxType = { 
+			name = "trigger_icons"
+			position = { 
+				x = 0
+				y = 10
+			}
+			size = { 
+				x = 200
+				y = 38
+			}
+		}
+	}
+	### END TEMPLATE:buttons ###
+	containerWindowType = { 
+		name = "dynamic_mod_menu_ui_scroll_events"
 		orientation = center
 		origo = center
 		moveable = yes
 		size = { 
-			width = 920
-			height = 460
+			width = 400
+			height = 800
 		}
 		background = { 
 			name = "background"
@@ -23,7 +91,7 @@ guiTypes = {
 		}
 		iconType = { 
 			name = "empire_header_line"
-			spriteType = "GFX_line_long"
+			spriteType = "GFX_line"
 			position = { 
 				x = 6
 				y = 30
@@ -40,7 +108,7 @@ guiTypes = {
 			Orientation = "UPPER_RIGHT"
 			shortcut = "ESCAPE"
 			clicksound = "back_click"
-			effect = "dynamic_mod_menu_close_utilities"
+			effect = "dynamic_mod_menu_close_events"
 		}
 		effectButtonType = { 
 			name = "options"
@@ -69,7 +137,7 @@ guiTypes = {
 					x = 10
 					y = 8
 				}
-				maxWidth = 800
+				maxWidth = 300
 				alwaysTransparent = yes
 			}
 			instantTextBoxType = { 
@@ -83,9 +151,21 @@ guiTypes = {
 			listboxType = { 
 				name = "option_list"
 				position = { 
-					x = -5000
-					y = -5000
+					x = 100
+					y = 90
 				}
+				background = ""
+				size = { 
+					x = 250
+					y = 700
+				}
+				spacing = 1
+				scrollbartype = "standardlistbox_slider"
+				borderSize = { 
+					x = 0
+					y = 0
+				}
+				orientation = "UPPER_LEFT"
 			}
 		}
 		# Custom message
@@ -97,7 +177,7 @@ guiTypes = {
 				y = 68
 			}
 			maxWidth = 820
-			maxHeight = 100
+			maxHeight = 30
 			format = left
 			scrollbartype = "standardtext_slider"
 		}
@@ -112,7 +192,7 @@ guiTypes = {
 			buttonText = "dmm_options_next"
 			clicksound = no_sound
 			oversound = no_sound
-			effect = "dynamic_mod_menu_next_page_utilities"
+			effect = "dynamic_mod_menu_next_page_general"
 		}
 		effectButtonType = { 
 			name = "dmm_options_prev"
@@ -125,10 +205,8 @@ guiTypes = {
 			buttonText = "dmm_options_prev"
 			clicksound = no_sound
 			oversound = no_sound
-			effect = "dynamic_mod_menu_prev_page_utilities"
+			effect = "dynamic_mod_menu_prev_page_general"
 		}
-		### BEGIN TEMPLATE:buttons ###
-		### END TEMPLATE:buttons ###
 		# Game crashes if these are not present, so use the old trick of moving them off the screen to "hide" them.
 		# Reference file: diplomacy_artist_event_view.gui
 		buttonType = { 

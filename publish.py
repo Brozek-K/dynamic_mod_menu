@@ -4,7 +4,8 @@ from templates import get_modules
 from compatibility_patches import publish_patches
 
 copy_directories = ["common", "events", "gfx", "interface", "localisation"]
-copy_files = ["Readme.txt", "descriptor.mod", "1.jpg", "2.jpg", "3.jpg"]
+copy_files = ["Readme.txt", "descriptor.mod",
+              "1.jpg", "2.jpg", "3.jpg", "4.jpg"]
 
 mod_name = "dynamic_mod_menu"
 publish_path = "publish"

@@ -1,0 +1,148 @@
+namespace = dmm_mod_options
+country_event = { 
+	id = dmm_mod_options.1
+	title = "dmm_mod_options.title"
+	desc = "dmm_mod_options.desc"
+	is_triggered_only = yes
+	picture = GFX_evt_psionics
+	option = { 
+		name = "dmm_mod_options.scroll"
+		trigger = { 
+			NOT = { 
+				has_global_flag = dynamic_mod_menu_use_scroll
+			}
+		}
+		set_global_flag = dynamic_mod_menu_use_scroll
+		country_event = { 
+			id = dmm_mod_options.1
+		}
+	}
+	option = { 
+		name = "dmm_mod_options.no_scroll"
+		trigger = { 
+			has_global_flag = dynamic_mod_menu_use_scroll
+		}
+		remove_global_flag = dynamic_mod_menu_use_scroll
+		country_event = { 
+			id = dmm_mod_options.1
+		}
+	}
+	option = { 
+		name = "dmm_mod_options.uninstall"
+		trigger = { 
+			has_global_flag = dynamic_mod_menu_installed
+		}
+		remove_global_flag = dynamic_mod_menu_installed
+		country_event = { 
+			id = dmm_mod_options.1
+		}
+	}
+	option = { 
+		name = "dmm_options.close"
+	}
+}
+
+country_event = { 
+	id = dmm_mod_options.2
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = { 
+		if = { 
+			limit = { 
+				has_global_flag = dynamic_mod_menu_use_scroll
+			}
+			country_event = { 
+				id = dynamic_mod_menu_scroll.1
+			}
+		}
+		else = { 
+			country_event = { 
+				id = dynamic_mod_menu.1
+			}
+		}
+	}
+}
+
+country_event = { 
+	id = dmm_mod_options.3
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = { 
+		if = { 
+			limit = { 
+				has_global_flag = dynamic_mod_menu_use_scroll
+			}
+			country_event = { 
+				id = dynamic_mod_menu_scroll_events.1
+			}
+		}
+		else = { 
+			country_event = { 
+				id = dynamic_mod_menu_events.1
+			}
+		}
+	}
+}
+
+country_event = { 
+	id = dmm_mod_options.4
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = { 
+		if = { 
+			limit = { 
+				has_global_flag = dynamic_mod_menu_use_scroll
+			}
+			country_event = { 
+				id = dynamic_mod_menu_scroll_gfx.1
+			}
+		}
+		else = { 
+			country_event = { 
+				id = dynamic_mod_menu_gfx.1
+			}
+		}
+	}
+}
+
+country_event = { 
+	id = dmm_mod_options.5
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = { 
+		if = { 
+			limit = { 
+				has_global_flag = dynamic_mod_menu_use_scroll
+			}
+			country_event = { 
+				id = dynamic_mod_menu_scroll_utilities.1
+			}
+		}
+		else = { 
+			country_event = { 
+				id = dynamic_mod_menu_utilities.1
+			}
+		}
+	}
+}
+
+country_event = { 
+	id = dmm_mod_options.6
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = { 
+		if = { 
+			limit = { 
+				has_global_flag = dynamic_mod_menu_use_scroll
+			}
+			country_event = { 
+				id = dynamic_mod_menu_scroll_other.1
+			}
+		}
+		else = { 
+			country_event = { 
+				id = dynamic_mod_menu_other.1
+			}
+		}
+	}
+}

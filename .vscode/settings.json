@@ -19,5 +19,11 @@
         "stellaris": "Stellaris Theme",
         "paradox": "Paradox Theme",
         "yaml": "Paradox Theme"
+    },
+    "[stellaris]": {
+        "editor.defaultFormatter": "tboby.cwtools-vscode"
+    },
+    "[yaml]": {
+        "editor.defaultFormatter": "Private.stellaris-formatter"
     }
 }
