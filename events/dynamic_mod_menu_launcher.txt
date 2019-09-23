@@ -265,7 +265,7 @@ country_event = {
 					}
 				}
 				country_event = {
-					id = dmm_mod_options.2
+					id = dynamic_mod_menu_options.2
 				}
 			}
 			else_if = {
@@ -276,7 +276,7 @@ country_event = {
 					}
 				}
 				country_event = {
-					id = dmm_mod_options.3
+					id = dynamic_mod_menu_options.3
 				}
 			}
 			else_if = {
@@ -287,7 +287,7 @@ country_event = {
 					}
 				}
 				country_event = {
-					id = dmm_mod_options.4
+					id = dynamic_mod_menu_options.4
 				}
 			}
 			else_if = {
@@ -298,7 +298,7 @@ country_event = {
 					}
 				}
 				country_event = {
-					id = dmm_mod_options.6
+					id = dynamic_mod_menu_options.6
 				}
 			}
 			else_if = {
@@ -309,7 +309,7 @@ country_event = {
 					}
 				}
 				country_event = {
-					id = dmm_mod_options.5
+					id = dynamic_mod_menu_options.5
 				}
 			}
 		}
