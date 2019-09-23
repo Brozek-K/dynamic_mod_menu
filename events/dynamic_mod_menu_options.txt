@@ -1,12 +1,12 @@
-namespace = dmm_mod_options
+namespace = dynamic_mod_menu_options
 country_event = { 
-	id = dmm_mod_options.1
-	title = "dmm_mod_options.title"
-	desc = "dmm_mod_options.desc"
+	id = dynamic_mod_menu_options.1
+	title = "dynamic_mod_menu_options.title"
+	desc = "dynamic_mod_menu_options.desc"
 	is_triggered_only = yes
 	picture = GFX_evt_psionics
 	option = { 
-		name = "dmm_mod_options.scroll"
+		name = "dynamic_mod_menu_options.scroll"
 		trigger = { 
 			NOT = { 
 				has_global_flag = dynamic_mod_menu_use_scroll
@@ -14,27 +14,27 @@ country_event = {
 		}
 		set_global_flag = dynamic_mod_menu_use_scroll
 		country_event = { 
-			id = dmm_mod_options.1
+			id = dynamic_mod_menu_options.1
 		}
 	}
 	option = { 
-		name = "dmm_mod_options.no_scroll"
+		name = "dynamic_mod_menu_options.no_scroll"
 		trigger = { 
 			has_global_flag = dynamic_mod_menu_use_scroll
 		}
 		remove_global_flag = dynamic_mod_menu_use_scroll
 		country_event = { 
-			id = dmm_mod_options.1
+			id = dynamic_mod_menu_options.1
 		}
 	}
 	option = { 
-		name = "dmm_mod_options.uninstall"
+		name = "dynamic_mod_menu_options.uninstall"
 		trigger = { 
 			has_global_flag = dynamic_mod_menu_installed
 		}
 		remove_global_flag = dynamic_mod_menu_installed
 		country_event = { 
-			id = dmm_mod_options.1
+			id = dynamic_mod_menu_options.1
 		}
 	}
 	option = { 
@@ -43,7 +43,7 @@ country_event = {
 }
 
 country_event = { 
-	id = dmm_mod_options.2
+	id = dynamic_mod_menu_options.2
 	hide_window = yes
 	is_triggered_only = yes
 	immediate = { 
@@ -64,7 +64,7 @@ country_event = {
 }
 
 country_event = { 
-	id = dmm_mod_options.3
+	id = dynamic_mod_menu_options.3
 	hide_window = yes
 	is_triggered_only = yes
 	immediate = { 
@@ -85,7 +85,7 @@ country_event = {
 }
 
 country_event = { 
-	id = dmm_mod_options.4
+	id = dynamic_mod_menu_options.4
 	hide_window = yes
 	is_triggered_only = yes
 	immediate = { 
@@ -106,7 +106,7 @@ country_event = {
 }
 
 country_event = { 
-	id = dmm_mod_options.5
+	id = dynamic_mod_menu_options.5
 	hide_window = yes
 	is_triggered_only = yes
 	immediate = { 
@@ -127,7 +127,7 @@ country_event = {
 }
 
 country_event = { 
-	id = dmm_mod_options.6
+	id = dynamic_mod_menu_options.6
 	hide_window = yes
 	is_triggered_only = yes
 	immediate = { 
