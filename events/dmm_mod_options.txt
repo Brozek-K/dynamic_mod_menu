@@ -28,6 +28,13 @@ country_event = {
 		}
 	}
 	option = { 
+		name = "dmm_mod_options.uninstall"
+		trigger = { 
+			has_global_flag = dynamic_mod_menu_installed
+		}
+		remove_global_flag = dynamic_mod_menu_installed
+	}
+	option = { 
 		name = "dmm_options.close"
 	}
 }

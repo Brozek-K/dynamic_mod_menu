@@ -12,13 +12,16 @@ template = """
 				has_global_flag = dmm_mod_utilities_{count}_opened
 				has_global_flag = dmm_mod_utilities_{count}_disabled
 			}}
-		}}			
-		country_event = {{
-			id = dynamic_mod_menu_scroll_utilities.1
+		}}		
+		hidden_effect = {{
+			remove_global_flag = dynamic_mod_menu_opened_utilities
+			country_event = {{
+				id = dynamic_mod_menu_scroll_utilities.1
+			}}
+			country_event = {{
+				id = dmm_prepare_mod_utilities.{count}
+			}}				
 		}}
-		country_event = {{
-			id = dmm_prepare_mod_utilities.{count}
-		}}				
 	}}"""
 
 

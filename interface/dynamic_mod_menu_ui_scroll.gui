@@ -151,13 +151,13 @@ guiTypes = {
 			listboxType = { 
 				name = "option_list"
 				position = { 
-					x = 10
-					y = 80
+					x = 100
+					y = 50
 				}
 				background = ""
 				size = { 
 					x = 250
-					y = 50
+					y = 540
 				}
 				spacing = 1
 				scrollbartype = "standardlistbox_slider"
@@ -177,7 +177,7 @@ guiTypes = {
 				y = 68
 			}
 			maxWidth = 820
-			maxHeight = 30
+			maxHeight = 20
 			format = left
 			scrollbartype = "standardtext_slider"
 		}
