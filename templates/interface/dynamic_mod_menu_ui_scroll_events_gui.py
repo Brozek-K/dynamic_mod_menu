@@ -17,7 +17,7 @@ template = """
 			quadTextureSprite = "GFX_dmm_mod_events_{count}"
 			position = {{ 
 				x = 0
-				y = 8
+				y = -12
 			}}
 			font = "cg_16b"
 			text = "OPTION_TEXT"
@@ -26,7 +26,7 @@ template = """
 			name = "trigger_icons"
 			position = {{
 				x = 0
-				y = 10
+				y = -10
 			}}
 			size = {{
 				x = 200
