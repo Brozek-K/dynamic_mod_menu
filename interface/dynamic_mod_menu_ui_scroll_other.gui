@@ -151,12 +151,12 @@ guiTypes = {
 			listboxType = { 
 				name = "option_list"
 				position = { 
-					x = 100
+					x = 90
 					y = 90
 				}
 				background = ""
 				size = { 
-					x = 250
+					x = 290
 					y = 700
 				}
 				spacing = 1
