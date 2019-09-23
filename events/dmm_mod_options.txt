@@ -1,0 +1,26 @@
+namespace = dmm_mod_options
+country_event = { 
+	id = dmm_mod_options.1
+	title = "dmm_mod_options.title"
+	desc = "dmm_mod_options.desc"
+	is_triggered_only = yes
+	option = { 
+		name = "dmm_mod_options.scroll"
+		trigger = { 
+			NOT = { 
+				has_global_flag = dynamic_mod_menu_use_scroll
+			}
+		}
+		set_global_flag = dynamic_mod_menu_use_scroll
+	}
+	option = { 
+		name = "dmm_mod_options.no_scroll"
+		trigger = { 
+			has_global_flag = dynamic_mod_menu_use_scroll
+		}
+		remove_global_flag = dynamic_mod_menu_use_scroll
+	}
+	option = { 
+		name = "dmm_options.close"
+	}
+}

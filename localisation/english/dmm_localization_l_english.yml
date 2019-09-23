@@ -15,5 +15,9 @@
  dmm_options.close:0 "Close"
  dmm_options_next:0 "Next"
  dmm_options_prev:0 "Prev"
+ dmm_mod_options.title:0 "$dmm_options.title$: Options"
+ dmm_mod_options.desc:0 "Please reopen Dynamic Mod Menu screen(s) to allow changes to take effect."
+ dmm_mod_options.scroll:0 "Enable Scroll"
+ dmm_mod_options.no_scroll:0 "Disable Scroll"
  ### BEGIN TEMPLATE:localisation ###
  ### END TEMPLATE:localisation ###

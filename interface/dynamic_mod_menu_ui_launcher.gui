@@ -1,227 +1,317 @@
-guiTypes = {
-	containerWindowType = {
+guiTypes = { 
+	containerWindowType = { 
 		name = "dynamic_mod_menu_ui_launcher"
 		orientation = center
 		origo = center
 		moveable = yes
-		size = { width = 500 height = 240 }
-
-		background = {
-			name = "background"
-			quadTextureSprite ="GFX_tile_outliner_bg"
+		size = { 
+			width = 500
+			height = 240
 		}
-
-		iconType = {
+		background = { 
+			name = "background"
+			quadTextureSprite = "GFX_tile_outliner_bg"
+		}
+		iconType = { 
 			name = "hex_bg"
 			spriteType = "GFX_hex_bg"
-			position = { x = -10 y = -14 }
+			position = { 
+				x = -10
+				y = -14
+			}
 			alwaysTransparent = yes
 		}
-
-		iconType = {
+		iconType = { 
 			name = "empire_header_line"
 			spriteType = "GFX_line"
-			position = { x = 6 y = 30 }
+			position = { 
+				x = 6
+				y = 30
+			}
 			alwaysTransparent = yes
 		}
-
-		effectButtonType = {
+		effectButtonType = { 
 			name = "close"
 			quadTextureSprite = "GFX_close"
-			position = { x= -40 y = 15 }
+			position = { 
+				x = -40
+				y = 15
+			}
 			Orientation = "UPPER_RIGHT"
 			shortcut = "ESCAPE"
 			clicksound = "back_click"
 			effect = "dynamic_mod_menu_close_launcher"
 		}
-
+		effectButtonType = { 
+			name = "options"
+			quadTextureSprite = "GFX_outliner_options_button"
+			position = { 
+				x = -70
+				y = 25
+			}
+			orientation = "UPPER_RIGHT"
+			oversound = "no_sound"
+			clicksound = "click_outliner"
+			effect = "dynamic_mod_menu_options"
+		}
 		# Custom title
-		containerWindowType = {
+		containerWindowType = { 
 			name = "EVENT_DIPLO"
-			position = { x = 0 y = 0 }
+			position = { 
+				x = 0
+				y = 0
+			}
 			moveable = no
-
-			instantTextBoxType = {
+			instantTextBoxType = { 
 				name = "action_title"
 				font = "malgun_goth_24"
-				position = { x = 10 y = 8 }
+				position = { 
+					x = 10
+					y = 8
+				}
 				maxWidth = 800
 				alwaysTransparent = yes
 			}
-
-			instantTextBoxType = {
+			instantTextBoxType = { 
 				name = "action_desc"
 				font = "malgun_goth_24"
-				position = { x = -5000 y = -5000 }
+				position = { 
+					x = -5000
+					y = -5000
+				}
 			}
-
-			listboxType = { name = "option_list" position = { x = -5000 y = -5000} }
+			listboxType = { 
+				name = "option_list"
+				position = { 
+					x = -5000
+					y = -5000
+				}
+			}
 		}
-
 		# Custom message
-		instantTextBoxType = {
+		instantTextBoxType = { 
 			name = "alien_message"
 			font = "cg_16b"
-			position = { x = 10 y = 68 }
+			position = { 
+				x = 10
+				y = 68
+			}
 			maxWidth = 820
 			maxHeight = 100
 			format = left
 			scrollbartype = "standardtext_slider"
 		}
-
 		### BEGIN TEMPLATE:buttons ###
 		### END TEMPLATE:buttons ###
-
 		# Game crashes if these are not present, so use the old trick of moving them off the screen to "hide" them.
 		# Reference file: diplomacy_artist_event_view.gui
-		buttonType = {
+		buttonType = { 
 			name = "focus_button"
 			spriteType = "GFX_fleetview_focus"
-			position = { x = -5000 y = -5000 }
+			position = { 
+				x = -5000
+				y = -5000
+			}
 		}
-		instantTextBoxType = {
+		instantTextBoxType = { 
 			name = "heading"
 			font = "malgun_goth_24"
-			position = { x = -5000 y = -5000 }
+			position = { 
+				x = -5000
+				y = -5000
+			}
 		}
-		buttonType = {
+		buttonType = { 
 			name = "alien_message_background"
-			position = { x = -5000 y = -5000 }
+			position = { 
+				x = -5000
+				y = -5000
+			}
 			spriteType = "GFX_tiles_dark_area_cut_8"
 		}
-		buttonType = {
+		buttonType = { 
 			name = "confirm_button"
 			quadTextureSprite = "GFX_standard_button_142_34_button"
-			position = { x= -5000 y = -5000  }
+			position = { 
+				x = -5000
+				y = -5000
+			}
 		}
-		containerWindowType = {
+		containerWindowType = { 
 			name = "portrait_background"
-			position = { x = -5000 y = -5000 }
-
-			iconType = {
+			position = { 
+				x = -5000
+				y = -5000
+			}
+			iconType = { 
 				name = "event_picture"
 				spriteType = "GFX_diplomacy_portrait_frame"
-				position = { x = -5000 y = -5000 }
+				position = { 
+					x = -5000
+					y = -5000
+				}
 			}
-
-			iconType = {
+			iconType = { 
 				name = "portrait"
-				position = { x = -5000 y = -5000 }
+				position = { 
+					x = -5000
+					y = -5000
+				}
 				spriteType = "GFX_portrait_character"
 			}
 		}
-
-		containerWindowType = {
+		containerWindowType = { 
 			name = "portrait"
-			position = { x = -5000 y = -5000 }
-
-			iconType = {
+			position = { 
+				x = -5000
+				y = -5000
+			}
+			iconType = { 
 				name = "portrait"
 				spriteType = "GFX_portrait_gamesetup_mask"
 			}
-
-			iconType = {
+			iconType = { 
 				name = "black_frame"
 				spriteType = "GFX_diplomacy_portrait_shadow_frame"
-				position = { x = -5000 y = -5000}
+				position = { 
+					x = -5000
+					y = -5000
+				}
 			}
-
-			iconType = {
+			iconType = { 
 				name = "stripes_1"
 				spriteType = "GFX_diplomacy_stripes_2"
 			}
-
-			iconType = {
+			iconType = { 
 				name = "city_frame"
 				spriteType = "GFX_diplomacy_portrait_frame_artist"
-				position = { x = -5000 y = -5000 }
+				position = { 
+					x = -5000
+					y = -5000
+				}
 			}
 		}
-		iconType = {
+		iconType = { 
 			name = "empire_info_bg"
 			spriteType = "GFX_diplomacy_dark_fade_bg"
-			position = { x = -5000 y = -5000 }
+			position = { 
+				x = -5000
+				y = -5000
+			}
 		}
-		instantTextBoxType = {
+		instantTextBoxType = { 
 			name = "empire_name"
 			font = "malgun_goth_24"
-			position = { x = -5000 y = -5000 }
+			position = { 
+				x = -5000
+				y = -5000
+			}
 		}
-		instantTextBoxType = {
+		instantTextBoxType = { 
 			name = "empire_government_type"
 			font = "cg_16b"
-			position = { x = -5000 y = -5000 }
+			position = { 
+				x = -5000
+				y = -5000
+			}
 		}
-		instantTextBoxType = {
+		instantTextBoxType = { 
 			name = "empire_personality_type"
 			font = "cg_16b"
-			position = { x = -5000 y = -5000 }
+			position = { 
+				x = -5000
+				y = -5000
+			}
 		}
-		buttonType = {
+		buttonType = { 
 			name = "empire_flag"
 			quadTextureSprite = "GFX_empire_flag_128_curator"
-			position = { x = -5000 y = -5000 }
+			position = { 
+				x = -5000
+				y = -5000
+			}
 		}
-		OverlappingElementsBoxType = {
+		OverlappingElementsBoxType = { 
 			name = "empire_ethics_icons"
-			position = { x = -5000 y = -5000 }
+			position = { 
+				x = -5000
+				y = -5000
+			}
 		}
-		containerWindowType = {
+		containerWindowType = { 
 			name = "leader_details"
-			position = { x = -5000 y = -5000 }
-
-			containerWindowType = {
+			position = { 
+				x = -5000
+				y = -5000
+			}
+			containerWindowType = { 
 				name = "empire_traits_box"
-				position = { x = -5000 y = -5000 }
-
-				background = {
+				position = { 
+					x = -5000
+					y = -5000
+				}
+				background = { 
 					name = "ethics_bg"
 					spriteType = "GFX_tiles_dark_area_cut_8"
 				}
 			}
-
-			instantTextBoxType = {
+			instantTextBoxType = { 
 				name = "empire_traits_label"
 				font = "cg_16b"
-				position = { x = -5000 y = -5000 }
+				position = { 
+					x = -5000
+					y = -5000
+				}
 			}
-
-			overlappingElementsBoxType = {
+			overlappingElementsBoxType = { 
 				name = "leader_traits"
-				position = { x = -5000 y = -5000 }
+				position = { 
+					x = -5000
+					y = -5000
+				}
 			}
-
-			instantTextBoxType = {
+			instantTextBoxType = { 
 				name = "leader_name"
 				font = "cg_16b"
-				position = { x = -5000 y = -5000 }
+				position = { 
+					x = -5000
+					y = -5000
+				}
 			}
-
-			instantTextBoxType = {
+			instantTextBoxType = { 
 				name = "leader_species"
 				font = "cg_16b"
-				position = { x = -5000 y = -5000 }
+				position = { 
+					x = -5000
+					y = -5000
+				}
 			}
 		}
-		containerWindowType = {
+		containerWindowType = { 
 			name = "opinion_window"
-			position = { x = -5000 y = -5000 }
-
-			background = {
+			position = { 
+				x = -5000
+				y = -5000
+			}
+			background = { 
 				name = "opinion_bg"
 				spriteType = "GFX_tiled_window_transparent"
 			}
-
-			iconType = {
+			iconType = { 
 				name = "their_opinion_icon"
 				spriteType = "GFX_diplomacy_opinion"
-				position = { x = -5000 y = -5000 }
+				position = { 
+					x = -5000
+					y = -5000
+				}
 			}
-
-			instantTextBoxType = {
+			instantTextBoxType = { 
 				name = "their_opinion"
 				font = "cg_16b"
-				position = { x = -5000 y = -5000 }
+				position = { 
+					x = -5000
+					y = -5000
+				}
 			}
 		}
 	}

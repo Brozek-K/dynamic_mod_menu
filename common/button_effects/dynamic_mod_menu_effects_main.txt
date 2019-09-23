@@ -1,617 +1,632 @@
 @first_empty_id = 0
 @items_per_page = 20
-
-dynamic_mod_menu_open_launcher = {
-    potential = {
-        OR = {
-            ### BEGIN TEMPLATE:open_flags_launcher ###
-            ### END TEMPLATE:open_flags_launcher ###
-        }
-    }
-    allow = {
-        NOT = {
-            has_global_flag = dynamic_mod_menu_opened_launcher
-        }
-    }
-    effect = {
-        hidden_effect = {
-            country_event = {
-                id = dynamic_mod_menu_launcher.1
-            }
-        }
-    }
+dynamic_mod_menu_open_launcher = { 
+	potential = { 
+		OR = { 
+			### BEGIN TEMPLATE:open_flags_launcher ###
+			### END TEMPLATE:open_flags_launcher ###
+		}
+	}
+	allow = { 
+		NOT = { 
+			has_global_flag = dynamic_mod_menu_opened_launcher
+		}
+	}
+	effect = { 
+		hidden_effect = { 
+			country_event = { 
+				id = dynamic_mod_menu_launcher.1
+			}
+		}
+	}
 }
 
-dynamic_mod_menu_open_general_1 = {
-    potential = {
-        has_global_flag = dynamic_mod_menu_category_general_1
-    }
-    allow = {
-        NOT = {
-            has_global_flag = dynamic_mod_menu_opened
-        }
-    }
-    effect = {
-        hidden_effect = {
-            country_event = {
-                id = dynamic_mod_menu.1
-            }
-        }
-    }
+dynamic_mod_menu_open_general_1 = { 
+	potential = { 
+		has_global_flag = dynamic_mod_menu_category_general_1
+	}
+	allow = { 
+		NOT = { 
+			has_global_flag = dynamic_mod_menu_opened
+		}
+	}
+	effect = { 
+		hidden_effect = { 
+			country_event = { 
+				id = dynamic_mod_menu.1
+			}
+		}
+	}
 }
 
-dynamic_mod_menu_open_events_1 = {
-    potential = {
-        has_global_flag = dynamic_mod_menu_category_events_1
-    }
-    allow = {
-        NOT = {
-            has_global_flag = dynamic_mod_menu_events_opened
-        }
-    }
-    effect = {
-        hidden_effect = {
-            country_event = {
-                id = dynamic_mod_menu_events.1
-            }
-        }
-    }
+dynamic_mod_menu_open_events_1 = { 
+	potential = { 
+		has_global_flag = dynamic_mod_menu_category_events_1
+	}
+	allow = { 
+		NOT = { 
+			has_global_flag = dynamic_mod_menu_events_opened
+		}
+	}
+	effect = { 
+		hidden_effect = { 
+			country_event = { 
+				id = dynamic_mod_menu_events.1
+			}
+		}
+	}
 }
 
-dynamic_mod_menu_open_gfx_1 = {
-    potential = {
-        has_global_flag = dynamic_mod_menu_category_gfx_1
-    }
-    allow = {
-        NOT = {
-            has_global_flag = dynamic_mod_menu_gfx_opened
-        }
-    }
-    effect = {
-        hidden_effect = {
-            country_event = {
-                id = dynamic_mod_menu_gfx.1
-            }
-        }
-    }
+dynamic_mod_menu_open_gfx_1 = { 
+	potential = { 
+		has_global_flag = dynamic_mod_menu_category_gfx_1
+	}
+	allow = { 
+		NOT = { 
+			has_global_flag = dynamic_mod_menu_gfx_opened
+		}
+	}
+	effect = { 
+		hidden_effect = { 
+			country_event = { 
+				id = dynamic_mod_menu_gfx.1
+			}
+		}
+	}
 }
 
-dynamic_mod_menu_open_utilities_1 = {
-    potential = {
-        has_global_flag = dynamic_mod_menu_category_utilities_1
-    }
-    allow = {
-        NOT = {
-            has_global_flag = dynamic_mod_menu_utilities_opened
-        }
-    }
-    effect = {
-        hidden_effect = {
-            country_event = {
-                id = dynamic_mod_menu_utilities.1
-            }
-        }
-    }
+dynamic_mod_menu_open_utilities_1 = { 
+	potential = { 
+		has_global_flag = dynamic_mod_menu_category_utilities_1
+	}
+	allow = { 
+		NOT = { 
+			has_global_flag = dynamic_mod_menu_utilities_opened
+		}
+	}
+	effect = { 
+		hidden_effect = { 
+			country_event = { 
+				id = dynamic_mod_menu_utilities.1
+			}
+		}
+	}
 }
 
-dynamic_mod_menu_open_other_1 = {
-    potential = {
-        has_global_flag = dynamic_mod_menu_category_other_1
-    }
-    allow = {
-        NOT = {
-            has_global_flag = dynamic_mod_menu_other_opened
-        }
-    }
-    effect = {
-        hidden_effect = {
-            country_event = {
-                id = dynamic_mod_menu_other.1
-            }
-        }
-    }
+dynamic_mod_menu_open_other_1 = { 
+	potential = { 
+		has_global_flag = dynamic_mod_menu_category_other_1
+	}
+	allow = { 
+		NOT = { 
+			has_global_flag = dynamic_mod_menu_other_opened
+		}
+	}
+	effect = { 
+		hidden_effect = { 
+			country_event = { 
+				id = dynamic_mod_menu_other.1
+			}
+		}
+	}
 }
 
-dynamic_mod_menu_open_events_2 = {
-    potential = {
-        has_global_flag = dynamic_mod_menu_category_events_2
-    }
-    allow = {
-        NOT = {
-            has_global_flag = dynamic_mod_menu_events_opened
-        }
-    }
-    effect = {
-        hidden_effect = {
-            country_event = {
-                id = dynamic_mod_menu_events.1
-            }
-        }
-    }
+dynamic_mod_menu_open_events_2 = { 
+	potential = { 
+		has_global_flag = dynamic_mod_menu_category_events_2
+	}
+	allow = { 
+		NOT = { 
+			has_global_flag = dynamic_mod_menu_events_opened
+		}
+	}
+	effect = { 
+		hidden_effect = { 
+			country_event = { 
+				id = dynamic_mod_menu_events.1
+			}
+		}
+	}
 }
 
-dynamic_mod_menu_open_gfx_2 = {
-    potential = {
-        has_global_flag = dynamic_mod_menu_category_gfx_2
-    }
-    allow = {
-        NOT = {
-            has_global_flag = dynamic_mod_menu_gfx_opened
-        }
-    }
-    effect = {
-        hidden_effect = {
-            country_event = {
-                id = dynamic_mod_menu_gfx.1
-            }
-        }
-    }
+dynamic_mod_menu_open_gfx_2 = { 
+	potential = { 
+		has_global_flag = dynamic_mod_menu_category_gfx_2
+	}
+	allow = { 
+		NOT = { 
+			has_global_flag = dynamic_mod_menu_gfx_opened
+		}
+	}
+	effect = { 
+		hidden_effect = { 
+			country_event = { 
+				id = dynamic_mod_menu_gfx.1
+			}
+		}
+	}
 }
 
-dynamic_mod_menu_open_utilities_2 = {
-    potential = {
-        has_global_flag = dynamic_mod_menu_category_utilities_2
-    }
-    allow = {
-        NOT = {
-            has_global_flag = dynamic_mod_menu_utilities_opened
-        }
-    }
-    effect = {
-        hidden_effect = {
-            country_event = {
-                id = dynamic_mod_menu_utilities.1
-            }
-        }
-    }
+dynamic_mod_menu_open_utilities_2 = { 
+	potential = { 
+		has_global_flag = dynamic_mod_menu_category_utilities_2
+	}
+	allow = { 
+		NOT = { 
+			has_global_flag = dynamic_mod_menu_utilities_opened
+		}
+	}
+	effect = { 
+		hidden_effect = { 
+			country_event = { 
+				id = dynamic_mod_menu_utilities.1
+			}
+		}
+	}
 }
 
-dynamic_mod_menu_open_other_2 = {
-    potential = {
-        has_global_flag = dynamic_mod_menu_category_other_2
-    }
-    allow = {
-        NOT = {
-            has_global_flag = dynamic_mod_menu_other_opened
-        }
-    }
-    effect = {
-        hidden_effect = {
-            country_event = {
-                id = dynamic_mod_menu_other.1
-            }
-        }
-    }
+dynamic_mod_menu_open_other_2 = { 
+	potential = { 
+		has_global_flag = dynamic_mod_menu_category_other_2
+	}
+	allow = { 
+		NOT = { 
+			has_global_flag = dynamic_mod_menu_other_opened
+		}
+	}
+	effect = { 
+		hidden_effect = { 
+			country_event = { 
+				id = dynamic_mod_menu_other.1
+			}
+		}
+	}
 }
 
-dynamic_mod_menu_open_gfx_3 = {
-    potential = {
-        has_global_flag = dynamic_mod_menu_category_gfx_3
-    }
-    allow = {
-        NOT = {
-            has_global_flag = dynamic_mod_menu_gfx_opened
-        }
-    }
-    effect = {
-        hidden_effect = {
-            country_event = {
-                id = dynamic_mod_menu_gfx.1
-            }
-        }
-    }
+dynamic_mod_menu_open_gfx_3 = { 
+	potential = { 
+		has_global_flag = dynamic_mod_menu_category_gfx_3
+	}
+	allow = { 
+		NOT = { 
+			has_global_flag = dynamic_mod_menu_gfx_opened
+		}
+	}
+	effect = { 
+		hidden_effect = { 
+			country_event = { 
+				id = dynamic_mod_menu_gfx.1
+			}
+		}
+	}
 }
 
-dynamic_mod_menu_open_utilities_3 = {
-    potential = {
-        has_global_flag = dynamic_mod_menu_category_utilities_3
-    }
-    allow = {
-        NOT = {
-            has_global_flag = dynamic_mod_menu_utilities_opened
-        }
-    }
-    effect = {
-        hidden_effect = {
-            country_event = {
-                id = dynamic_mod_menu_utilities.1
-            }
-        }
-    }
+dynamic_mod_menu_open_utilities_3 = { 
+	potential = { 
+		has_global_flag = dynamic_mod_menu_category_utilities_3
+	}
+	allow = { 
+		NOT = { 
+			has_global_flag = dynamic_mod_menu_utilities_opened
+		}
+	}
+	effect = { 
+		hidden_effect = { 
+			country_event = { 
+				id = dynamic_mod_menu_utilities.1
+			}
+		}
+	}
 }
 
-dynamic_mod_menu_open_other_3 = {
-    potential = {
-        has_global_flag = dynamic_mod_menu_category_other_3
-    }
-    allow = {
-        NOT = {
-            has_global_flag = dynamic_mod_menu_other_opened
-        }
-    }
-    effect = {
-        hidden_effect = {
-            country_event = {
-                id = dynamic_mod_menu_other.1
-            }
-        }
-    }
+dynamic_mod_menu_open_other_3 = { 
+	potential = { 
+		has_global_flag = dynamic_mod_menu_category_other_3
+	}
+	allow = { 
+		NOT = { 
+			has_global_flag = dynamic_mod_menu_other_opened
+		}
+	}
+	effect = { 
+		hidden_effect = { 
+			country_event = { 
+				id = dynamic_mod_menu_other.1
+			}
+		}
+	}
 }
 
-dynamic_mod_menu_open_utilities_4 = {
-    potential = {
-        has_global_flag = dynamic_mod_menu_category_utilities_4
-    }
-    allow = {
-        NOT = {
-            has_global_flag = dynamic_mod_menu_utilities_opened
-        }
-    }
-    effect = {
-        hidden_effect = {
-            country_event = {
-                id = dynamic_mod_menu_utilities.1
-            }
-        }
-    }
+dynamic_mod_menu_open_utilities_4 = { 
+	potential = { 
+		has_global_flag = dynamic_mod_menu_category_utilities_4
+	}
+	allow = { 
+		NOT = { 
+			has_global_flag = dynamic_mod_menu_utilities_opened
+		}
+	}
+	effect = { 
+		hidden_effect = { 
+			country_event = { 
+				id = dynamic_mod_menu_utilities.1
+			}
+		}
+	}
 }
 
-dynamic_mod_menu_open_other_4 = {
-    potential = {
-        has_global_flag = dynamic_mod_menu_category_other_4
-    }
-    allow = {
-        NOT = {
-            has_global_flag = dynamic_mod_menu_other_opened
-        }
-    }
-    effect = {
-        hidden_effect = {
-            country_event = {
-                id = dynamic_mod_menu_other.1
-            }
-        }
-    }
+dynamic_mod_menu_open_other_4 = { 
+	potential = { 
+		has_global_flag = dynamic_mod_menu_category_other_4
+	}
+	allow = { 
+		NOT = { 
+			has_global_flag = dynamic_mod_menu_other_opened
+		}
+	}
+	effect = { 
+		hidden_effect = { 
+			country_event = { 
+				id = dynamic_mod_menu_other.1
+			}
+		}
+	}
 }
 
-dynamic_mod_menu_open_other_5 = {
-    potential = {
-        has_global_flag = dynamic_mod_menu_category_other_5
-    }
-    allow = {
-        NOT = {
-            has_global_flag = dynamic_mod_menu_other_opened
-        }
-    }
-    effect = {
-        hidden_effect = {
-            country_event = {
-                id = dynamic_mod_menu_other.1
-            }
-        }
-    }
+dynamic_mod_menu_open_other_5 = { 
+	potential = { 
+		has_global_flag = dynamic_mod_menu_category_other_5
+	}
+	allow = { 
+		NOT = { 
+			has_global_flag = dynamic_mod_menu_other_opened
+		}
+	}
+	effect = { 
+		hidden_effect = { 
+			country_event = { 
+				id = dynamic_mod_menu_other.1
+			}
+		}
+	}
 }
 
-dynamic_mod_menu_close_launcher = {
-    potential = {
-        always = yes
-    }
-    allow = {
-        always = yes
-    }
-    effect = {
-        hidden_effect = {
-            remove_global_flag = dynamic_mod_menu_opened_launcher
-        }
-    }
+dynamic_mod_menu_close_launcher = { 
+	potential = { 
+		always = yes
+	}
+	allow = { 
+		always = yes
+	}
+	effect = { 
+		hidden_effect = { 
+			remove_global_flag = dynamic_mod_menu_opened_launcher
+		}
+	}
 }
 
-dynamic_mod_menu_close_general = {
-    potential = {
-        always = yes
-    }
-    allow = {
-        always = yes
-    }
-    effect = {
-        hidden_effect = {
-            remove_global_flag = dynamic_mod_menu_opened
-        }
-    }
+dynamic_mod_menu_close_general = { 
+	potential = { 
+		always = yes
+	}
+	allow = { 
+		always = yes
+	}
+	effect = { 
+		hidden_effect = { 
+			remove_global_flag = dynamic_mod_menu_opened
+		}
+	}
 }
 
-dynamic_mod_menu_close_events = {
-    potential = {
-        always = yes
-    }
-    allow = {
-        always = yes
-    }
-    effect = {
-        hidden_effect = {
-            remove_global_flag = dynamic_mod_menu_opened_events
-        }
-    }
+dynamic_mod_menu_close_events = { 
+	potential = { 
+		always = yes
+	}
+	allow = { 
+		always = yes
+	}
+	effect = { 
+		hidden_effect = { 
+			remove_global_flag = dynamic_mod_menu_opened_events
+		}
+	}
 }
 
-dynamic_mod_menu_close_gfx = {
-    potential = {
-        always = yes
-    }
-    allow = {
-        always = yes
-    }
-    effect = {
-        hidden_effect = {
-            remove_global_flag = dynamic_mod_menu_opened_gfx
-        }
-    }
+dynamic_mod_menu_close_gfx = { 
+	potential = { 
+		always = yes
+	}
+	allow = { 
+		always = yes
+	}
+	effect = { 
+		hidden_effect = { 
+			remove_global_flag = dynamic_mod_menu_opened_gfx
+		}
+	}
 }
 
-dynamic_mod_menu_close_utilities = {
-    potential = {
-        always = yes
-    }
-    allow = {
-        always = yes
-    }
-    effect = {
-        hidden_effect = {
-            remove_global_flag = dynamic_mod_menu_opened_utilities
-        }
-    }
+dynamic_mod_menu_close_utilities = { 
+	potential = { 
+		always = yes
+	}
+	allow = { 
+		always = yes
+	}
+	effect = { 
+		hidden_effect = { 
+			remove_global_flag = dynamic_mod_menu_opened_utilities
+		}
+	}
 }
 
-dynamic_mod_menu_close_other = {
-    potential = {
-        always = yes
-    }
-    allow = {
-        always = yes
-    }
-    effect = {
-        hidden_effect = {
-            remove_global_flag = dynamic_mod_menu_opened_other
-        }
-    }
+dynamic_mod_menu_close_other = { 
+	potential = { 
+		always = yes
+	}
+	allow = { 
+		always = yes
+	}
+	effect = { 
+		hidden_effect = { 
+			remove_global_flag = dynamic_mod_menu_opened_other
+		}
+	}
 }
 
-dynamic_mod_menu_next_page_general = {
-    potential = {
-        NOT = {
-            OR = {
-                has_global_flag = dynamic_mod_menu_no_new_pages
-                check_variable = {
-                    which = dynamic_mod_menu_items_shown
-                    value < @items_per_page
-                }
-            }
-        }
-    }
-    allow = {
-        always = yes
-    }
-    effect = {
-        hidden_effect = {
-            country_event = {
-                id = dynamic_mod_menu_pagination.1
-            }
-        }
-    }
+dynamic_mod_menu_next_page_general = { 
+	potential = { 
+		NOT = { 
+			OR = { 
+				has_global_flag = dynamic_mod_menu_no_new_pages
+				check_variable = { 
+					which = dynamic_mod_menu_items_shown
+					value < @items_per_page
+				}
+			}
+		}
+	}
+	allow = { 
+		always = yes
+	}
+	effect = { 
+		hidden_effect = { 
+			country_event = { 
+				id = dynamic_mod_menu_pagination.1
+			}
+		}
+	}
 }
 
-dynamic_mod_menu_prev_page_general = {
-    potential = {
-        NOT = {
-            OR = {
-                has_global_flag = dynamic_mod_menu_no_prev_pages
-                check_variable = {
-                    which = dynamic_mod_menu_last_processed_id
-                    value = @first_empty_id
-                }
-            }
-        }
-    }
-    allow = {
-        always = yes
-    }
-    effect = {
-        hidden_effect = {
-            country_event = {
-                id = dynamic_mod_menu_pagination.2
-            }
-        }
-    }
+dynamic_mod_menu_prev_page_general = { 
+	potential = { 
+		NOT = { 
+			OR = { 
+				has_global_flag = dynamic_mod_menu_no_prev_pages
+				check_variable = { 
+					which = dynamic_mod_menu_last_processed_id
+					value = @first_empty_id
+				}
+			}
+		}
+	}
+	allow = { 
+		always = yes
+	}
+	effect = { 
+		hidden_effect = { 
+			country_event = { 
+				id = dynamic_mod_menu_pagination.2
+			}
+		}
+	}
 }
 
-dynamic_mod_menu_next_page_events = {
-    potential = {
-        NOT = {
-            OR = {
-                has_global_flag = dynamic_mod_menu_events_no_new_pages
-                check_variable = {
-                    which = dynamic_mod_menu_events_items_shown
-                    value < @items_per_page
-                }
-            }
-        }
-    }
-    allow = {
-        always = yes
-    }
-    effect = {
-        hidden_effect = {
-            country_event = {
-                id = dynamic_mod_menu_pagination_events.1
-            }
-        }
-    }
+dynamic_mod_menu_next_page_events = { 
+	potential = { 
+		NOT = { 
+			OR = { 
+				has_global_flag = dynamic_mod_menu_events_no_new_pages
+				check_variable = { 
+					which = dynamic_mod_menu_events_items_shown
+					value < @items_per_page
+				}
+			}
+		}
+	}
+	allow = { 
+		always = yes
+	}
+	effect = { 
+		hidden_effect = { 
+			country_event = { 
+				id = dynamic_mod_menu_pagination_events.1
+			}
+		}
+	}
 }
 
-dynamic_mod_menu_prev_page_events = {
-    potential = {
-        NOT = {
-            OR = {
-                has_global_flag = dynamic_mod_menu_events_no_prev_pages
-                check_variable = {
-                    which = dynamic_mod_menu_events_last_processed_id
-                    value = @first_empty_id
-                }
-            }
-        }
-    }
-    allow = {
-        always = yes
-    }
-    effect = {
-        hidden_effect = {
-            country_event = {
-                id = dynamic_mod_menu_pagination_events.2
-            }
-        }
-    }
+dynamic_mod_menu_prev_page_events = { 
+	potential = { 
+		NOT = { 
+			OR = { 
+				has_global_flag = dynamic_mod_menu_events_no_prev_pages
+				check_variable = { 
+					which = dynamic_mod_menu_events_last_processed_id
+					value = @first_empty_id
+				}
+			}
+		}
+	}
+	allow = { 
+		always = yes
+	}
+	effect = { 
+		hidden_effect = { 
+			country_event = { 
+				id = dynamic_mod_menu_pagination_events.2
+			}
+		}
+	}
 }
 
-dynamic_mod_menu_next_page_gfx = {
-    potential = {
-        NOT = {
-            OR = {
-                has_global_flag = dynamic_mod_menu_gfx_no_new_pages
-                check_variable = {
-                    which = dynamic_mod_menu_gfx_items_shown
-                    value < @items_per_page
-                }
-            }
-        }
-    }
-    allow = {
-        always = yes
-    }
-    effect = {
-        hidden_effect = {
-            country_event = {
-                id = dynamic_mod_menu_pagination_gfx.1
-            }
-        }
-    }
+dynamic_mod_menu_next_page_gfx = { 
+	potential = { 
+		NOT = { 
+			OR = { 
+				has_global_flag = dynamic_mod_menu_gfx_no_new_pages
+				check_variable = { 
+					which = dynamic_mod_menu_gfx_items_shown
+					value < @items_per_page
+				}
+			}
+		}
+	}
+	allow = { 
+		always = yes
+	}
+	effect = { 
+		hidden_effect = { 
+			country_event = { 
+				id = dynamic_mod_menu_pagination_gfx.1
+			}
+		}
+	}
 }
 
-dynamic_mod_menu_prev_page_gfx = {
-    potential = {
-        NOT = {
-            OR = {
-                has_global_flag = dynamic_mod_menu_gfx_no_prev_pages
-                check_variable = {
-                    which = dynamic_mod_menu_gfx_last_processed_id
-                    value = @first_empty_id
-                }
-            }
-        }
-    }
-    allow = {
-        always = yes
-    }
-    effect = {
-        hidden_effect = {
-            country_event = {
-                id = dynamic_mod_menu_pagination_gfx.2
-            }
-        }
-    }
+dynamic_mod_menu_prev_page_gfx = { 
+	potential = { 
+		NOT = { 
+			OR = { 
+				has_global_flag = dynamic_mod_menu_gfx_no_prev_pages
+				check_variable = { 
+					which = dynamic_mod_menu_gfx_last_processed_id
+					value = @first_empty_id
+				}
+			}
+		}
+	}
+	allow = { 
+		always = yes
+	}
+	effect = { 
+		hidden_effect = { 
+			country_event = { 
+				id = dynamic_mod_menu_pagination_gfx.2
+			}
+		}
+	}
 }
 
-dynamic_mod_menu_next_page_utilities = {
-    potential = {
-        NOT = {
-            OR = {
-                has_global_flag = dynamic_mod_menu_utilities_no_new_pages
-                check_variable = {
-                    which = dynamic_mod_menu_utilities_items_shown
-                    value < @items_per_page
-                }
-            }
-        }
-    }
-    allow = {
-        always = yes
-    }
-    effect = {
-        hidden_effect = {
-            country_event = {
-                id = dynamic_mod_menu_pagination_utilities.1
-            }
-        }
-    }
+dynamic_mod_menu_next_page_utilities = { 
+	potential = { 
+		NOT = { 
+			OR = { 
+				has_global_flag = dynamic_mod_menu_utilities_no_new_pages
+				check_variable = { 
+					which = dynamic_mod_menu_utilities_items_shown
+					value < @items_per_page
+				}
+			}
+		}
+	}
+	allow = { 
+		always = yes
+	}
+	effect = { 
+		hidden_effect = { 
+			country_event = { 
+				id = dynamic_mod_menu_pagination_utilities.1
+			}
+		}
+	}
 }
 
-dynamic_mod_menu_prev_page_utilities = {
-    potential = {
-        NOT = {
-            OR = {
-                has_global_flag = dynamic_mod_menu_utilities_no_prev_pages
-                check_variable = {
-                    which = dynamic_mod_menu_utilities_last_processed_id
-                    value = @first_empty_id
-                }
-            }
-        }
-    }
-    allow = {
-        always = yes
-    }
-    effect = {
-        hidden_effect = {
-            country_event = {
-                id = dynamic_mod_menu_pagination_utilities.2
-            }
-        }
-    }
+dynamic_mod_menu_prev_page_utilities = { 
+	potential = { 
+		NOT = { 
+			OR = { 
+				has_global_flag = dynamic_mod_menu_utilities_no_prev_pages
+				check_variable = { 
+					which = dynamic_mod_menu_utilities_last_processed_id
+					value = @first_empty_id
+				}
+			}
+		}
+	}
+	allow = { 
+		always = yes
+	}
+	effect = { 
+		hidden_effect = { 
+			country_event = { 
+				id = dynamic_mod_menu_pagination_utilities.2
+			}
+		}
+	}
 }
 
-dynamic_mod_menu_next_page_other = {
-    potential = {
-        NOT = {
-            OR = {
-                has_global_flag = dynamic_mod_menu_other_no_new_pages
-                check_variable = {
-                    which = dynamic_mod_menu_other_items_shown
-                    value < @items_per_page
-                }
-            }
-        }
-    }
-    allow = {
-        always = yes
-    }
-    effect = {
-        hidden_effect = {
-            country_event = {
-                id = dynamic_mod_menu_pagination_other.1
-            }
-        }
-    }
+dynamic_mod_menu_next_page_other = { 
+	potential = { 
+		NOT = { 
+			OR = { 
+				has_global_flag = dynamic_mod_menu_other_no_new_pages
+				check_variable = { 
+					which = dynamic_mod_menu_other_items_shown
+					value < @items_per_page
+				}
+			}
+		}
+	}
+	allow = { 
+		always = yes
+	}
+	effect = { 
+		hidden_effect = { 
+			country_event = { 
+				id = dynamic_mod_menu_pagination_other.1
+			}
+		}
+	}
 }
 
-dynamic_mod_menu_prev_page_other = {
-    potential = {
-        NOT = {
-            OR = {
-                has_global_flag = dynamic_mod_menu_other_no_prev_pages
-                check_variable = {
-                    which = dynamic_mod_menu_other_last_processed_id
-                    value = @first_empty_id
-                }
-            }
-        }
-    }
-    allow = {
-        always = yes
-    }
-    effect = {
-        hidden_effect = {
-            country_event = {
-                id = dynamic_mod_menu_pagination_other.2
-            }
-        }
-    }
+dynamic_mod_menu_prev_page_other = { 
+	potential = { 
+		NOT = { 
+			OR = { 
+				has_global_flag = dynamic_mod_menu_other_no_prev_pages
+				check_variable = { 
+					which = dynamic_mod_menu_other_last_processed_id
+					value = @first_empty_id
+				}
+			}
+		}
+	}
+	allow = { 
+		always = yes
+	}
+	effect = { 
+		hidden_effect = { 
+			country_event = { 
+				id = dynamic_mod_menu_pagination_other.2
+			}
+		}
+	}
+}
+
+dynamic_mod_menu_options = { 
+	potential = { 
+		always = yes
+	}
+	allow = { 
+		always = yes
+	}
+	effect = { 
+		hidden_effect = { 
+			country_event = { 
+				id = dmm_mod_options.1
+			}
+		}
+	}
 }
