@@ -74,7 +74,7 @@ guiTypes = {
 		moveable = yes
 		size = { 
 			width = 400
-			height = 660
+			height = 800
 		}
 		background = { 
 			name = "background"
@@ -152,12 +152,12 @@ guiTypes = {
 				name = "option_list"
 				position = { 
 					x = 100
-					y = 50
+					y = 90
 				}
 				background = ""
 				size = { 
 					x = 250
-					y = 540
+					y = 700
 				}
 				spacing = 1
 				scrollbartype = "standardlistbox_slider"
