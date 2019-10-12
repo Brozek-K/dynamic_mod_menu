@@ -1,3 +1,9 @@
+[h1]Load Order[/h1]
+Not important.
+
+[h1]Older Versions[/h1]
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=1885042831]For 2.3[/url]
+
 [h1]Menu in action[/h1]
 [img]https://media.giphy.com/media/LPlPcdqY1UsW0k8UII/giphy.gif[/img]
 
@@ -46,6 +52,9 @@ Let me know which so I can create a patch. Other developers are welcome to creat
 
 [i]Menu icon is not showing.[/i]
 It's probably a mod conflict. See above.
+
+[i]Are there any existing compatibility patches?[/i]
+[url=https://steamcommunity.com/workshop/filedetails/discussion/1840010432/2564160288800825062/]Here[/url]
 
 [i]Mod icon is terrible.[/i]
 I know and that's not a question.

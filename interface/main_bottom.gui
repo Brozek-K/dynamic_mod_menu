@@ -7,6 +7,7 @@ guiTypes = {
 
 	#Adjusts offset for tooltips for all elements at the bottom of the screen
 	@tt_offset_y = 0
+	@expand_x_pos = -155
 
 	containerWindowType = {
 		name = "maingui_bottombar"
@@ -33,7 +34,7 @@ guiTypes = {
 			orientation = center_down
 			origo = center_up
 
-			###	BACKGROUND FOR AVOIDED SYSTEMS
+			###	BACKGROUND FOR AVOIDED SYSTEMS					
 			iconType = {
 				name = "starsystem_panel_avoid_bg"
 				spriteType = "GFX_starsystem_panel_avoid"
@@ -56,14 +57,14 @@ guiTypes = {
 			iconType = {
 				name = "claims_button_bg"
 				spriteType = "GFX_starsystem_panel_left"
-				position = { x = -205 y = 38 }
+				position = { x = -205 y = 38 }				
 			}
 
 			### BACKGROUND FOR AVOID SYSTEM BUTTON VISIBLE WHEN ENABLED
 			iconType = {
 				name = "restricted_button_bg"
 				spriteType = "GFX_starsystem_panel_right"
-				position = { x = -112 y = 46 }
+				position = { x = -112 y = 46 }				
 			}
 
 			buttonType = {
@@ -74,7 +75,7 @@ guiTypes = {
 				clicksound = interface
 				oversound = no_sound
 			}
-
+	
 
 			buttonType = {
 				name = "button"
@@ -123,7 +124,7 @@ guiTypes = {
 				fixedsize = yes
 				#text_color_code = "E"
 			}
-
+			
 			instantTextBoxType={
 				name = "system_type"
 				font = "cg_16b"
@@ -136,7 +137,7 @@ guiTypes = {
 				alwaystransparent = yes
 				fixedsize = yes
 				text_color_code = "E"
-			}
+			}			
 
 			buttonType = {
 				name = "system_rename_button"
@@ -147,24 +148,24 @@ guiTypes = {
 				pdx_tooltip = "RENAME_SYSTEM_TOOLTIP"
 				oversound = no_sound
 			}
-
+			
 			iconType = {
 				name = "environmental_effects_icon"
 				spriteType = "GFX_system_hazards_icon"
-				position = { x = 252 y = 49 }
+				position = { x = 252 y = 49 }				
 			}
 
 			buttonType = {
 				name = "claim_system_button"
 				quadTextureSprite = "GFX_claim_system_icon"
-				position = { x = -204 y = 43 }
-			}
+				position = { x = -204 y = 43 }		
+			}			
 
 			buttonType = {
 				name = "restricted_system_button"
 				quadTextureSprite = "GFX_restricted_system_icon"
-				position = { x = -112 y = 43 }
-			}
+				position = { x = -112 y = 43 }		
+			}			
 		}
 
 		### LEAVE GALAXY WINDOW
@@ -327,8 +328,8 @@ guiTypes = {
 		# Lower right toolbar
 		containerWindowType = {
 			name = "toolbar"
-			position = { x = -377 y = -36 }
-			size = { width = 380 height = 36 }
+			position = { x = -379 y = -36 }
+			size = { width = 379 height = 36 }
 			orientation = lower_right
 			clipping = no
 
@@ -365,41 +366,70 @@ guiTypes = {
 			}
 
 			buttonType = {
-				name = "button_topbar_help"
+				name = "expand_button"
 				quadTextureSprite = "GFX_button_60_29"
-				position = { x= -155 y = -45  }
+				position = { x = @expand_x_pos y = -45  }
 				orientation = lower_right
-				pdx_tooltip = "TOPBAR_HELP"
-				pdx_tooltip_anchor_offset = { x= 0 y = @tt_offset_y }
+				pdx_tooltip = "EXPAND_BUTTON"
+				pdx_tooltip_anchor_offset = { x = 0 y = @tt_offset_y }
 				pdx_tooltip_anchor_orientation = lower_left
-				shortcut="alt+b"
-				clicksound = confirm_click
 			}
-
+			
 			iconType = {
-				name = "help_icon"
-				spriteType = "GFX_help_icon"
-				position = { x= -140 y = -35 }
+				name = "expand_icon"
+				spriteType = "GFX_expand_icon"
+				position = { x = -140 y = -35 }
 				orientation = lower_right
 				alwaystransparent = yes
 			}
 
-			buttonType = {
-				name = "button_topbar_chat"
-				quadTextureSprite = "GFX_button_60_29"
-				position = { x= -221 y = -45  }
-				orientation = lower_right
-				shortcut = "l"
-			}
-
-			iconType = {
-				name = "chat_icon"
-				spriteType = "GFX_chat_icon"
-				position = { x= -206 y = -35 }
-				orientation = lower_right
-				alwaystransparent = yes
-			}
-
+			#containerWindowType = {
+			#	name = "social_view_interface_window"
+			#	position = { x= -221 y = -45 }	
+			#	size = { width=256 height=256 }
+			#	orientation = lower_right
+				
+			#	buttonType = {
+			#		name = "toggle_button"
+			#		quadTextureSprite = "GFX_button_60_29"
+			#		position = { x= 0 y = 0  }
+			#		pdx_tooltip_anchor_offset = { x= 0 y = @tt_offset_y }
+			#		pdx_tooltip_anchor_orientation = lower_left
+			#	}
+				
+			#	iconType = {
+			#		name = "button_toggle_socialview_icon"
+			#		spriteType = "GFX_socialview_icon"
+			#		position = { x= 15 y = 10 }
+			#		alwaystransparent = yes
+			#	}
+				
+			#	instantTextBoxType={
+			#		name = "friends_online"
+			#		font = "cg_16b"
+			#		position = { x= 36 y= 18 }
+			#		text = "0"
+			#		maxWidth = 30
+			#		maxHeight = 16
+			#		alwaysTransparent = yes
+			#		format = center
+			#	}
+				
+			#	iconType = {
+			#		name = "new_message"
+			#		position = { x = 60 y = 8 }
+			#		spriteType = "GFX_new_message_icon"
+			#		pdx_tooltip = "SOCIAL_NEW_MESSAGE"
+			#	}
+			#	
+			#	iconType = {
+			#		name = "new_friend"
+			#		position = { x = 60 y = 19 }
+			#		spriteType = "GFX_new_friend_icon"
+			#		pdx_tooltip = "SOCIAL_NEW_FRIEND"
+			#	}
+			#}
+			
 			buttonType = {
 				name = "toggle_gotobox"
 				quadTextureSprite = "GFX_button_60_29"
@@ -446,7 +476,7 @@ guiTypes = {
 				name = "toggle_mapmode_icon_details"
 				spriteType = "GFX_mapmode"
 				frame = 9
-				position = { x = -376 y = -33 }
+				position = { x = -374 y = -33 }
 				orientation = "LOWER_RIGHT"
 				alwaystransparent = yes
 			}
@@ -454,7 +484,7 @@ guiTypes = {
 			buttonType = {
 				name = "toggle_mapmode_details"
 				quadTextureSprite = "GFX_button_29_animated_survey"
-				position = { x= -388 y = -45  }
+				position = { x= -386 y = -45  }
 				pdx_tooltip = "TOGGLE_MAPMODE_DETAILS_INFO"
 				pdx_tooltip_anchor_offset = { x= 0 y = @tt_offset_y }
 				pdx_tooltip_anchor_orientation = lower_left
@@ -464,12 +494,12 @@ guiTypes = {
 			iconType = {
 				name = "toggle_mapmode_icon_sectors"
 				spriteType = "GFX_map_mode_sectors"
-				position = { x = -379 y = -70 }
+				position = { x = -380 y = -70 }
 				orientation = "LOWER_RIGHT"
 				alwaystransparent = yes
 			}
 
-			buttonType = {
+ 			buttonType = {
 				name = "toggle_mapmode_sectors"
 				quadTextureSprite = "GFX_button_29_animated"
 				position = { x= -391 y = -82  }
@@ -478,7 +508,7 @@ guiTypes = {
 				pdx_tooltip_anchor_orientation = lower_left
 				orientation = lower_right
 			}
-
+			
 			iconType = {
 				name = "toggle_mapmode_icon_hyperlanes"
 				spriteType = "GFX_map_mode_hyperlanes"
@@ -505,7 +535,7 @@ guiTypes = {
 				alwaystransparent = yes
 			}
 
-			buttonType = {
+ 			buttonType = {
 				name = "toggle_mapmode_trade_routes"
 				quadTextureSprite = "GFX_button_29_animated"
 				position = { x= -358 y = -115  }
@@ -523,7 +553,7 @@ guiTypes = {
 				alwaystransparent = yes
 			}
 
-			buttonType = {
+ 			buttonType = {
 				name = "toggle_mapmode_unions"
 				quadTextureSprite = "GFX_button_29_animated"
 				position = { x= -325 y = -82  }
@@ -561,6 +591,52 @@ guiTypes = {
 				buttonFont = "cg_16b"
 				Orientation = "LOWER_RIGHT"
 				oversound = no_sound
+			}
+			
+			containerWindowType = {
+				name = "expand_buttons_background"
+				position = { x = -143 y = -93 }
+				size = { width = 60 height = 59 }
+				orientation = lower_right
+				clipping = no
+
+				background = {
+					name = "bg"
+					quadTextureSprite = "GFX_ship_army_outliner"
+					position = { x = 0 y = 0  }
+				}
+			}
+
+			buttonType = {
+				name = "button_topbar_chat"
+				quadTextureSprite = "GFX_button_60_29"
+				position = { x = @expand_x_pos y = -75  }
+				orientation = lower_right
+				shortcut = "l"
+			}
+
+			iconType = {
+				name = "chat_icon"
+				spriteType = "GFX_chat_icon"
+				position = { x = -140 y = -65 }
+				orientation = lower_right
+				alwaystransparent = yes
+			}
+
+			buttonType = {
+				name = "button_topbar_help"
+				quadTextureSprite = "GFX_button_60_29"
+				position = { x = @expand_x_pos y = -105  }
+				orientation = lower_right
+				shortcut="alt+b"
+			}
+
+			iconType = {
+				name = "help_icon"
+				spriteType = "GFX_help_icon"
+				position = { x = -140 y = -95 }
+				orientation = lower_right
+				alwaystransparent = yes
 			}
 		}
 	}
@@ -617,7 +693,7 @@ guiTypes = {
 			format = center
 		}
 	}
-	#map mode neighbours
+#map mode neighbours
 	containerWindowType = {
 		name = "main_gui_map_mode_entry"
 		position = { x= 0 y = 0 }

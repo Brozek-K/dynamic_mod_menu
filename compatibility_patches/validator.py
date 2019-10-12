@@ -43,11 +43,16 @@ def __get_steam_package_content(package, steam_package_path):
     interface_path = interface_path.replace(
         interface_path.split(os.path.sep)[0] + os.path.sep, "").replace(os.path.sep, "/")
     zip_file_path = glob.glob(steam_package_path + "/*.zip")
-    # Seriously Python? https://docs.python.org/3/library/zipfile.html
-    # Changed in version 3.6: Removed support of mode='U'. Use io.TextIOWrapper for reading compressed text files in universal newlines mode.
-    with zipfile.ZipFile(zip_file_path[0], "r") as archive:
-        with archive.open(interface_path) as file:
-            return io.TextIOWrapper(file, "utf-8").read()
+    if len(zip_file_path) > 0:
+        # Seriously Python? https://docs.python.org/3/library/zipfile.html
+        # Changed in version 3.6: Removed support of mode='U'. Use io.TextIOWrapper for reading compressed text files in universal newlines mode.
+        with zipfile.ZipFile(zip_file_path[0], "r") as archive:
+            with archive.open(interface_path) as file:
+                return io.TextIOWrapper(file, "utf-8").read()
+    else:
+        # For some 2.4 versions
+        interface_path = steam_package_path + "/" + interface_path.lstrip("/").lstrip("\\")
+        return __get_existing_package_content(interface_path)
     return None
 
 
