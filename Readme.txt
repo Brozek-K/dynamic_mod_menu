@@ -1,3 +1,9 @@
+[h1]Load Order[/h1]
+Not important.
+
+[h1]Older Versions[/h1]
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=1885042831]For 2.3[/url]
+
 [h1]Menu in action[/h1]
 [img]https://media.giphy.com/media/LPlPcdqY1UsW0k8UII/giphy.gif[/img]
 
@@ -86,6 +92,3 @@ in your close options event code. In the sample it is added in after block.
 
 [i]How can I check if DMM is installed?[/i]
 [code]has_global_flag = dynamic_mod_menu_installed[/code]
-
-[h1]Older Versions[/h1]
-[url=https://steamcommunity.com/sharedfiles/filedetails/?id=1885042831]2.3[/url]
