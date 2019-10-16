@@ -5,7 +5,6 @@ guiTypes = {
 	}
 	#Adjusts offset for tooltips for all elements at the bottom of the screen
 	@tt_offset_y = 0
-	@expand_x_pos = -155
 	containerWindowType = {
 		name = "maingui_bottombar"
 		size = { width = 100% height = 100% }
@@ -265,29 +264,62 @@ guiTypes = {
 		}
 		# Map Modes
 		containerWindowType = {
+			name = "mapmodes_background"
+			size = { width = 90 height = 72 }
+			position = { x = -531 y = -72 }
+			clipping = yes
+			if_resolution = {
+				min_width = 1650
+				position = { x = -600 y = -72 }
+				size = { width = 160 height = 72 }
+			}
+			if_resolution = {
+				min_width = 1920
+				position = { x = -640 y = -72 }
+				size = { width = 200 height = 72 }
+			}
+			if_resolution = {
+				min_width = 2560
+				position = { x = -590 y = -72 }
+				size = { width = 150 height = 72 }
+			}
+			orientation = lower_right
+			containerWindowType = {
+				name = "mapmodes_background_scalefix"
+				size = { width = 100% height = 100% }
+				position = { x = -1 y = 0 }
+				background = {
+					name = "background"
+					spriteType = "GFX_ui_mapmode_background_stretch"
+					alwaystransparent = yes
+				}
+			}
+		}
+		containerWindowType = {
 			name = "mapmodes"
 			size = { width = 80 height = 68 }
-			position = { x = -528 y = -68 }
+			position = { x = -520 y = -68 }
 			orientation = lower_right
 			verticalScrollBar = "right_vertical_slider_s"
 			if_resolution = {
 				min_width = 1650
 				size = { width = 145 height = 68 }
-				position = { x = -589 y = -68 }
+				position = { x = -585 y = -68 }
 			}
 			if_resolution = {
 				min_width = 1920
-				size = { width = 250 height = 34 }
-				position = { x = -698 y = -34 }
+				size = { width = 250 height = 68 }
+				position = { x = -690 y = -68 }
 			}
 			if_resolution = {
 				min_width = 2560
 				size = { width = 576 height = 68 }
-				position = { x = -1023 y = -68 }
+				position = { x = -1016 y = -68 }
 			}
 			background = {
 				name = "background"
 				spriteType = "GFX_tiled_window_transparent"
+				alwaystransparent = yes
 			}
 			gridBoxType = {
 				name = "map_modes"
@@ -316,7 +348,7 @@ guiTypes = {
 		# Lower right toolbar
 		containerWindowType = {
 			name = "toolbar"
-			position = { x = -377 y = -36 }
+			position = { x = -370 y = -36 }
 			size = { width = 380 height = 36 }
 			orientation = lower_right
 			clipping = no
@@ -330,10 +362,26 @@ guiTypes = {
 				spriteType = "GFX_bottombar_details"
 				position = { x = 0 y = -5 }
 			}
+			iconType = {
+				name = "bottombar_mapicons"
+				spriteType = "GFX_ui_mapmode_background_static"
+				position = { x = -72 y = -36 }
+			}
+			@button_1_button_x = -89
+			@button_1_icon_x   = -74
+			@button_2_button_x = -155
+			@button_2_icon_x   = -140
+			@button_3_button_x = -257
+			@button_3_icon_x   = -242
+			@button_4_button_x = -323
+			@button_4_icon_x   = -308
+			@button_5_button_x = -389
+			@button_5_icon_x   = -374
+			@button_background = -377
 			buttonType = {
 				name = "button_topbar_menu"
 				quadTextureSprite = "GFX_button_60_29"
-				position = { x = -89 y = -45 }
+				position = { x = @button_1_button_x y = -45 }
 				shortcut = "ESCAPE"
 				pdx_tooltip = "TOPBAR_MENU"
 				pdx_tooltip_anchor_offset = { x = 0 y = @tt_offset_y }
@@ -344,14 +392,14 @@ guiTypes = {
 			iconType = {
 				name = "main_menu_icon"
 				spriteType = "GFX_topbar_menu_button"
-				position = { x = -74 y = -33 }
+				position = { x = @button_1_icon_x y = -35 }
 				orientation = lower_right
 				alwaystransparent = yes
 			}
 			buttonType = {
 				name = "button_topbar_help"
 				quadTextureSprite = "GFX_button_60_29"
-				position = { x = @expand_x_pos y = -45 }
+				position = { x = @button_2_button_x y = -45 }
 				orientation = lower_right
 				pdx_tooltip = "TOPBAR_HELP"
 				pdx_tooltip_anchor_offset = { x = 0 y = @tt_offset_y }
@@ -362,28 +410,28 @@ guiTypes = {
 			iconType = {
 				name = "help_icon"
 				spriteType = "GFX_help_icon"
-				position = { x = -140 y = -35 }
+				position = { x = @button_2_icon_x  y = -35 }
 				orientation = lower_right
 				alwaystransparent = yes
 			}
 			buttonType = {
 				name = "button_topbar_chat"
 				quadTextureSprite = "GFX_button_60_29"
-				position = { x = -221 y = -45 }
+				position = { x = @button_3_button_x y = -45 }
 				orientation = lower_right
 				shortcut = "l"
 			}
 			iconType = {
 				name = "chat_icon"
 				spriteType = "GFX_chat_icon"
-				position = { x = -206 y = -35 }
+				position = { x = @button_3_icon_x y = -35 }
 				orientation = lower_right
 				alwaystransparent = yes
 			}
 			buttonType = {
 				name = "toggle_gotobox"
 				quadTextureSprite = "GFX_button_60_29"
-				position = { x = -287 y = -45 }
+				position = { x = @button_4_button_x y = -45 }
 				shortCut = "f"
 				pdx_tooltip = "GOTOBOX_HEADER"
 				pdx_tooltip_anchor_offset = { x = 0 y = @tt_offset_y }
@@ -394,14 +442,14 @@ guiTypes = {
 			iconType = {
 				name = "toggle_gotobox_icon"
 				spriteType = "GFX_search_icon"
-				position = { x = -271 y = -35 }
+				position = { x = @button_4_icon_x y = -35 }
 				orientation = lower_right
 				alwaystransparent = yes
 			}
 			buttonType = {
 				name = "home_button"
 				quadTextureSprite = "GFX_button_60_29"
-				position = { x = -353 y = -45 }
+				position = { x = @button_5_button_x y = -45 }
 				shortCut = "HOME"
 				pdx_tooltip = "GOTO_HOME"
 				pdx_tooltip_anchor_offset = { x = 0 y = @tt_offset_y }
@@ -412,27 +460,27 @@ guiTypes = {
 			iconType = {
 				name = "home_icon"
 				spriteType = "GFX_home_icon"
-				position = { x = -338 y = -33 }
+				position = { x = @button_5_icon_x y = -35 }
 				orientation = lower_right
 				alwaystransparent = yes
 			}
 			## Filters
-			iconType = {
-				name = "toggle_mapmode_icon_details"
-				spriteType = "GFX_mapmode"
-				frame = 9
-				position = { x = -376 y = -33 }
-				orientation = "LOWER_RIGHT"
-				alwaystransparent = yes
-			}
 			buttonType = {
 				name = "toggle_mapmode_details"
 				quadTextureSprite = "GFX_button_29_animated_survey"
-				position = { x = -388 y = -45 }
+				position = { x = -358 y = -81 }
 				pdx_tooltip = "TOGGLE_MAPMODE_DETAILS_INFO"
 				pdx_tooltip_anchor_offset = { x = 0 y = @tt_offset_y }
 				pdx_tooltip_anchor_orientation = lower_left
 				orientation = lower_right
+			}
+			iconType = {
+				name = "toggle_mapmode_icon_details"
+				spriteType = "GFX_mapmode"
+				frame = 9
+				position = { x = -346 y = -68 }
+				orientation = "LOWER_RIGHT"
+				alwaystransparent = yes
 			}
 			iconType = {
 				name = "toggle_mapmode_icon_sectors"
