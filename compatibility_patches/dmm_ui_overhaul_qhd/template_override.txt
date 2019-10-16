@@ -1,7 +1,7 @@
 		# Dynamic Mod Menu
 		containerWindowType = {
 			name = "dynamic_mod_menu_toolbar"
-			position = { x = -377 y = -72 }
+			position = { x = -620 y = -36 }
 			size = { width = 70 height = 36 }
 			orientation = lower_right
 			clipping = yes
