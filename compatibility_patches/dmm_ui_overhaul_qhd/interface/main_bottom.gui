@@ -334,7 +334,7 @@ guiTypes = {
 				}
 				if_resolution = {
 					min_width = 1920
-					max_slots_horizontal = 8
+					max_slots_horizontal = 7
 				}
 				if_resolution = {
 					min_width = 2560
