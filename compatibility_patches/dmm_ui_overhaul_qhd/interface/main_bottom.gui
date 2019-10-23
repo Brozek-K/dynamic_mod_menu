@@ -397,41 +397,9 @@ guiTypes = {
 				alwaystransparent = yes
 			}
 			buttonType = {
-				name = "button_topbar_help"
-				quadTextureSprite = "GFX_button_60_29"
-				position = { x = @button_2_button_x y = -45 }
-				orientation = lower_right
-				pdx_tooltip = "TOPBAR_HELP"
-				pdx_tooltip_anchor_offset = { x = 0 y = @tt_offset_y }
-				pdx_tooltip_anchor_orientation = lower_left
-				shortcut= "alt+b"
-				clicksound = confirm_click
-			}
-			iconType = {
-				name = "help_icon"
-				spriteType = "GFX_help_icon"
-				position = { x = @button_2_icon_x  y = -35 }
-				orientation = lower_right
-				alwaystransparent = yes
-			}
-			buttonType = {
-				name = "button_topbar_chat"
-				quadTextureSprite = "GFX_button_60_29"
-				position = { x = @button_3_button_x y = -45 }
-				orientation = lower_right
-				shortcut = "l"
-			}
-			iconType = {
-				name = "chat_icon"
-				spriteType = "GFX_chat_icon"
-				position = { x = @button_3_icon_x y = -35 }
-				orientation = lower_right
-				alwaystransparent = yes
-			}
-			buttonType = {
 				name = "toggle_gotobox"
 				quadTextureSprite = "GFX_button_60_29"
-				position = { x = @button_4_button_x y = -45 }
+				position = { x = @button_3_button_x y = -45 }
 				shortCut = "f"
 				pdx_tooltip = "GOTOBOX_HEADER"
 				pdx_tooltip_anchor_offset = { x = 0 y = @tt_offset_y }
@@ -442,14 +410,14 @@ guiTypes = {
 			iconType = {
 				name = "toggle_gotobox_icon"
 				spriteType = "GFX_search_icon"
-				position = { x = @button_4_icon_x y = -35 }
+				position = { x = @button_3_icon_x y = -35 }
 				orientation = lower_right
 				alwaystransparent = yes
 			}
 			buttonType = {
 				name = "home_button"
 				quadTextureSprite = "GFX_button_60_29"
-				position = { x = @button_5_button_x y = -45 }
+				position = { x = @button_4_button_x y = -45 }
 				shortCut = "HOME"
 				pdx_tooltip = "GOTO_HOME"
 				pdx_tooltip_anchor_offset = { x = 0 y = @tt_offset_y }
@@ -460,7 +428,7 @@ guiTypes = {
 			iconType = {
 				name = "home_icon"
 				spriteType = "GFX_home_icon"
-				position = { x = @button_5_icon_x y = -35 }
+				position = { x = @button_4_icon_x y = -35 }
 				orientation = lower_right
 				alwaystransparent = yes
 			}
@@ -482,6 +450,64 @@ guiTypes = {
 				orientation = "LOWER_RIGHT"
 				alwaystransparent = yes
 			}
+			### EXPANDED MENU
+			buttonType = {
+				name = "expand_button"
+				quadTextureSprite = "GFX_button_60_29"
+				position = { x = @button_5_button_x y = -45  }
+				orientation = lower_right
+				pdx_tooltip = "EXPAND_BUTTON"
+				pdx_tooltip_anchor_offset = { x = 0 y = @tt_offset_y }
+				pdx_tooltip_anchor_orientation = lower_left
+			}
+			iconType = {
+				name = "expand_icon"
+				spriteType = "GFX_expand_icon"
+				position = { x = @button_5_icon_x y = -35 }
+				orientation = lower_right
+				alwaystransparent = yes
+			}
+			containerWindowType = {
+				name = "expand_buttons_background"
+				position = { x = @button_background y = -93 }
+				size = { width = 60 height = 59 }
+				orientation = lower_right
+				clipping = no
+				background = {
+					name = "bg"
+					quadTextureSprite = "GFX_ship_army_outliner"
+					position = { x = 0 y = 0  }
+				}
+			}
+			buttonType = {
+				name = "button_topbar_chat"
+				quadTextureSprite = "GFX_button_60_29"
+				position = { x = @button_5_button_x y = -75  }
+				orientation = lower_right
+				shortcut = "l"
+			}
+			iconType = {
+				name = "chat_icon"
+				spriteType = "GFX_chat_icon"
+				position = { x = @button_5_icon_x y = -65 }
+				orientation = lower_right
+				alwaystransparent = yes
+			}
+			buttonType = {
+				name = "button_topbar_help"
+				quadTextureSprite = "GFX_button_60_29"
+				position = { x = @button_5_button_x y = -105  }
+				orientation = lower_right
+				shortcut="alt+b"
+			}
+			iconType = {
+				name = "help_icon"
+				spriteType = "GFX_help_icon"
+				position = { x = @button_5_icon_x y = -95 }
+				orientation = lower_right
+				alwaystransparent = yes
+			}
+			### MAP ICONS
 			iconType = {
 				name = "toggle_mapmode_icon_sectors"
 				spriteType = "GFX_map_mode_sectors"
