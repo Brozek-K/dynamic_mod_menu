@@ -3,6 +3,7 @@ Not important.
 
 [h1]Older Versions[/h1]
 [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1885042831]For 2.3[/url]
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=1897590680]For 2.4[/url]
 
 [h1]Menu in action[/h1]
 [img]https://media.giphy.com/media/LPlPcdqY1UsW0k8UII/giphy.gif[/img]
