@@ -4,5 +4,5 @@ tags={
 	"Utilities"
 }
 picture="thumbnail.png"
-supported_version="2.4.*"
+supported_version="2.5.*"
 remote_file_id="1840010432"

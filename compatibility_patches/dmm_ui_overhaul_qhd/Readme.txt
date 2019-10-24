@@ -3,6 +3,7 @@ Ensure that it is located at the bottom of the list.
 
 [h1]Older Versions[/h1]
 [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1885042559]For 2.3[/url]
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=1897590481]For 2.4[/url]
 
 Compatibility patch for:
 - [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1840010432]Dynamic Mod Menu[/url]
