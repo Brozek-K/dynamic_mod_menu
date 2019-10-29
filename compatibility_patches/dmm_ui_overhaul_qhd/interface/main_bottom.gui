@@ -450,63 +450,6 @@ guiTypes = {
 				orientation = "LOWER_RIGHT"
 				alwaystransparent = yes
 			}
-			### EXPANDED MENU
-			buttonType = {
-				name = "expand_button"
-				quadTextureSprite = "GFX_button_60_29"
-				position = { x = @button_5_button_x y = -45  }
-				orientation = lower_right
-				pdx_tooltip = "EXPAND_BUTTON"
-				pdx_tooltip_anchor_offset = { x = 0 y = @tt_offset_y }
-				pdx_tooltip_anchor_orientation = lower_left
-			}
-			iconType = {
-				name = "expand_icon"
-				spriteType = "GFX_expand_icon"
-				position = { x = @button_5_icon_x y = -35 }
-				orientation = lower_right
-				alwaystransparent = yes
-			}
-			containerWindowType = {
-				name = "expand_buttons_background"
-				position = { x = @button_background y = -93 }
-				size = { width = 60 height = 59 }
-				orientation = lower_right
-				clipping = no
-				background = {
-					name = "bg"
-					quadTextureSprite = "GFX_ship_army_outliner"
-					position = { x = 0 y = 0  }
-				}
-			}
-			buttonType = {
-				name = "button_topbar_chat"
-				quadTextureSprite = "GFX_button_60_29"
-				position = { x = @button_5_button_x y = -75  }
-				orientation = lower_right
-				shortcut = "l"
-			}
-			iconType = {
-				name = "chat_icon"
-				spriteType = "GFX_chat_icon"
-				position = { x = @button_5_icon_x y = -65 }
-				orientation = lower_right
-				alwaystransparent = yes
-			}
-			buttonType = {
-				name = "button_topbar_help"
-				quadTextureSprite = "GFX_button_60_29"
-				position = { x = @button_5_button_x y = -105  }
-				orientation = lower_right
-				shortcut="alt+b"
-			}
-			iconType = {
-				name = "help_icon"
-				spriteType = "GFX_help_icon"
-				position = { x = @button_5_icon_x y = -95 }
-				orientation = lower_right
-				alwaystransparent = yes
-			}
 			### MAP ICONS
 			iconType = {
 				name = "toggle_mapmode_icon_sectors"
@@ -587,6 +530,63 @@ guiTypes = {
 				pdx_tooltip_anchor_offset = { x = 0 y = @tt_offset_y }
 				pdx_tooltip_anchor_orientation = lower_left
 				orientation = lower_right
+			}
+			### EXPANDED MENU
+			buttonType = {
+				name = "expand_button"
+				quadTextureSprite = "GFX_button_60_29"
+				position = { x = @button_5_button_x y = -45  }
+				orientation = lower_right
+				pdx_tooltip = "EXPAND_BUTTON"
+				pdx_tooltip_anchor_offset = { x = 0 y = @tt_offset_y }
+				pdx_tooltip_anchor_orientation = lower_left
+			}
+			iconType = {
+				name = "expand_icon"
+				spriteType = "GFX_expand_icon"
+				position = { x = @button_5_icon_x y = -35 }
+				orientation = lower_right
+				alwaystransparent = yes
+			}
+			containerWindowType = {
+				name = "expand_buttons_background"
+				position = { x = @button_background y = -93 }
+				size = { width = 60 height = 59 }
+				orientation = lower_right
+				clipping = no
+				background = {
+					name = "bg"
+					quadTextureSprite = "GFX_ship_army_outliner"
+					position = { x = 0 y = 0  }
+				}
+			}
+			buttonType = {
+				name = "button_topbar_chat"
+				quadTextureSprite = "GFX_button_60_29"
+				position = { x = @button_5_button_x y = -75  }
+				orientation = lower_right
+				shortcut = "l"
+			}
+			iconType = {
+				name = "chat_icon"
+				spriteType = "GFX_chat_icon"
+				position = { x = @button_5_icon_x y = -65 }
+				orientation = lower_right
+				alwaystransparent = yes
+			}
+			buttonType = {
+				name = "button_topbar_help"
+				quadTextureSprite = "GFX_button_60_29"
+				position = { x = @button_5_button_x y = -105  }
+				orientation = lower_right
+				shortcut="alt+b"
+			}
+			iconType = {
+				name = "help_icon"
+				spriteType = "GFX_help_icon"
+				position = { x = @button_5_icon_x y = -95 }
+				orientation = lower_right
+				alwaystransparent = yes
 			}
 			## Error Log
 			buttonType = {
