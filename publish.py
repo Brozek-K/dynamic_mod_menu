@@ -36,4 +36,4 @@ if __name__ == "__main__":
     clean_up()
     copy()
     process_templates()
-    publish_patches(publish_path, "1.jpg")
+    publish_patches(publish_path, "thumbnail.png")
