@@ -396,6 +396,19 @@ guiTypes = {
 				orientation = lower_right
 				alwaystransparent = yes
 			}
+			#buttonType = {
+			#	name = "button_ui"
+			#	quadTextureSprite = "GFX_button_60_29"
+			#	position = { x = @button_2_button_x y = -45 }
+			#	orientation = lower_right
+			#	clicksound = confirm_click
+			#	buttonText = "UI_OVERHAUL_BUTTON"
+			#	pdx_tooltip = "UI_OVERHAUL_TOOLTIP"
+			#	pdx_tooltip_anchor_offset = { x = 0 y = @tt_offset_y }
+			#	pdx_tooltip_anchor_orientation = lower_left
+			#	font = "large_title_font"
+			#	web_link = "https://steamcommunity.com/sharedfiles/filedetails/?id=1623423360"
+			#}
 			buttonType = {
 				name = "toggle_gotobox"
 				quadTextureSprite = "GFX_button_60_29"
