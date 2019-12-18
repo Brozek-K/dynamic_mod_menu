@@ -4,6 +4,14 @@ import glob
 import zipfile
 import io
 
+
+class colors:
+    success = "\033[92m"
+    warning = "\033[93m"
+    success2 = "\033[94m"
+    end = "\033[0m"
+
+
 path = os.path.relpath(os.path.dirname(__file__))
 
 
@@ -23,10 +31,11 @@ def validate():
         is_same = __clean__content(
             local_content) == __clean__content(steam_content)
         print("{package} is {status}".format(package=package_name,
-                                             status="Up to date" if is_same else "NOT up to date"))
+                                             status=f"{colors.success}Up to date{colors.end}" if is_same else f"{colors.warning}NOT up to date{colors.end}"))
         if not is_same:
             __update_local_content(package, steam_content)
-            print("{package} has been synced".format(package=package_name))
+            print((colors.success2 + "{package} has been synced" +
+                   colors.end).format(package=package_name))
 
 
 def __update_local_content(path, content):
@@ -51,7 +60,8 @@ def __get_steam_package_content(package, steam_package_path):
                 return io.TextIOWrapper(file, "utf-8").read()
     else:
         # For some 2.4 versions
-        interface_path = steam_package_path + "/" + interface_path.lstrip("/").lstrip("\\")
+        interface_path = steam_package_path + "/" + \
+            interface_path.lstrip("/").lstrip("\\")
         return __get_existing_package_content(interface_path)
     return None
 
