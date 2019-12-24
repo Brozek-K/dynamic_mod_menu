@@ -1,6 +1,9 @@
 import os
 import codecs
 
+locales = ["l_english", "l_braz_por", "l_french", "l_german",
+           "l_polish", "l_russian", "l_simp_chinese", "l_spanish"]
+
 event_template = """
 namespace = dmm_mod{1}
 
@@ -49,7 +52,7 @@ spriteTypes = {{
 }}"""
 
 localization_template = """
-l_english:
+{3}:
  dmm_mod{1}_{0}:0 \"Dynamic Mod Menu {2} {0}\"
  dmm_mod{1}.{0}.title:0 \"Dynamic Mod Menu {2} {0}\"
  dmm_mod{1}.{0}.desc:0 \"Dynamic Mod Menu {2} {0}\""""
@@ -114,8 +117,8 @@ def pick_category():
             value = input(
                 "Type a desired category, valid categories are: \"general\", \"events\", \"gfx\", \"utilities\" and \"other\": ")
             eval_exit_requested(value)
-            if value in categories:
-                category = {'name': value, 'value': categories[value]}
+            if value.lower() in categories:
+                category = {'name': value.lower(), 'value': categories[value]}
         except ValueError:
             pass
     return category
@@ -135,6 +138,10 @@ def save(path, template, bomEncoding=False):
             file.write(template)
 
 
+def locale_to_path(locale):
+    return locale.replace("l_", "")
+
+
 if __name__ == "__main__":
     print("When propmted type \"exit\" or \"quit\" to kill the script.")
     category = pick_category()
@@ -142,26 +149,22 @@ if __name__ == "__main__":
     cat_value = category['value']
     id = pick_id()
     if not os.path.exists("events"):
-        os.mkdir("events")
+        os.makedirs("events")
     if not os.path.exists("interface"):
-        os.mkdir("interface")
-    if not os.path.exists("localisation"):
-        os.mkdir("localisation")
-    if not os.path.exists("localisation/english"):
-        os.mkdir("localisation/english")
-    if not os.path.exists("localisation/english/replace"):
-        os.mkdir("localisation/english/replace")
-    if not os.path.exists("common"):
-        os.mkdir("common")
+        os.makedirs("interface")
     if not os.path.exists("common/on_actions"):
-        os.mkdir("common/on_actions")
+        os.makedirs("common/on_actions")
     save("events/000_dmm_mod{0}_".format(cat_value) + str(id) +
          ".txt", event_template.format(id, cat_value))
     save("events/dmm_mod{0}_flag_".format(cat_value) + str(id) +
          ".txt", global_flag_template.format(id, cat_value))
     save("interface/zzz_dmm_mod{0}_".format(cat_value) + str(id) +
          ".gfx", button_template.format(id, cat_value))
-    save("localisation/english/replace/dmm_mod{0}_".format(cat_value) +
-         str(id) + "_l_english.yml", localization_template.format(id, cat_value, cat_name.capitalize()), 1)
     save("common/on_actions/dmm_mod{0}_".format(cat_value) +
          str(id) + ".txt", on_actions_template.format(id, cat_value))
+
+    for locale in locales:
+        if not os.path.exists("localisation/" + locale_to_path(locale) + "/replace"):
+            os.makedirs("localisation/" + locale_to_path(locale) + "/replace")
+        save("localisation/" + locale_to_path(locale) + "/replace/dmm_mod{0}_".format(cat_value) + str(
+            id) + "_" + locale + ".yml", localization_template.format(id, cat_value, cat_name.capitalize(), locale), 1)
