@@ -2,6 +2,7 @@
 # pylint: disable=no-value-for-parameter
 import glob
 import os
+from templates.utils import locales
 from importlib.machinery import SourceFileLoader
 
 paths = ["common", "events", "interface", "localisation"]
@@ -19,3 +20,7 @@ def get_modules():
             module = SourceFileLoader(name, file).load_module()
             modules.append(module)
     return modules
+
+
+def localize(destination):
+    locales.process_locales(destination)
