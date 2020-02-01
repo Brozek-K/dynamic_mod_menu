@@ -1,12 +1,12 @@
 import shutil
 import os
-from templates import get_modules
+from templates import get_modules, localize
 from compatibility_patches import publish_patches
-from templates.utils import locales
 
+thumbnail = "thumbnail.png"
 copy_directories = ["common", "events", "gfx", "interface", "localisation"]
 copy_files = ["Readme.txt", "descriptor.mod",
-              "thumbnail.png", "1.jpg", "2.jpg", "3.jpg", "4.jpg"]
+              thumbnail, "1.jpg", "2.jpg", "3.jpg", "4.jpg"]
 
 mod_name = "dynamic_mod_menu"
 publish_path = "publish"
@@ -33,9 +33,13 @@ def process_templates():
         module.process(destination)
 
 
+def process_locales():
+    localize(destination)
+
+
 if __name__ == "__main__":
     clean_up()
     copy()
     process_templates()
-    locales.process_locales(destination)
-    publish_patches(publish_path, "thumbnail.png")
+    process_locales()
+    publish_patches(publish_path, thumbnail)
