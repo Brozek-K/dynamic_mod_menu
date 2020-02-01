@@ -587,7 +587,6 @@ guiTypes = {
 			background = {
 				name = "background"
 				spriteType = "GFX_tiled_window_transparent"
-				alwaystransparent = yes
 			}
 			gridBoxType = {
 				name = "map_modes"
