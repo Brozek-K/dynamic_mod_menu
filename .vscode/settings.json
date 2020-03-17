@@ -25,5 +25,6 @@
     },
     "[yaml]": {
         "editor.defaultFormatter": "Private.stellaris-formatter"
-    }
+    },
+    "python.pythonPath": "C:\\Programs\\Python3.8\\python.exe"
 }
