@@ -8,5 +8,5 @@ dependencies={
 	"Dynamic Mod Menu"
 }
 picture="thumbnail.png"
-supported_version="2.5.*"
+supported_version="2.6.*"
 remote_file_id="1938034692"
