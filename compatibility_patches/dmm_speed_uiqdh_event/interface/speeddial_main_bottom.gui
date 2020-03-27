@@ -76,7 +76,6 @@ guiTypes = {
 				oversound = mouse_over
 			}
 
-
 			##############################################################################################################
 			##############################################################################################################
 			##############################################################################################################
@@ -84,7 +83,29 @@ guiTypes = {
 			################################################
 			# EHOF & SA ####################################
 			################################################
-	
+
+			iconType = {
+				name = "paused_bar_bg"
+				spriteType = "GFX_paused_bar_bg"
+				position = { x = 0 y = 19000 }
+				alwaysTransparent = yes
+				orientation = center_up
+				centerPosition = yes
+			}
+
+			instantTextBoxType={
+				name = "paused"
+				font = "large_title_font"
+				position = { x=-200 y=-70 }
+				text = "GAME_SPEED_0"
+				maxWidth = 400
+				maxHeight = 50
+				format = center
+				orientation = center_up
+				alwaystransparent = yes
+				text_color_code = "H"
+			}
+
 			effectButtonType  = {
 				name = "ehof_ui"
 				spriteType = "GFX_ehof_ui_bg"
@@ -300,7 +321,7 @@ guiTypes = {
 			effectButtonType  = {
 				name = "ehof_only_ui"
 				spriteType = "GFX_ehof_ui_bg"
-				position = { x = -34 y = 2 }
+				position = { x = -40 y = 2 }
 				no_clicksound = yes
 				alwaysTransparent = yes
 				effect = "ehof_only_ui"
@@ -309,7 +330,7 @@ guiTypes = {
 			effectButtonType  = {
 				name = "ehof_ui_left"
 				spriteType = "GFX_ehof_ui_left_bg"
-				position = { x = -68 y = 7 }
+				position = { x = -74 y = 7 }
 				no_clicksound = yes
 				alwaysTransparent = yes
 				effect = "ehof_only_ui_left"
@@ -318,7 +339,7 @@ guiTypes = {
 			effectButtonType  = {
 				name = "ehof_ui_right"
 				spriteType = "GFX_ehof_ui_right_bg"
-				position = { x = 183 y = 7 }
+				position = { x = 177 y = 7 }
 				no_clicksound = yes
 				alwaysTransparent = yes
 				effect = "ehof_only_ui_right"
@@ -327,7 +348,7 @@ guiTypes = {
 			effectButtonType  = {
 				name = "ehof_ui_traders1"
 				quadTextureSprite = "GFX_ehof_ui_traders"
-				position = { x = -69 y = 6 }
+				position = { x = -75 y = 6 }
 				clicksound = interface
 				effect = "ehof_only_traders"
 			}
@@ -335,7 +356,7 @@ guiTypes = {
 			effectButtonType  = {
 				name = "ehof_ui_redo1"
 				quadTextureSprite = "GFX_ehof_ui_redo1"
-				position = { x = 183 y = 7 }
+				position = { x = 177 y = 7 }
 				clicksound = interface
 				effect = "ehof_only_redo"
 			}
@@ -343,7 +364,7 @@ guiTypes = {
 			effectButtonType  = {
 				name = "ehof_ui_toggle_temp1"
 				quadTextureSprite = "GFX_ehof_ui_toggle_temp1"
-				position = { x = 182 y = 6 }
+				position = { x = 176 y = 6 }
 				clicksound = interface
 				effect = "ehof_only_toggle_temp"
 			}
@@ -351,7 +372,7 @@ guiTypes = {
 			effectButtonType  = {
 				name = "ehof_ui_toggle_perm1"
 				quadTextureSprite = "GFX_ehof_ui_toggle_perm1"
-				position = { x = 182 y = 6 }
+				position = { x = 176 y = 6 }
 				clicksound = interface
 				effect = "ehof_only_toggle_perm"
 			}
@@ -359,7 +380,7 @@ guiTypes = {
 			effectButtonType  = {
 				name = "ehof_only_upgrading"
 				quadTextureSprite = "GFX_ehof_btn_main_purple"
-				position = { x = -116 y = -7 }
+				position = { x = -122 y = -7 }
 				size = { x = 208 y = 23 }
 				buttonText = ehof_upgrading_btn
 				buttonFont = "cg_16b"
@@ -370,7 +391,7 @@ guiTypes = {
 			effectButtonType  = {
 				name = "ehof_only_malfunctioning"
 				quadTextureSprite = "GFX_ehof_btn_main_red"
-				position = { x = -116 y = -7 }
+				position = { x = -122 y = -7 }
 				size = { x = 208 y = 23 }
 				buttonText = ehof_malfunctioning_btn
 				buttonFont = "cg_16b"
@@ -381,7 +402,7 @@ guiTypes = {
 			effectButtonType  = {
 				name = "ehof_only_cooldown"
 				quadTextureSprite = "GFX_ehof_btn_main_red"
-				position = { x = -116 y = -7 }
+				position = { x = -122 y = -7 }
 				size = { x = 208 y = 23 }
 				buttonText = ehof_cooldown_btn
 				buttonFont = "cg_16b"
@@ -392,7 +413,7 @@ guiTypes = {
 			effectButtonType  = {
 				name = "ehof_only_disabled"
 				quadTextureSprite = "GFX_ehof_btn_main_red"
-				position = { x = -116 y = -7 }
+				position = { x = -122 y = -7 }
 				size = { x = 208 y = 23 }
 				buttonText = ehof_disabled_btn
 				buttonFont = "cg_16b"
@@ -403,7 +424,7 @@ guiTypes = {
 			effectButtonType  = {
 				name = "ehof_only_activating"
 				quadTextureSprite = "GFX_ehof_btn_main_orange"
-				position = { x = -116 y = -7 }
+				position = { x = -122 y = -7 }
 				size = { x = 208 y = 23 }
 				buttonText = ehof_activating_btn
 				buttonFont = "cg_16b"
@@ -414,7 +435,7 @@ guiTypes = {
 			effectButtonType  = {
 				name = "ehof_only_activated"
 				quadTextureSprite = "GFX_ehof_btn_main_blue"
-				position = { x = -116 y = -7 }
+				position = { x = -122 y = -7 }
 				size = { x = 208 y = 23 }
 				buttonText = ehof_activated_btn
 				buttonFont = "cg_16b"
@@ -425,7 +446,7 @@ guiTypes = {
 			effectButtonType  = {
 				name = "ehof_only_activate"
 				quadTextureSprite = "GFX_ehof_btn_main_green"
-				position = { x = -116 y = -7 }
+				position = { x = -122 y = -7 }
 				size = { x = 208 y = 23 }
 				buttonText = ehof_activate_btn
 				buttonFont = "cg_16b"
@@ -437,7 +458,7 @@ guiTypes = {
 			effectButtonType  = {
 				name = "ehof_only_deactivate"
 				quadTextureSprite = "GFX_ehof_btn_main_purple"
-				position = { x = -116 y = -7 }
+				position = { x = -122 y = -7 }
 				size = { x = 208 y = 23 }
 				buttonText = ehof_deactivate_btn
 				buttonFont = "cg_16b"
@@ -446,31 +467,10 @@ guiTypes = {
 				effect = "ehof_only_deactivate"
 			}
 
-		##############################################################################################################
-		##############################################################################################################
-		##############################################################################################################
+			##############################################################################################################
+			##############################################################################################################
+			##############################################################################################################
 
-
-			iconType = {
-				name = "paused_bar_bg"
-				spriteType = "GFX_paused_bar_bg"
-				position = { x = 0 y = 19 }
-				alwaysTransparent = yes
-				orientation = center_up
-				centerPosition = yes
-			}
-			instantTextBoxType = {
-				name = "paused"
-				font = "large_title_font"
-				position = { x = -200 y = 0 }
-				text = "GAME_SPEED_0"
-				maxWidth = 400
-				maxHeight = 50
-				format = center
-				orientation = center_up
-				alwaystransparent = yes
-				text_color_code = "H"
-			}
 			instantTextBoxType = {
 				name = "system_name"
 				font = "large_title_font_28"
@@ -522,6 +522,15 @@ guiTypes = {
 				position = { x = -112 y = 43 }
 			}
 		}
+
+		##############################################################################################################
+		##############################################################################################################
+		##############################################################################################################
+
+		################################################
+		# EHOF & SA ####################################
+		################################################
+
 		### LEAVE GALAXY WINDOW
 		containerWindowType = {
 			name = "leave_galaxy_window"
@@ -538,6 +547,7 @@ guiTypes = {
 				position = { x = -130 y = 35 }
 				alwaysTransparent = yes
 			}
+
 			buttonType = {
 				name = "button"
 				quadTextureSprite = "GFX_button_animated_265_34"
@@ -551,390 +561,17 @@ guiTypes = {
 				oversound = mouse_over
 			}
 
-			
-		##############################################################################################################
-		##############################################################################################################
-		##############################################################################################################
-
-		################################################
-		# EHOF & SA ####################################
-		################################################
-
-		effectButtonType  = {
-			name = "ehof_ui2"
-			spriteType = "GFX_ehof_ui_bg"
-			position = { x = -50 y = -38 }
-			no_clicksound = yes
-			alwaysTransparent = yes
-			effect = "ehof_and_sa_ui"
-		}
-
-		effectButtonType  = {
-			name = "ehof_ui2_left"
-			spriteType = "GFX_ehof_ui2_left_bg"
-			position = { x = -82 y = -34 }
-			no_clicksound = yes
-			alwaysTransparent = yes
-			effect = "ehof_and_sa_ui_left"
-		}
-
-		effectButtonType  = {
-			name = "ehof_ui2_right"
-			spriteType = "GFX_ehof_ui2_right_bg"
-			position = { x = 162 y = -34 }
-			no_clicksound = yes
-			alwaysTransparent = yes
-			effect = "ehof_and_sa_ui_right"
-		}
-
-		effectButtonType  = {
-			name = "ehof_ui_traders2"
-			quadTextureSprite = "GFX_ehof_ui_traders2"
-			position = { x = -82 y = -34 }
-			clicksound = interface
-			effect = "ehof_and_sa_ui_traders"
-		}
-
-		effectButtonType  = {
-			name = "ehof_ui_redo2"
-			quadTextureSprite = "GFX_ehof_ui_redo2"
-			position = { x = 165 y = -34 }
-			clicksound = interface
-			effect = "ehof_and_sa_ui_redo"
-		}
-
-		effectButtonType  = {
-			name = "ehof_ui_toggle_temp2"
-			quadTextureSprite = "GFX_ehof_ui_toggle_temp2"
-			position = { x = 165 y = -34 }
-			clicksound = interface
-			effect = "ehof_and_sa_ui_toggle_temp"
-		}
-
-		effectButtonType  = {
-			name = "ehof_ui_toggle_perm2"
-			quadTextureSprite = "GFX_ehof_ui_toggle_perm2"
-			position = { x = 165 y = -34 }
-			clicksound = interface
-			effect = "ehof_and_sa_ui_toggle_perm"
-		}
-
-		effectButtonType  = {
-			name = "ehof_ui22"
-			spriteType = "GFX_ehof_ui2_bg"
-			position = { x = -87 y = -2 }
-			no_clicksound = yes
-			alwaysTransparent = yes
-			effect = "sa_ui"
-		}
-
-		effectButtonType  = {
-			name = "ehof_upgrading2"
-			quadTextureSprite = "GFX_ehof_btn_main_purple"
-			position = { x = -132 y = -47 }
-			size = { x = 208 y = 23 }
-			buttonText = ehof_upgrading_btn
-			buttonFont = "cg_16b"
-			orientation = center_up
-			effect = "ehof_and_sa_ui_upgrading"
-		}
-
-		effectButtonType  = {
-			name = "ehof_malfunctioning2"
-			quadTextureSprite = "GFX_ehof_btn_main_red"
-			position = { x = -132 y = -47 }
-			size = { x = 208 y = 23 }
-			buttonText = ehof_malfunctioning_btn
-			buttonFont = "cg_16b"
-			orientation = center_up
-			effect = "ehof_and_sa_ui_malfunctioning"
-		}
-
-		effectButtonType  = {
-			name = "ehof_cooldown2"
-			quadTextureSprite = "GFX_ehof_btn_main_red"
-			position = { x = -132 y = -47 }
-			size = { x = 208 y = 23 }
-			buttonText = ehof_cooldown_btn
-			buttonFont = "cg_16b"
-			orientation = center_up
-			effect = "ehof_and_sa_ui_cooldown"
-		}
-
-		effectButtonType  = {
-			name = "ehof_disabled2"
-			quadTextureSprite = "GFX_ehof_btn_main_red"
-			position = { x = -132 y = -47 }
-			size = { x = 208 y = 23 }
-			buttonText = ehof_disabled_btn
-			buttonFont = "cg_16b"
-			orientation = center_up
-			effect = "ehof_and_sa_ui_disabled"
-		}
-
-		effectButtonType  = {
-			name = "ehof_activating2"
-			quadTextureSprite = "GFX_ehof_btn_main_orange"
-			position = { x = -132 y = -47 }
-			size = { x = 208 y = 23 }
-			buttonText = ehof_activating_btn
-			buttonFont = "cg_16b"
-			orientation = center_up
-			effect = "ehof_and_sa_ui_activating"
-		}
-
-		effectButtonType  = {
-			name = "ehof_activated2"
-			quadTextureSprite = "GFX_ehof_btn_main_blue"
-			position = { x = -132 y = -47 }
-			size = { x = 208 y = 23 }
-			buttonText = ehof_activated_btn
-			buttonFont = "cg_16b"
-			orientation = center_up
-			effect = "ehof_and_sa_ui_activated"
-		}
-
-		effectButtonType  = {
-			name = "ehof_activate2"
-			quadTextureSprite = "GFX_ehof_btn_main_green"
-			position = { x = -132 y = -47 }
-			size = { x = 208 y = 23 }
-			buttonText = ehof_activate_btn
-			buttonFont = "cg_16b"
-			orientation = center_up
-			clicksound = interface
-			effect = "ehof_and_sa_ui_activate"
-		}
-
-		effectButtonType  = {
-			name = "ehof_deactivate2"
-			quadTextureSprite = "GFX_ehof_btn_main_purple"
-			position = { x = -132 y = -47 }
-			size = { x = 208 y = 23 }
-			buttonText = ehof_deactivate_btn
-			buttonFont = "cg_16b"
-			orientation = center_up
-			clicksound = interface
-			effect = "ehof_and_sa_ui_deactivate"
-		}
-
-		effectButtonType  = {
-			name = "ehof_sa_comm2"
-			quadTextureSprite = "GFX_ehof_ui_comm"
-			position = { x = -157 y = -1 }
-			size = { x = 208 y = 23 }
-			orientation = center_up
-			clicksound = interface
-			effect = "sa_comm"
-		}
-
-		effectButtonType  = {
-			name = "ehof_sa_defend2"
-			quadTextureSprite = "GFX_ehof_ui_defend"
-			position = { x = -90 y = -1 }
-			size = { x = 208 y = 23 }
-			orientation = center_up
-			clicksound = interface
-			effect = "sa_defend"
-		}
-
-		effectButtonType  = {
-			name = "ehof_sa_sphere2"
-			quadTextureSprite = "GFX_ehof_ui_sphere"
-			position = { x = -37 y = -1 }
-			size = { x = 208 y = 23 }
-			orientation = center_up
-			clicksound = interface
-			effect = "sa_sphere"
-		}
-
-		effectButtonType  = {
-			name = "ehof_sa_follow2"
-			quadTextureSprite = "GFX_ehof_ui_follow"
-			position = { x = 16 y = -1 }
-			size = { x = 208 y = 23 }
-			orientation = center_up
-			clicksound = interface
-			effect = "sa_follow"
-		}
-
-		effectButtonType  = {
-			name = "ehof_sa_attack2"
-			quadTextureSprite = "GFX_ehof_ui_attack"
-			position = { x = 69 y = -1 }
-			size = { x = 208 y = 23 }
-			orientation = center_up
-			clicksound = interface
-			effect = "sa_attack"
-		}
-
-	################################################
-	# EHOF #########################################
-	################################################
-
-		effectButtonType  = {
-			name = "ehof_only_ui2"
-			spriteType = "GFX_ehof_ui_bg"
-			position = { x = -50 y = -1 }
-			no_clicksound = yes
-			alwaysTransparent = yes
-			effect = "ehof_only_ui"
-		}
-
-		effectButtonType  = {
-			name = "ehof_ui_left"
-			spriteType = "GFX_ehof_ui_left_bg"
-			position = { x = -85 y = 5 }
-			no_clicksound = yes
-			alwaysTransparent = yes
-			effect = "ehof_only_ui_left"
-		}
-
-		effectButtonType  = {
-			name = "ehof_ui_right"
-			spriteType = "GFX_ehof_ui_right_bg"
-			position = { x = 168 y = 5 }
-			no_clicksound = yes
-			alwaysTransparent = yes
-			effect = "ehof_only_ui_right"
-		}
-
-		effectButtonType  = {
-			name = "ehof_ui_traders1"
-			quadTextureSprite = "GFX_ehof_ui_traders"
-			position = { x = -86 y = 4 }
-			clicksound = interface
-			effect = "ehof_only_traders"
-		}
-
-		effectButtonType  = {
-			name = "ehof_ui_redo1"
-			quadTextureSprite = "GFX_ehof_ui_redo1"
-			position = { x = 168 y = 5 }
-			clicksound = interface
-			effect = "ehof_only_redo"
-		}
-
-		effectButtonType  = {
-			name = "ehof_ui_toggle_temp1"
-			quadTextureSprite = "GFX_ehof_ui_toggle_temp1"
-			position = { x = 167 y = 4 }
-			clicksound = interface
-			effect = "ehof_only_toggle_temp"
-		}
-
-		effectButtonType  = {
-			name = "ehof_ui_toggle_perm1"
-			quadTextureSprite = "GFX_ehof_ui_toggle_perm1"
-			position = { x = 167 y = 4 }
-			clicksound = interface
-			effect = "ehof_only_toggle_perm"
-		}
-
-		effectButtonType  = {
-			name = "ehof_upgrading_no_sa2"
-			quadTextureSprite = "GFX_ehof_btn_main_purple"
-			position = { x = -132 y = -10 }
-			size = { x = 208 y = 23 }
-			buttonText = ehof_upgrading_btn
-			buttonFont = "cg_16b"
-			orientation = center_up
-			effect = "ehof_only_upgrading"
-		}
-
-		effectButtonType  = {
-			name = "ehof_malfunctioning_no_sa2"
-			quadTextureSprite = "GFX_ehof_btn_main_red"
-			position = { x = -132 y = -10 }
-			size = { x = 208 y = 23 }
-			buttonText = ehof_malfunctioning_btn
-			buttonFont = "cg_16b"
-			orientation = center_up
-			effect = "ehof_only_malfunctioning"
-		}
-
-		effectButtonType  = {
-			name = "ehof_cooldown_no_sa2"
-			quadTextureSprite = "GFX_ehof_btn_main_red"
-			position = { x = -132 y = -10 }
-			size = { x = 208 y = 23 }
-			buttonText = ehof_cooldown_btn
-			buttonFont = "cg_16b"
-			orientation = center_up
-			effect = "ehof_only_cooldown"
-		}
-
-		effectButtonType  = {
-			name = "ehof_disabled_no_sa2"
-			quadTextureSprite = "GFX_ehof_btn_main_red"
-			position = { x = -132 y = -10 }
-			size = { x = 208 y = 23 }
-			buttonText = ehof_disabled_btn
-			buttonFont = "cg_16b"
-			orientation = center_up
-			effect = "ehof_only_disabled"
-		}
-
-		effectButtonType  = {
-			name = "ehof_activating_no_sa2"
-			quadTextureSprite = "GFX_ehof_btn_main_orange"
-			position = { x = -132 y = -10 }
-			size = { x = 208 y = 23 }
-			buttonText = ehof_activating_btn
-			buttonFont = "cg_16b"
-			orientation = center_up
-			effect = "ehof_only_activating"
-		}
-
-		effectButtonType  = {
-			name = "ehof_activated_no_sa2"
-			quadTextureSprite = "GFX_ehof_btn_main_blue"
-			position = { x = -132 y = -10 }
-			size = { x = 208 y = 23 }
-			buttonText = ehof_activated_btn
-			buttonFont = "cg_16b"
-			orientation = center_up
-			effect = "ehof_only_activated"
-		}
-
-		effectButtonType  = {
-			name = "ehof_activate_no_sa2"
-			quadTextureSprite = "GFX_ehof_btn_main_green"
-			position = { x = -132 y = -10 }
-			size = { x = 208 y = 23 }
-			buttonText = ehof_activate_btn
-			buttonFont = "cg_16b"
-			orientation = center_up
-			clicksound = interface
-			effect = "ehof_only_activate"
-		}
-
-		effectButtonType  = {
-			name = "ehof_only_deactivate2"
-			quadTextureSprite = "GFX_ehof_btn_main_purple"
-			position = { x = -132 y = -10 }
-			size = { x = 208 y = 23 }
-			buttonText = ehof_deactivate_btn
-			buttonFont = "cg_16b"
-			orientation = center_up
-			clicksound = interface
-			effect = "ehof_only_deactivate"
-		}
-
-	##############################################################################################################
-	##############################################################################################################
-	##############################################################################################################
-
 			iconType = {
 				name = "paused_bar_bg"
 				spriteType = "GFX_paused_bar_bg"
-				position = { x = -87 y = -1 }
+				position = { x = -14 y = -22222 }
 				alwaysTransparent = yes
 			}
-			instantTextBoxType = {
+
+			instantTextBoxType={
 				name = "paused"
 				font = "large_title_font"
-				position = { x = -127 y = -3 }
+				position = { x=-127 y=-70 }
 				text = "GAME_SPEED_0"
 				maxWidth = 400
 				maxHeight = 50
@@ -942,7 +579,373 @@ guiTypes = {
 				alwaystransparent = yes
 				text_color_code = "H"
 			}
+
+			effectButtonType  = {
+				name = "ehof_ui2"
+				spriteType = "GFX_ehof_ui_bg"
+				position = { x = -50 y = -38 }
+				no_clicksound = yes
+				alwaysTransparent = yes
+				effect = "ehof_and_sa_ui"
+			}
+
+			effectButtonType  = {
+				name = "ehof_ui2_left"
+				spriteType = "GFX_ehof_ui2_left_bg"
+				position = { x = -82 y = -34 }
+				no_clicksound = yes
+				alwaysTransparent = yes
+				effect = "ehof_and_sa_ui_left"
+			}
+
+			effectButtonType  = {
+				name = "ehof_ui2_right"
+				spriteType = "GFX_ehof_ui2_right_bg"
+				position = { x = 162 y = -34 }
+				no_clicksound = yes
+				alwaysTransparent = yes
+				effect = "ehof_and_sa_ui_right"
+			}
+
+			effectButtonType  = {
+				name = "ehof_ui_traders2"
+				quadTextureSprite = "GFX_ehof_ui_traders2"
+				position = { x = -82 y = -34 }
+				clicksound = interface
+				effect = "ehof_and_sa_ui_traders"
+			}
+
+			effectButtonType  = {
+				name = "ehof_ui_redo2"
+				quadTextureSprite = "GFX_ehof_ui_redo2"
+				position = { x = 165 y = -34 }
+				clicksound = interface
+				effect = "ehof_and_sa_ui_redo"
+			}
+
+			effectButtonType  = {
+				name = "ehof_ui_toggle_temp2"
+				quadTextureSprite = "GFX_ehof_ui_toggle_temp2"
+				position = { x = 165 y = -34 }
+				clicksound = interface
+				effect = "ehof_and_sa_ui_toggle_temp"
+			}
+
+			effectButtonType  = {
+				name = "ehof_ui_toggle_perm2"
+				quadTextureSprite = "GFX_ehof_ui_toggle_perm2"
+				position = { x = 165 y = -34 }
+				clicksound = interface
+				effect = "ehof_and_sa_ui_toggle_perm"
+			}
+
+			effectButtonType  = {
+				name = "ehof_ui22"
+				spriteType = "GFX_ehof_ui2_bg"
+				position = { x = -87 y = -2 }
+				no_clicksound = yes
+				alwaysTransparent = yes
+				effect = "sa_ui"
+			}
+
+			effectButtonType  = {
+				name = "ehof_upgrading2"
+				quadTextureSprite = "GFX_ehof_btn_main_purple"
+				position = { x = -132 y = -47 }
+				size = { x = 208 y = 23 }
+				buttonText = ehof_upgrading_btn
+				buttonFont = "cg_16b"
+				orientation = center_up
+				effect = "ehof_and_sa_ui_upgrading"
+			}
+
+			effectButtonType  = {
+				name = "ehof_malfunctioning2"
+				quadTextureSprite = "GFX_ehof_btn_main_red"
+				position = { x = -132 y = -47 }
+				size = { x = 208 y = 23 }
+				buttonText = ehof_malfunctioning_btn
+				buttonFont = "cg_16b"
+				orientation = center_up
+				effect = "ehof_and_sa_ui_malfunctioning"
+			}
+
+			effectButtonType  = {
+				name = "ehof_cooldown2"
+				quadTextureSprite = "GFX_ehof_btn_main_red"
+				position = { x = -132 y = -47 }
+				size = { x = 208 y = 23 }
+				buttonText = ehof_cooldown_btn
+				buttonFont = "cg_16b"
+				orientation = center_up
+				effect = "ehof_and_sa_ui_cooldown"
+			}
+
+			effectButtonType  = {
+				name = "ehof_disabled2"
+				quadTextureSprite = "GFX_ehof_btn_main_red"
+				position = { x = -132 y = -47 }
+				size = { x = 208 y = 23 }
+				buttonText = ehof_disabled_btn
+				buttonFont = "cg_16b"
+				orientation = center_up
+				effect = "ehof_and_sa_ui_disabled"
+			}
+
+			effectButtonType  = {
+				name = "ehof_activating2"
+				quadTextureSprite = "GFX_ehof_btn_main_orange"
+				position = { x = -132 y = -47 }
+				size = { x = 208 y = 23 }
+				buttonText = ehof_activating_btn
+				buttonFont = "cg_16b"
+				orientation = center_up
+				effect = "ehof_and_sa_ui_activating"
+			}
+
+			effectButtonType  = {
+				name = "ehof_activated2"
+				quadTextureSprite = "GFX_ehof_btn_main_blue"
+				position = { x = -132 y = -47 }
+				size = { x = 208 y = 23 }
+				buttonText = ehof_activated_btn
+				buttonFont = "cg_16b"
+				orientation = center_up
+				effect = "ehof_and_sa_ui_activated"
+			}
+
+			effectButtonType  = {
+				name = "ehof_activate2"
+				quadTextureSprite = "GFX_ehof_btn_main_green"
+				position = { x = -132 y = -47 }
+				size = { x = 208 y = 23 }
+				buttonText = ehof_activate_btn
+				buttonFont = "cg_16b"
+				orientation = center_up
+				clicksound = interface
+				effect = "ehof_and_sa_ui_activate"
+			}
+
+			effectButtonType  = {
+				name = "ehof_deactivate2"
+				quadTextureSprite = "GFX_ehof_btn_main_purple"
+				position = { x = -132 y = -47 }
+				size = { x = 208 y = 23 }
+				buttonText = ehof_deactivate_btn
+				buttonFont = "cg_16b"
+				orientation = center_up
+				clicksound = interface
+				effect = "ehof_and_sa_ui_deactivate"
+			}
+
+			effectButtonType  = {
+				name = "ehof_sa_comm2"
+				quadTextureSprite = "GFX_ehof_ui_comm"
+				position = { x = -157 y = -1 }
+				size = { x = 208 y = 23 }
+				orientation = center_up
+				clicksound = interface
+				effect = "sa_comm"
+			}
+
+			effectButtonType  = {
+				name = "ehof_sa_defend2"
+				quadTextureSprite = "GFX_ehof_ui_defend"
+				position = { x = -90 y = -1 }
+				size = { x = 208 y = 23 }
+				orientation = center_up
+				clicksound = interface
+				effect = "sa_defend"
+			}
+
+			effectButtonType  = {
+				name = "ehof_sa_sphere2"
+				quadTextureSprite = "GFX_ehof_ui_sphere"
+				position = { x = -37 y = -1 }
+				size = { x = 208 y = 23 }
+				orientation = center_up
+				clicksound = interface
+				effect = "sa_sphere"
+			}
+
+			effectButtonType  = {
+				name = "ehof_sa_follow2"
+				quadTextureSprite = "GFX_ehof_ui_follow"
+				position = { x = 16 y = -1 }
+				size = { x = 208 y = 23 }
+				orientation = center_up
+				clicksound = interface
+				effect = "sa_follow"
+			}
+
+			effectButtonType  = {
+				name = "ehof_sa_attack2"
+				quadTextureSprite = "GFX_ehof_ui_attack"
+				position = { x = 69 y = -1 }
+				size = { x = 208 y = 23 }
+				orientation = center_up
+				clicksound = interface
+				effect = "sa_attack"
+			}
+
+	################################################
+	# EHOF #########################################
+	################################################
+
+			effectButtonType  = {
+				name = "ehof_only_ui2"
+				spriteType = "GFX_ehof_ui_bg"
+				position = { x = -50 y = -1 }
+				no_clicksound = yes
+				alwaysTransparent = yes
+				effect = "ehof_only_ui"
+			}
+
+			effectButtonType  = {
+				name = "ehof_ui_left"
+				spriteType = "GFX_ehof_ui_left_bg"
+				position = { x = -85 y = 5 }
+				no_clicksound = yes
+				alwaysTransparent = yes
+				effect = "ehof_only_ui_left"
+			}
+
+			effectButtonType  = {
+				name = "ehof_ui_right"
+				spriteType = "GFX_ehof_ui_right_bg"
+				position = { x = 168 y = 5 }
+				no_clicksound = yes
+				alwaysTransparent = yes
+				effect = "ehof_only_ui_right"
+			}
+
+			effectButtonType  = {
+				name = "ehof_ui_traders1"
+				quadTextureSprite = "GFX_ehof_ui_traders"
+				position = { x = -86 y = 4 }
+				clicksound = interface
+				effect = "ehof_only_traders"
+			}
+
+			effectButtonType  = {
+				name = "ehof_ui_redo1"
+				quadTextureSprite = "GFX_ehof_ui_redo1"
+				position = { x = 168 y = 5 }
+				clicksound = interface
+				effect = "ehof_only_redo"
+			}
+
+			effectButtonType  = {
+				name = "ehof_ui_toggle_temp1"
+				quadTextureSprite = "GFX_ehof_ui_toggle_temp1"
+				position = { x = 167 y = 4 }
+				clicksound = interface
+				effect = "ehof_only_toggle_temp"
+			}
+
+			effectButtonType  = {
+				name = "ehof_ui_toggle_perm1"
+				quadTextureSprite = "GFX_ehof_ui_toggle_perm1"
+				position = { x = 167 y = 4 }
+				clicksound = interface
+				effect = "ehof_only_toggle_perm"
+			}
+
+			effectButtonType  = {
+				name = "ehof_upgrading_no_sa2"
+				quadTextureSprite = "GFX_ehof_btn_main_purple"
+				position = { x = -132 y = -10 }
+				size = { x = 208 y = 23 }
+				buttonText = ehof_upgrading_btn
+				buttonFont = "cg_16b"
+				orientation = center_up
+				effect = "ehof_only_upgrading"
+			}
+
+			effectButtonType  = {
+				name = "ehof_malfunctioning_no_sa2"
+				quadTextureSprite = "GFX_ehof_btn_main_red"
+				position = { x = -132 y = -10 }
+				size = { x = 208 y = 23 }
+				buttonText = ehof_malfunctioning_btn
+				buttonFont = "cg_16b"
+				orientation = center_up
+				effect = "ehof_only_malfunctioning"
+			}
+
+			effectButtonType  = {
+				name = "ehof_cooldown_no_sa2"
+				quadTextureSprite = "GFX_ehof_btn_main_red"
+				position = { x = -132 y = -10 }
+				size = { x = 208 y = 23 }
+				buttonText = ehof_cooldown_btn
+				buttonFont = "cg_16b"
+				orientation = center_up
+				effect = "ehof_only_cooldown"
+			}
+
+			effectButtonType  = {
+				name = "ehof_disabled_no_sa2"
+				quadTextureSprite = "GFX_ehof_btn_main_red"
+				position = { x = -132 y = -10 }
+				size = { x = 208 y = 23 }
+				buttonText = ehof_disabled_btn
+				buttonFont = "cg_16b"
+				orientation = center_up
+				effect = "ehof_only_disabled"
+			}
+
+			effectButtonType  = {
+				name = "ehof_activating_no_sa2"
+				quadTextureSprite = "GFX_ehof_btn_main_orange"
+				position = { x = -132 y = -10 }
+				size = { x = 208 y = 23 }
+				buttonText = ehof_activating_btn
+				buttonFont = "cg_16b"
+				orientation = center_up
+				effect = "ehof_only_activating"
+			}
+
+			effectButtonType  = {
+				name = "ehof_activated_no_sa2"
+				quadTextureSprite = "GFX_ehof_btn_main_blue"
+				position = { x = -132 y = -10 }
+				size = { x = 208 y = 23 }
+				buttonText = ehof_activated_btn
+				buttonFont = "cg_16b"
+				orientation = center_up
+				effect = "ehof_only_activated"
+			}
+
+			effectButtonType  = {
+				name = "ehof_activate_no_sa2"
+				quadTextureSprite = "GFX_ehof_btn_main_green"
+				position = { x = -132 y = -10 }
+				size = { x = 208 y = 23 }
+				buttonText = ehof_activate_btn
+				buttonFont = "cg_16b"
+				orientation = center_up
+				clicksound = interface
+				effect = "ehof_only_activate"
+			}
+
+			effectButtonType  = {
+				name = "ehof_only_deactivate2"
+				quadTextureSprite = "GFX_ehof_btn_main_purple"
+				position = { x = -132 y = -10 }
+				size = { x = 208 y = 23 }
+				buttonText = ehof_deactivate_btn
+				buttonFont = "cg_16b"
+				orientation = center_up
+				clicksound = interface
+				effect = "ehof_only_deactivate"
+			}
 		}
+
+	##############################################################################################################
+	##############################################################################################################
+	##############################################################################################################
+
 		## Claims Management
 		containerWindowType = {
 			name = "claims_management"
