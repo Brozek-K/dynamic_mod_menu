@@ -351,10 +351,11 @@ guiTypes = {
 				size = { width = 420 height = 68 }
 				position = { x = -860 y = -68 }
 			}
+			clipping = yes
+			verticalScrollbar = "right_vertical_slider_s_thick"
 			background = {
 				name = "background"
-				spriteType = "GFX_tiled_window_transparent"
-				alwaysTransparent = yes
+				spriteType = "GFX_invisible"
 			}
 			gridBoxType = {
 				name = "map_modes"
@@ -381,8 +382,6 @@ guiTypes = {
 					max_slots_vertical = 2
 					add_horizontal = no
 				}
-				scrollbartype = "standardlistbox_slider_thick_low"
-				offset = { x = -7 y = 0 }
 			}
 		}
 		# Lower right toolbar
