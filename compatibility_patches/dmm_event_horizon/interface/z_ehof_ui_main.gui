@@ -142,8 +142,6 @@ guiTypes = {
 				buttonFont = "cg_16b"
 				orientation = upper_left
 				effect = "ehof_refunded_after_stations"
-
-				quadTextureSprite = "GFX_btn_main_red"
 			}
 
 			effectButtonType  = {
@@ -267,6 +265,17 @@ guiTypes = {
 				buttonFont = "cg_16b"
 				orientation = center_up
 				effect = "ehofsa_upgrading"
+			}
+
+			effectButtonType  = {
+				name = "system_large_no_ehof_sa"
+				quadTextureSprite = "GFX_btn_main_red"
+				position = { x = -121 y = -43 }
+				size = { x = 208 y = 23 }
+				buttonText = no_ehof_sa_btn
+				buttonFont = "cg_16b"
+				orientation = center_up
+				effect = "no_ehof_sa"
 			}
 
 			effectButtonType  = {
@@ -749,8 +758,6 @@ guiTypes = {
 				buttonFont = "cg_16b"
 				orientation = upper_left
 				effect = "ehof_refunded_after_stations"
-
-				quadTextureSprite = "GFX_btn_main_red"
 			}
 
 			effectButtonType  = {
@@ -874,6 +881,17 @@ guiTypes = {
 				buttonFont = "cg_16b"
 				orientation = center_up
 				effect = "ehofsa_upgrading"
+			}
+
+			effectButtonType  = {
+				name = "galaxy_large_no_ehof_sa"
+				quadTextureSprite = "GFX_btn_main_red"
+				position = { x = -132 y = -47 }
+				size = { x = 208 y = 23 }
+				buttonText = no_ehof_sa_btn
+				buttonFont = "cg_16b"
+				orientation = center_up
+				effect = "no_ehof_sa"
 			}
 
 			effectButtonType  = {
