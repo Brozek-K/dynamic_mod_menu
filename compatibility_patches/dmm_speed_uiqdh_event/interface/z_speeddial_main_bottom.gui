@@ -618,7 +618,7 @@ guiTypes = {
 				maxHeight = 50
 				format = center
 				orientation = center_up
-				alwaystransparent = yes
+				alwaysTransparent = yes
 				fixedsize = yes
 				#text_color_code = "E"
 			}
@@ -631,7 +631,7 @@ guiTypes = {
 				maxHeight = 50
 				format = center
 				orientation = center_up
-				alwaystransparent = yes
+				alwaysTransparent = yes
 				fixedsize = yes
 				text_color_code = "E"
 			}
@@ -1225,7 +1225,6 @@ guiTypes = {
 		containerWindowType = {
 			name = "claims_management"
 			size = { width = 406 height = 124 }
-			position = { x = -203 y = 0 }
 			hide_position = { x = -203 y = 20 }
 			show_position = { x = -203 y = -107 }
 			animation_type = decelerated
@@ -1236,16 +1235,13 @@ guiTypes = {
 				spriteType = "GFX_invisible"
 				alwaysTransparent = yes
 			}
-			containerWindowType = {
-				name = "status_background"
-				size = { width = 250 height = 56 }
-				position = { x = -125 y = 0 }
+			iconType = {
+				name = "manage_bar_background"
+				spriteType = "GFX_ui_mapmode_manage"
+				position = { x = 0 y = 28 }
+				alwaysTransparent = yes
 				orientation = center_up
-				background = {
-					name = "planet_desc_background"
-					spriteType = "GFX_tiles_frame"
-					alwaysTransparent = yes
-				}
+				centerPosition = yes
 			}
 			instantTextBoxType = {
 				name = "status"
@@ -1253,7 +1249,7 @@ guiTypes = {
 				position = { x = -125 y = 3 }
 				orientation = center_up
 				maxWidth = 250
-				maxHeight = 16
+				maxHeight = 48
 				alwaysTransparent = yes
 				format = center
 				text = "CLAIMS_MANAGEMENT_MODE"
@@ -1278,7 +1274,6 @@ guiTypes = {
 		containerWindowType = {
 			name = "trade_routes_management"
 			size = { width = 406 height = 124 }
-			position = { x = -203 y = 0 }
 			hide_position = { x = -203 y = 20 }
 			show_position = { x = -203 y = -107 }
 			animation_type = decelerated
@@ -1289,16 +1284,13 @@ guiTypes = {
 				spriteType = "GFX_invisible"
 				alwaysTransparent = yes
 			}
-			containerWindowType = {
-				name = "status_background"
-				size = { width = 250 height = 56 }
-				position = { x = -125 y = 0 }
+			iconType = {
+				name = "manage_bar_background"
+				spriteType = "GFX_ui_mapmode_manage"
+				position = { x = 0 y = 28 }
+				alwaysTransparent = yes
 				orientation = center_up
-				background = {
-					name = "planet_desc_background"
-					spriteType = "GFX_tiles_frame"
-					alwaysTransparent = yes
-				}
+				centerPosition = yes
 			}
 			instantTextBoxType = {
 				name = "status"
@@ -1306,7 +1298,7 @@ guiTypes = {
 				position = { x = -125 y = 3 }
 				orientation = center_up
 				maxWidth = 250
-				maxHeight = 16
+				maxHeight = 48
 				alwaysTransparent = yes
 				format = center
 				text = "TRADE_ROUTES_MANAGEMENT_MODE"
@@ -1356,7 +1348,7 @@ guiTypes = {
 				background = {
 					name = "background"
 					spriteType = "GFX_ui_mapmode_background_stretch"
-					alwaystransparent = yes
+					alwaysTransparent = yes
 				}
 			}
 		}
@@ -1437,8 +1429,8 @@ guiTypes = {
 			}
 			@button_1_button_x = -89
 			@button_1_icon_x = -74
-			@button_2_button_x = -155
-			@button_2_icon_x = -140
+			@button_2_button_x = -191
+			@button_2_icon_x = -176
 			@button_3_button_x = -257
 			@button_3_icon_x = -242
 			@button_4_button_x = -323
@@ -1462,7 +1454,7 @@ guiTypes = {
 				spriteType = "GFX_topbar_menu_button"
 				position = { x = @button_1_icon_x y = -35 }
 				orientation = lower_right
-				alwaystransparent = yes
+				alwaysTransparent = yes
 			}
 			#buttonType = {
 			#	name = "button_ui"
@@ -1478,9 +1470,37 @@ guiTypes = {
 			#	web_link = "https://steamcommunity.com/sharedfiles/filedetails/?id=1623423360"
 			#}
 			buttonType = {
-				name = "toggle_gotobox"
+				name = "button_topbar_chat"
+				quadTextureSprite = "GFX_button_60_29"
+				position = { x = @button_2_button_x y = -45 }
+				orientation = lower_right
+				shortcut = "l"
+			}
+			iconType = {
+				name = "chat_icon"
+				spriteType = "GFX_chat_icon"
+				position = { x = @button_2_icon_x y = -35 }
+				orientation = lower_right
+				alwaysTransparent = yes
+			}
+			buttonType = {
+				name = "button_topbar_help"
 				quadTextureSprite = "GFX_button_60_29"
 				position = { x = @button_3_button_x y = -45 }
+				orientation = lower_right
+				shortcut = "alt+b"
+			}
+			iconType = {
+				name = "help_icon"
+				spriteType = "GFX_help_icon"
+				position = { x = @button_3_icon_x y = -35 }
+				orientation = lower_right
+				alwaysTransparent = yes
+			}
+			buttonType = {
+				name = "toggle_gotobox"
+				quadTextureSprite = "GFX_button_60_29"
+				position = { x = @button_4_button_x y = -45 }
 				shortCut = "f"
 				pdx_tooltip = "GOTOBOX_HEADER"
 				pdx_tooltip_anchor_offset = { x = 0 y = @tt_offset_y }
@@ -1491,14 +1511,14 @@ guiTypes = {
 			iconType = {
 				name = "toggle_gotobox_icon"
 				spriteType = "GFX_search_icon"
-				position = { x = @button_3_icon_x y = -35 }
+				position = { x = @button_4_icon_x y = -35 }
 				orientation = lower_right
-				alwaystransparent = yes
+				alwaysTransparent = yes
 			}
 			buttonType = {
 				name = "home_button"
 				quadTextureSprite = "GFX_button_60_29"
-				position = { x = @button_4_button_x y = -45 }
+				position = { x = @button_5_button_x y = -45 }
 				shortCut = "HOME"
 				pdx_tooltip = "GOTO_HOME"
 				pdx_tooltip_anchor_offset = { x = 0 y = @tt_offset_y }
@@ -1509,9 +1529,9 @@ guiTypes = {
 			iconType = {
 				name = "home_icon"
 				spriteType = "GFX_home_icon"
-				position = { x = @button_4_icon_x y = -35 }
+				position = { x = @button_5_icon_x y = -35 }
 				orientation = lower_right
-				alwaystransparent = yes
+				alwaysTransparent = yes
 			}
 			## Filters
 			buttonType = {
@@ -1529,7 +1549,7 @@ guiTypes = {
 				frame = 9
 				position = { x = -346 y = -68 }
 				orientation = "LOWER_RIGHT"
-				alwaystransparent = yes
+				alwaysTransparent = yes
 			}
 			### MAP ICONS
 			iconType = {
@@ -1537,7 +1557,7 @@ guiTypes = {
 				spriteType = "GFX_map_mode_sectors"
 				position = { x = -414 y = -34 }
 				orientation = "LOWER_RIGHT"
-				alwaystransparent = yes
+				alwaysTransparent = yes
 			}
 			buttonType = {
 				name = "toggle_mapmode_sectors"
@@ -1553,7 +1573,7 @@ guiTypes = {
 				spriteType = "GFX_map_mode_hyperlanes"
 				position = { x = -448 y = -34 }
 				orientation = "LOWER_RIGHT"
-				alwaystransparent = yes
+				alwaysTransparent = yes
 			}
 			buttonType = {
 				name = "toggle_mapmode_hyperlanes"
@@ -1569,7 +1589,7 @@ guiTypes = {
 				spriteType = "GFX_map_mode_trade_routes"
 				position = { x = -414 y = -69 }
 				orientation = "LOWER_RIGHT"
-				alwaystransparent = yes
+				alwaysTransparent = yes
 			}
 			buttonType = {
 				name = "toggle_mapmode_trade_routes"
@@ -1585,7 +1605,7 @@ guiTypes = {
 				spriteType = "GFX_map_mode_unions"
 				position = { x = -448 y = -68 }
 				orientation = "LOWER_RIGHT"
-				alwaystransparent = yes
+				alwaysTransparent = yes
 			}
 			buttonType = {
 				name = "toggle_mapmode_unions"
@@ -1601,7 +1621,7 @@ guiTypes = {
 				spriteType = "GFX_map_mode_players"
 				position = { x = -378 y = -68 }
 				orientation = "LOWER_RIGHT"
-				alwaystransparent = yes
+				alwaysTransparent = yes
 			}
 			buttonType = {
 				name = "toggle_mapmode_players"
@@ -1611,63 +1631,6 @@ guiTypes = {
 				pdx_tooltip_anchor_offset = { x = 0 y = @tt_offset_y }
 				pdx_tooltip_anchor_orientation = lower_left
 				orientation = lower_right
-			}
-			### EXPANDED MENU
-			buttonType = {
-				name = "expand_button"
-				quadTextureSprite = "GFX_button_60_29"
-				position = { x = @button_5_button_x y = -45 }
-				orientation = lower_right
-				pdx_tooltip = "EXPAND_BUTTON"
-				pdx_tooltip_anchor_offset = { x = 0 y = @tt_offset_y }
-				pdx_tooltip_anchor_orientation = lower_left
-			}
-			iconType = {
-				name = "expand_icon"
-				spriteType = "GFX_expand_icon"
-				position = { x = @button_5_icon_x y = -35 }
-				orientation = lower_right
-				alwaystransparent = yes
-			}
-			containerWindowType = {
-				name = "expand_buttons_background"
-				position = { x = @button_background y = -93 }
-				size = { width = 60 height = 59 }
-				orientation = lower_right
-				clipping = no
-				background = {
-					name = "bg"
-					quadTextureSprite = "GFX_ship_army_outliner"
-					position = { x = 0 y = 0 }
-				}
-			}
-			buttonType = {
-				name = "button_topbar_chat"
-				quadTextureSprite = "GFX_button_60_29"
-				position = { x = @button_5_button_x y = -75 }
-				orientation = lower_right
-				shortcut = "l"
-			}
-			iconType = {
-				name = "chat_icon"
-				spriteType = "GFX_chat_icon"
-				position = { x = @button_5_icon_x y = -65 }
-				orientation = lower_right
-				alwaystransparent = yes
-			}
-			buttonType = {
-				name = "button_topbar_help"
-				quadTextureSprite = "GFX_button_60_29"
-				position = { x = @button_5_button_x y = -105 }
-				orientation = lower_right
-				shortcut = "alt+b"
-			}
-			iconType = {
-				name = "help_icon"
-				spriteType = "GFX_help_icon"
-				position = { x = @button_5_icon_x y = -95 }
-				orientation = lower_right
-				alwaystransparent = yes
 			}
 			## Error Log
 			buttonType = {
