@@ -1,5 +1,4 @@
 ﻿name = "DMM & Event Horizon Compatibility Patch"
-path = "mod/dmm_event_horizon"
 tags = {
 	"Fixes"
 }
@@ -10,4 +9,4 @@ dependencies = {
 }
 
 picture = "thumbnail.png"
-supported_version = "2.6.*"
+supported_version = "2.7.*"

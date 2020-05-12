@@ -142,23 +142,23 @@ guiTypes = {
 			}
 
 			effectButtonType  = {
-				name = "system_sa_returning_damaged"
+				name = "system_annihilator_returning"
 				position = { x = -285 y = -75 }
 				size = { x = 400 y = 50 }
-				buttonText = sa_returning_damaged
+				buttonText = annihilator_returning
 				buttonFont = "cg_16b"
 				orientation = center_up
-				effect = "sa_returning_damaged"
+				effect = "annihilator_returning"
 			}
 
 			effectButtonType  = {
-				name = "system_sa_returned_damaged"
+				name = "system_annihilator_returned"
 				position = { x = -285 y = -75 }
 				size = { x = 400 y = 50 }
-				buttonText = sa_returned_damaged
+				buttonText = annihilator_returned
 				buttonFont = "cg_16b"
 				orientation = center_up
-				effect = "sa_returned_damaged"
+				effect = "annihilator_returned"
 			}
 
 			################################################
@@ -753,23 +753,23 @@ guiTypes = {
 			}
 
 			effectButtonType  = {
-				name = "galaxy_sa_returning_damaged"
+				name = "galaxy_annihilator_returning"
 				position = { x = -290 y = -75 }
 				size = { x = 400 y = 50 }
-				buttonText = sa_returning_damaged
+				buttonText = annihilator_returning
 				buttonFont = "cg_16b"
 				orientation = center_up
-				effect = "sa_returning_damaged"
+				effect = "annihilator_returning"
 			}
 
 			effectButtonType  = {
-				name = "galaxy_sa_returned_damaged"
+				name = "galaxy_annihilator_returned"
 				position = { x = -290 y = -75 }
 				size = { x = 400 y = 50 }
-				buttonText = sa_returned_damaged
+				buttonText = annihilator_returned
 				buttonFont = "cg_16b"
 				orientation = center_up
-				effect = "sa_returned_damaged"
+				effect = "annihilator_returned"
 			}
 	
 			################################################

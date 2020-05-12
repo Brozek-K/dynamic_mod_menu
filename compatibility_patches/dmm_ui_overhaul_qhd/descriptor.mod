@@ -1,12 +1,13 @@
-﻿name="DMM & UI Overhaul Dynamic Compatibility Patch"
-path="mod/dmm_ui_overhaul_qhd"
-tags={
+﻿name = "DMM & UI Overhaul Dynamic Compatibility Patch"
+tags = {
 	"Fixes"
 }
-dependencies={
+
+dependencies = {
 	"UI Overhaul Dynamic"
 	"Dynamic Mod Menu"
 }
-picture="thumbnail.png"
-supported_version="2.6.*"
-remote_file_id="1864499222"
+
+picture = "thumbnail.png"
+supported_version = "2.7.*"
+remote_file_id = "1864499222"
