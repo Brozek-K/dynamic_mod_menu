@@ -112,6 +112,22 @@ guiTypes = {
 			# NOTIFICATIONS ################################
 			################################################
 			effectButtonType  = {
+				name = "system_sa_alert"
+				spriteType = "GFX_ehof_alert"
+				position = { x = 38 y = -47 }
+				no_clicksound = yes
+				effect = "ehofsa_alert"
+			}
+
+			effectButtonType  = {
+				name = "system_alert"
+				spriteType = "GFX_ehof_alert"
+				position = { x = 38 y = -11 }
+				no_clicksound = yes
+				effect = "ehof_alert"
+			}
+
+			effectButtonType = {
 				name = "system_after_outpost"
 				position = { x = 280 y = 50 }
 				size = { x = 400 y = 50 }
@@ -121,7 +137,7 @@ guiTypes = {
 				effect = "ehof_refunded_after_outpost"
 			}
 
-			effectButtonType  = {
+			effectButtonType = {
 				name = "system_after_stations"
 				position = { x = 280 y = 50 }
 				size = { x = 400 y = 50 }
@@ -131,7 +147,7 @@ guiTypes = {
 				effect = "ehof_refunded_after_stations"
 			}
 
-			effectButtonType  = {
+			effectButtonType = {
 				name = "system_after_inaccurate"
 				position = { x = 280 y = 50 }
 				size = { x = 400 y = 50 }
@@ -141,7 +157,7 @@ guiTypes = {
 				effect = "ehof_refunded_after_inaccurate"
 			}
 
-			effectButtonType  = {
+			effectButtonType = {
 				name = "system_annihilator_returning"
 				position = { x = -285 y = -75 }
 				size = { x = 400 y = 50 }
@@ -151,7 +167,7 @@ guiTypes = {
 				effect = "annihilator_returning"
 			}
 
-			effectButtonType  = {
+			effectButtonType = {
 				name = "system_annihilator_returned"
 				position = { x = -285 y = -75 }
 				size = { x = 400 y = 50 }
@@ -166,7 +182,7 @@ guiTypes = {
 			################################################
 			# UI ###########################################
 			################################################
-			effectButtonType  = {
+			effectButtonType = {
 				name = "system_large_ehof_ui"
 				spriteType = "GFX_ehof_bg_main"
 				position = { x = -39 y = -34 }
@@ -175,7 +191,7 @@ guiTypes = {
 				effect = "ehofsa"
 			}
 
-			effectButtonType  = {
+			effectButtonType = {
 				name = "system_large_sa_ui"
 				spriteType = "GFX_sa_bg_main"
 				position = { x = -76 y = 2 }
@@ -184,7 +200,7 @@ guiTypes = {
 				effect = "ehofsa"
 			}
 
-			effectButtonType  = {
+			effectButtonType = {
 				name = "system_large_left_ui"
 				spriteType = "GFX_ehof_bg_large_left"
 				position = { x = -71 y = -30 }
@@ -193,7 +209,7 @@ guiTypes = {
 				effect = "ehofsa_left"
 			}
 
-			effectButtonType  = {
+			effectButtonType = {
 				name = "system_large_right_ui"
 				spriteType = "GFX_ehof_bg_large_right"
 				position = { x = 173 y = -30 }
@@ -205,7 +221,7 @@ guiTypes = {
 			################################################
 			# LEFT BUTTONS #################################
 			################################################
-			effectButtonType  = {
+			effectButtonType = {
 				name = "system_large_traders"
 				quadTextureSprite = "GFX_btn_large_traders"
 				position = { x = -71 y = -30 }
@@ -216,7 +232,7 @@ guiTypes = {
 			################################################
 			# RIGHT BUTTONS ################################
 			################################################
-			effectButtonType  = {
+			effectButtonType = {
 				name = "system_large_redo"
 				quadTextureSprite = "GFX_btn_large_redo"
 				position = { x = 176 y = -30 }
@@ -224,7 +240,7 @@ guiTypes = {
 				effect = "ehofsa_redo"
 			}
 
-			effectButtonType  = {
+			effectButtonType = {
 				name = "system_large_toggle_temp"
 				quadTextureSprite = "GFX_btn_large_toggle_temp"
 				position = { x = 176 y = -30 }
@@ -232,7 +248,7 @@ guiTypes = {
 				effect = "ehofsa_toggle_temp"
 			}
 
-			effectButtonType  = {
+			effectButtonType = {
 				name = "system_large_toggle_perm"
 				quadTextureSprite = "GFX_btn_large_toggle_perm"
 				position = { x = 176 y = -30 }
@@ -243,7 +259,7 @@ guiTypes = {
 			################################################
 			# MAIN BUTTONS #################################
 			################################################
-			effectButtonType  = {
+			effectButtonType = {
 				name = "system_large_upgrading"
 				quadTextureSprite = "GFX_btn_main_purple"
 				position = { x = -121 y = -43 }
@@ -254,7 +270,7 @@ guiTypes = {
 				effect = "ehofsa_upgrading"
 			}
 
-			effectButtonType  = {
+			effectButtonType = {
 				name = "system_large_no_ehof_sa"
 				quadTextureSprite = "GFX_btn_main_red"
 				position = { x = -121 y = -43 }
@@ -265,7 +281,7 @@ guiTypes = {
 				effect = "no_ehof_sa"
 			}
 
-			effectButtonType  = {
+			effectButtonType = {
 				name = "system_large_malfunctioning"
 				quadTextureSprite = "GFX_btn_main_red"
 				position = { x = -121 y = -43 }
@@ -276,7 +292,7 @@ guiTypes = {
 				effect = "ehofsa_malfunctioning"
 			}
 
-			effectButtonType  = {
+			effectButtonType = {
 				name = "system_large_cooldown"
 				quadTextureSprite = "GFX_btn_main_red"
 				position = { x = -121 y = -43 }
@@ -287,7 +303,7 @@ guiTypes = {
 				effect = "ehofsa_cooldown"
 			}
 
-			effectButtonType  = {
+			effectButtonType = {
 				name = "system_large_disabled"
 				quadTextureSprite = "GFX_btn_main_red"
 				position = { x = -121 y = -43 }
@@ -298,7 +314,7 @@ guiTypes = {
 				effect = "ehofsa_disabled"
 			}
 
-			effectButtonType  = {
+			effectButtonType = {
 				name = "system_large_activating"
 				quadTextureSprite = "GFX_btn_main_orange"
 				position = { x = -121 y = -43 }
@@ -309,7 +325,7 @@ guiTypes = {
 				effect = "ehofsa_activating"
 			}
 
-			effectButtonType  = {
+			effectButtonType = {
 				name = "system_large_activated"
 				quadTextureSprite = "GFX_btn_main_blue"
 				position = { x = -121 y = -43 }
@@ -320,7 +336,7 @@ guiTypes = {
 				effect = "ehofsa_activated"
 			}
 
-			effectButtonType  = {
+			effectButtonType = {
 				name = "system_large_activate"
 				quadTextureSprite = "GFX_btn_main_green"
 				position = { x = -121 y = -43 }
@@ -332,7 +348,7 @@ guiTypes = {
 				effect = "ehofsa_activate"
 			}
 
-			effectButtonType  = {
+			effectButtonType = {
 				name = "system_large_deactivate"
 				quadTextureSprite = "GFX_btn_main_purple"
 				position = { x = -121 y = -43 }
@@ -347,7 +363,7 @@ guiTypes = {
 			################################################
 			# SA BUTTONS ###################################
 			################################################
-			effectButtonType  = {
+			effectButtonType = {
 				name = "system_large_sa_comm"
 				quadTextureSprite = "GFX_btn_sa_comm"
 				position = { x = -146 y = 3 }
@@ -357,7 +373,7 @@ guiTypes = {
 				effect = "sa_comm"
 			}
 
-			effectButtonType  = {
+			effectButtonType = {
 				name = "system_large_sa_defend"
 				quadTextureSprite = "GFX_btn_sa_defend"
 				position = { x = -79 y = 3 }
@@ -367,7 +383,7 @@ guiTypes = {
 				effect = "sa_defend"
 			}
 
-			effectButtonType  = {
+			effectButtonType = {
 				name = "system_large_sa_defend_highlight"
 				quadTextureSprite = "GFX_btn_sa_defend"
 				position = { x = -79 y = 3 }
@@ -378,7 +394,7 @@ guiTypes = {
 				effect = "sa_defend_highlight"
 			}
 
-			effectButtonType  = {
+			effectButtonType = {
 				name = "system_large_sa_sphere"
 				quadTextureSprite = "GFX_btn_sa_sphere"
 				position = { x = -26 y = 3 }
@@ -388,7 +404,7 @@ guiTypes = {
 				effect = "sa_sphere"
 			}
 
-			effectButtonType  = {
+			effectButtonType = {
 				name = "system_large_sa_sphere_highlight"
 				quadTextureSprite = "GFX_btn_sa_sphere"
 				position = { x = -26 y = 3 }
@@ -399,7 +415,7 @@ guiTypes = {
 				effect = "sa_sphere_highlight"
 			}
 
-			effectButtonType  = {
+			effectButtonType = {
 				name = "system_large_sa_follow"
 				quadTextureSprite = "GFX_btn_sa_follow"
 				position = { x = 27 y = 3 }
@@ -409,7 +425,7 @@ guiTypes = {
 				effect = "sa_follow"
 			}
 
-			effectButtonType  = {
+			effectButtonType = {
 				name = "system_large_sa_follow_highlight"
 				quadTextureSprite = "GFX_btn_sa_follow"
 				position = { x = 27 y = 3 }
@@ -420,7 +436,7 @@ guiTypes = {
 				effect = "sa_follow_highlight"
 			}
 
-			effectButtonType  = {
+			effectButtonType = {
 				name = "system_large_sa_attack"
 				quadTextureSprite = "GFX_btn_sa_attack"
 				position = { x = 80 y = 3 }
@@ -430,7 +446,7 @@ guiTypes = {
 				effect = "sa_attack"
 			}
 
-			effectButtonType  = {
+			effectButtonType = {
 				name = "system_large_sa_attack_highlight"
 				quadTextureSprite = "GFX_btn_sa_attack"
 				position = { x = 80 y = 3 }
@@ -446,7 +462,7 @@ guiTypes = {
 			################################################
 			# UI ###########################################
 			################################################
-			effectButtonType  = {
+			effectButtonType = {
 				name = "system_small_ehof_ui"
 				spriteType = "GFX_ehof_bg_main"
 				position = { x = -40 y = 2 }
@@ -455,7 +471,7 @@ guiTypes = {
 				effect = "ehof"
 			}
 
-			effectButtonType  = {
+			effectButtonType = {
 				name = "system_small_ehof_left"
 				spriteType = "GFX_ehof_bg_small_left"
 				position = { x = -74 y = 7 }
@@ -464,7 +480,7 @@ guiTypes = {
 				effect = "ehof_left"
 			}
 
-			effectButtonType  = {
+			effectButtonType = {
 				name = "system_small_ehof_right"
 				spriteType = "GFX_ehof_bg_small_right"
 				position = { x = 177 y = 7 }
@@ -476,7 +492,7 @@ guiTypes = {
 			################################################
 			# LEFT BUTTONS #################################
 			################################################
-			effectButtonType  = {
+			effectButtonType = {
 				name = "system_small_traders"
 				quadTextureSprite = "GFX_btn_small_traders"
 				position = { x = -75 y = 6 }
@@ -487,7 +503,7 @@ guiTypes = {
 			################################################
 			# RIGHT BUTTONS ################################
 			################################################
-			effectButtonType  = {
+			effectButtonType = {
 				name = "system_small_redo"
 				quadTextureSprite = "GFX_btn_small_redo"
 				position = { x = 177 y = 7 }
@@ -495,7 +511,7 @@ guiTypes = {
 				effect = "ehof_redo"
 			}
 
-			effectButtonType  = {
+			effectButtonType = {
 				name = "system_small_toggle_temp"
 				quadTextureSprite = "GFX_btn_small_toggle_temp"
 				position = { x = 176 y = 6 }
@@ -503,7 +519,7 @@ guiTypes = {
 				effect = "ehof_toggle_temp"
 			}
 
-			effectButtonType  = {
+			effectButtonType = {
 				name = "system_small_toggle_perm"
 				quadTextureSprite = "GFX_btn_small_toggle_perm"
 				position = { x = 176 y = 6 }
@@ -514,7 +530,7 @@ guiTypes = {
 			################################################
 			# MAIN BUTTONS #################################
 			################################################
-			effectButtonType  = {
+			effectButtonType = {
 				name = "system_small_upgrading"
 				quadTextureSprite = "GFX_btn_main_purple"
 				position = { x = -122 y = -7 }
@@ -525,7 +541,7 @@ guiTypes = {
 				effect = "ehof_upgrading"
 			}
 
-			effectButtonType  = {
+			effectButtonType = {
 				name = "system_small_malfunctioning"
 				quadTextureSprite = "GFX_btn_main_red"
 				position = { x = -122 y = -7 }
@@ -536,7 +552,7 @@ guiTypes = {
 				effect = "ehof_malfunctioning"
 			}
 
-			effectButtonType  = {
+			effectButtonType = {
 				name = "system_small_cooldown"
 				quadTextureSprite = "GFX_btn_main_red"
 				position = { x = -122 y = -7 }
@@ -547,7 +563,7 @@ guiTypes = {
 				effect = "ehof_cooldown"
 			}
 
-			effectButtonType  = {
+			effectButtonType = {
 				name = "system_small_disabled"
 				quadTextureSprite = "GFX_btn_main_red"
 				position = { x = -122 y = -7 }
@@ -558,7 +574,7 @@ guiTypes = {
 				effect = "ehof_disabled"
 			}
 
-			effectButtonType  = {
+			effectButtonType = {
 				name = "system_small_activating"
 				quadTextureSprite = "GFX_btn_main_orange"
 				position = { x = -122 y = -7 }
@@ -569,7 +585,7 @@ guiTypes = {
 				effect = "ehof_activating"
 			}
 
-			effectButtonType  = {
+			effectButtonType = {
 				name = "system_small_activated"
 				quadTextureSprite = "GFX_btn_main_blue"
 				position = { x = -122 y = -7 }
@@ -580,7 +596,7 @@ guiTypes = {
 				effect = "ehof_activated"
 			}
 
-			effectButtonType  = {
+			effectButtonType = {
 				name = "system_small_activate"
 				quadTextureSprite = "GFX_btn_main_green"
 				position = { x = -122 y = -7 }
@@ -592,7 +608,7 @@ guiTypes = {
 				effect = "ehof_activate"
 			}
 
-			effectButtonType  = {
+			effectButtonType = {
 				name = "system_small_deactivate"
 				quadTextureSprite = "GFX_btn_main_purple"
 				position = { x = -122 y = -7 }
@@ -723,6 +739,22 @@ guiTypes = {
 			# NOTIFICATIONS ################################
 			################################################
 			effectButtonType  = {
+				name = "galaxy_sa_alert"
+				spriteType = "GFX_ehof_alert"
+				position = { x = 29 y = -51 }
+				no_clicksound = yes
+				effect = "ehofsa_alert"
+			}
+
+			effectButtonType  = {
+				name = "galaxy_alert"
+				spriteType = "GFX_ehof_alert"
+				position = { x = 29 y = -15 }
+				no_clicksound = yes
+				effect = "ehof_alert"
+			}
+
+			effectButtonType = {
 				name = "galaxy_after_outpost"
 				position = { x = 220 y = 50 }
 				size = { x = 400 y = 50 }
@@ -732,7 +764,7 @@ guiTypes = {
 				effect = "ehof_refunded_after_outpost"
 			}
 
-			effectButtonType  = {
+			effectButtonType = {
 				name = "galaxy_after_stations"
 				position = { x = 220 y = 50 }
 				size = { x = 400 y = 50 }
@@ -742,7 +774,7 @@ guiTypes = {
 				effect = "ehof_refunded_after_stations"
 			}
 
-			effectButtonType  = {
+			effectButtonType = {
 				name = "galaxy_after_inaccurate"
 				position = { x = 220 y = 50 }
 				size = { x = 400 y = 50 }
@@ -752,7 +784,7 @@ guiTypes = {
 				effect = "ehof_refunded_after_inaccurate"
 			}
 
-			effectButtonType  = {
+			effectButtonType = {
 				name = "galaxy_annihilator_returning"
 				position = { x = -290 y = -75 }
 				size = { x = 400 y = 50 }
@@ -762,7 +794,7 @@ guiTypes = {
 				effect = "annihilator_returning"
 			}
 
-			effectButtonType  = {
+			effectButtonType = {
 				name = "galaxy_annihilator_returned"
 				position = { x = -290 y = -75 }
 				size = { x = 400 y = 50 }
@@ -777,7 +809,7 @@ guiTypes = {
 			################################################
 			# UI ###########################################
 			################################################
-			effectButtonType  = {
+			effectButtonType = {
 				name = "galaxy_large_ehof_ui"
 				spriteType = "GFX_ehof_bg_main"
 				position = { x = -50 y = -38 }
@@ -786,7 +818,7 @@ guiTypes = {
 				effect = "ehofsa"
 			}
 
-			effectButtonType  = {
+			effectButtonType = {
 				name = "galaxy_large_sa_ui"
 				spriteType = "GFX_sa_bg_main"
 				position = { x = -87 y = -2 }
@@ -795,7 +827,7 @@ guiTypes = {
 				effect = "ehofsa"
 			}
 
-			effectButtonType  = {
+			effectButtonType = {
 				name = "galaxy_large_ehof_left"
 				spriteType = "GFX_ehof_bg_large_left"
 				position = { x = -82 y = -34 }
@@ -804,7 +836,7 @@ guiTypes = {
 				effect = "ehofsa_left"
 			}
 
-			effectButtonType  = {
+			effectButtonType = {
 				name = "galaxy_large_ehof_right"
 				spriteType = "GFX_ehof_bg_large_right"
 				position = { x = 162 y = -34 }
@@ -816,7 +848,7 @@ guiTypes = {
 			################################################
 			# LEFT BUTTONS #################################
 			################################################
-			effectButtonType  = {
+			effectButtonType = {
 				name = "galaxy_large_traders"
 				quadTextureSprite = "GFX_btn_large_traders"
 				position = { x = -82 y = -34 }
@@ -827,7 +859,7 @@ guiTypes = {
 			################################################
 			# RIGHT BUTTONS ################################
 			################################################
-			effectButtonType  = {
+			effectButtonType = {
 				name = "galaxy_large_redo"
 				quadTextureSprite = "GFX_btn_large_redo"
 				position = { x = 165 y = -34 }
@@ -835,7 +867,7 @@ guiTypes = {
 				effect = "ehofsa_redo"
 			}
 
-			effectButtonType  = {
+			effectButtonType = {
 				name = "galaxy_large_toggle_temp"
 				quadTextureSprite = "GFX_btn_large_toggle_temp"
 				position = { x = 165 y = -34 }
@@ -843,7 +875,7 @@ guiTypes = {
 				effect = "ehofsa_toggle_temp"
 			}
 
-			effectButtonType  = {
+			effectButtonType = {
 				name = "galaxy_large_toggle_perm"
 				quadTextureSprite = "GFX_btn_large_toggle_perm"
 				position = { x = 165 y = -34 }
@@ -854,7 +886,7 @@ guiTypes = {
 			################################################
 			# MAIN BUTTONS #################################
 			################################################
-			effectButtonType  = {
+			effectButtonType = {
 				name = "galaxy_large_upgrading"
 				quadTextureSprite = "GFX_btn_main_purple"
 				position = { x = -132 y = -47 }
@@ -865,7 +897,7 @@ guiTypes = {
 				effect = "ehofsa_upgrading"
 			}
 
-			effectButtonType  = {
+			effectButtonType = {
 				name = "galaxy_large_no_ehof_sa"
 				quadTextureSprite = "GFX_btn_main_red"
 				position = { x = -132 y = -47 }
@@ -876,7 +908,7 @@ guiTypes = {
 				effect = "no_ehof_sa"
 			}
 
-			effectButtonType  = {
+			effectButtonType = {
 				name = "galaxy_large_malfunctioning"
 				quadTextureSprite = "GFX_btn_main_red"
 				position = { x = -132 y = -47 }
@@ -887,7 +919,7 @@ guiTypes = {
 				effect = "ehofsa_malfunctioning"
 			}
 
-			effectButtonType  = {
+			effectButtonType = {
 				name = "galaxy_large_cooldown"
 				quadTextureSprite = "GFX_btn_main_red"
 				position = { x = -132 y = -47 }
@@ -898,7 +930,7 @@ guiTypes = {
 				effect = "ehofsa_cooldown"
 			}
 
-			effectButtonType  = {
+			effectButtonType = {
 				name = "galaxy_large_disabled"
 				quadTextureSprite = "GFX_btn_main_red"
 				position = { x = -132 y = -47 }
@@ -909,7 +941,7 @@ guiTypes = {
 				effect = "ehofsa_disabled"
 			}
 
-			effectButtonType  = {
+			effectButtonType = {
 				name = "galaxy_large_activating"
 				quadTextureSprite = "GFX_btn_main_orange"
 				position = { x = -132 y = -47 }
@@ -920,7 +952,7 @@ guiTypes = {
 				effect = "ehofsa_activating"
 			}
 
-			effectButtonType  = {
+			effectButtonType = {
 				name = "galaxy_large_activated"
 				quadTextureSprite = "GFX_btn_main_blue"
 				position = { x = -132 y = -47 }
@@ -931,7 +963,7 @@ guiTypes = {
 				effect = "ehofsa_activated"
 			}
 
-			effectButtonType  = {
+			effectButtonType = {
 				name = "galaxy_large_activate"
 				quadTextureSprite = "GFX_btn_main_green"
 				position = { x = -132 y = -47 }
@@ -943,7 +975,7 @@ guiTypes = {
 				effect = "ehofsa_activate"
 			}
 
-			effectButtonType  = {
+			effectButtonType = {
 				name = "galaxy_large_deactivate"
 				quadTextureSprite = "GFX_btn_main_purple"
 				position = { x = -132 y = -47 }
@@ -958,7 +990,7 @@ guiTypes = {
 			################################################
 			# SA BUTTONS ###################################
 			################################################
-			effectButtonType  = {
+			effectButtonType = {
 				name = "galaxy_large_sa_comm"
 				quadTextureSprite = "GFX_btn_sa_comm"
 				position = { x = -157 y = -1 }
@@ -968,7 +1000,7 @@ guiTypes = {
 				effect = "sa_comm"
 			}
 
-			effectButtonType  = {
+			effectButtonType = {
 				name = "galaxy_large_sa_defend"
 				quadTextureSprite = "GFX_btn_sa_defend"
 				position = { x = -90 y = -1 }
@@ -978,7 +1010,7 @@ guiTypes = {
 				effect = "sa_defend"
 			}
 
-			effectButtonType  = {
+			effectButtonType = {
 				name = "galaxy_large_sa_defend_highlight"
 				quadTextureSprite = "GFX_btn_sa_defend"
 				position = { x = -90 y = -1 }
@@ -989,7 +1021,7 @@ guiTypes = {
 				effect = "sa_defend_highlight"
 			}
 
-			effectButtonType  = {
+			effectButtonType = {
 				name = "galaxy_large_sa_sphere"
 				quadTextureSprite = "GFX_btn_sa_sphere"
 				position = { x = -37 y = -1 }
@@ -999,7 +1031,7 @@ guiTypes = {
 				effect = "sa_sphere"
 			}
 
-			effectButtonType  = {
+			effectButtonType = {
 				name = "galaxy_large_sa_sphere_highlight"
 				quadTextureSprite = "GFX_btn_sa_sphere"
 				position = { x = -37 y = -1 }
@@ -1010,7 +1042,7 @@ guiTypes = {
 				effect = "sa_sphere_highlight"
 			}
 
-			effectButtonType  = {
+			effectButtonType = {
 				name = "galaxy_large_sa_follow"
 				quadTextureSprite = "GFX_btn_sa_follow"
 				position = { x = 16 y = -1 }
@@ -1020,7 +1052,7 @@ guiTypes = {
 				effect = "sa_follow"
 			}
 
-			effectButtonType  = {
+			effectButtonType = {
 				name = "galaxy_large_sa_follow_highlight"
 				quadTextureSprite = "GFX_btn_sa_follow"
 				position = { x = 16 y = -1 }
@@ -1031,7 +1063,7 @@ guiTypes = {
 				effect = "sa_follow_highlight"
 			}
 
-			effectButtonType  = {
+			effectButtonType = {
 				name = "galaxy_large_sa_attack"
 				quadTextureSprite = "GFX_btn_sa_attack"
 				position = { x = 69 y = -1 }
@@ -1041,7 +1073,7 @@ guiTypes = {
 				effect = "sa_attack"
 			}
 
-			effectButtonType  = {
+			effectButtonType = {
 				name = "galaxy_large_sa_attack_highlight"
 				quadTextureSprite = "GFX_btn_sa_attack"
 				position = { x = 69 y = -1 }
@@ -1057,7 +1089,7 @@ guiTypes = {
 			################################################
 			# UI ###########################################
 			################################################
-			effectButtonType  = {
+			effectButtonType = {
 				name = "galaxy_small_ui"
 				spriteType = "GFX_ehof_bg_main"
 				position = { x = -50 y = -1 }
@@ -1066,7 +1098,7 @@ guiTypes = {
 				effect = "ehof"
 			}
 
-			effectButtonType  = {
+			effectButtonType = {
 				name = "galaxy_small_left"
 				spriteType = "GFX_ehof_bg_small_left"
 				position = { x = -85 y = 5 }
@@ -1075,7 +1107,7 @@ guiTypes = {
 				effect = "ehof_left"
 			}
 
-			effectButtonType  = {
+			effectButtonType = {
 				name = "galaxy_small_right"
 				spriteType = "GFX_ehof_bg_small_right"
 				position = { x = 168 y = 5 }
@@ -1087,7 +1119,7 @@ guiTypes = {
 			################################################
 			# LEFT BUTTONS #################################
 			################################################
-			effectButtonType  = {
+			effectButtonType = {
 				name = "galaxy_small_traders"
 				quadTextureSprite = "GFX_btn_small_traders"
 				position = { x = -86 y = 4 }
@@ -1098,7 +1130,7 @@ guiTypes = {
 			################################################
 			# RIGHT BUTTONS ################################
 			################################################
-			effectButtonType  = {
+			effectButtonType = {
 				name = "galaxy_small_redo"
 				quadTextureSprite = "GFX_btn_small_redo"
 				position = { x = 168 y = 5 }
@@ -1106,7 +1138,7 @@ guiTypes = {
 				effect = "ehof_redo"
 			}
 
-			effectButtonType  = {
+			effectButtonType = {
 				name = "galaxy_small_toggle_temp"
 				quadTextureSprite = "GFX_btn_small_toggle_temp"
 				position = { x = 167 y = 4 }
@@ -1114,7 +1146,7 @@ guiTypes = {
 				effect = "ehof_toggle_temp"
 			}
 
-			effectButtonType  = {
+			effectButtonType = {
 				name = "galaxy_small_toggle_perm"
 				quadTextureSprite = "GFX_btn_small_toggle_perm"
 				position = { x = 167 y = 4 }
@@ -1125,7 +1157,7 @@ guiTypes = {
 			################################################
 			# MAIN BUTTONS #################################
 			################################################
-			effectButtonType  = {
+			effectButtonType = {
 				name = "galaxy_small_upgrading"
 				quadTextureSprite = "GFX_btn_main_purple"
 				position = { x = -132 y = -10 }
@@ -1136,7 +1168,7 @@ guiTypes = {
 				effect = "ehof_upgrading"
 			}
 
-			effectButtonType  = {
+			effectButtonType = {
 				name = "galaxy_small_malfunctioning"
 				quadTextureSprite = "GFX_btn_main_red"
 				position = { x = -132 y = -10 }
@@ -1147,7 +1179,7 @@ guiTypes = {
 				effect = "ehof_malfunctioning"
 			}
 
-			effectButtonType  = {
+			effectButtonType = {
 				name = "galaxy_small_cooldown"
 				quadTextureSprite = "GFX_btn_main_red"
 				position = { x = -132 y = -10 }
@@ -1158,7 +1190,7 @@ guiTypes = {
 				effect = "ehof_cooldown"
 			}
 
-			effectButtonType  = {
+			effectButtonType = {
 				name = "galaxy_small_disabled"
 				quadTextureSprite = "GFX_btn_main_red"
 				position = { x = -132 y = -10 }
@@ -1169,7 +1201,7 @@ guiTypes = {
 				effect = "ehof_disabled"
 			}
 
-			effectButtonType  = {
+			effectButtonType = {
 				name = "galaxy_small_activating"
 				quadTextureSprite = "GFX_btn_main_orange"
 				position = { x = -132 y = -10 }
@@ -1180,7 +1212,7 @@ guiTypes = {
 				effect = "ehof_activating"
 			}
 
-			effectButtonType  = {
+			effectButtonType = {
 				name = "galaxy_small_activated"
 				quadTextureSprite = "GFX_btn_main_blue"
 				position = { x = -132 y = -10 }
@@ -1191,7 +1223,7 @@ guiTypes = {
 				effect = "ehof_activated"
 			}
 
-			effectButtonType  = {
+			effectButtonType = {
 				name = "galaxy_small_activate"
 				quadTextureSprite = "GFX_btn_main_green"
 				position = { x = -132 y = -10 }
@@ -1203,7 +1235,7 @@ guiTypes = {
 				effect = "ehof_activate"
 			}
 
-			effectButtonType  = {
+			effectButtonType = {
 				name = "galaxy_small_deactivate"
 				quadTextureSprite = "GFX_btn_main_purple"
 				position = { x = -132 y = -10 }
