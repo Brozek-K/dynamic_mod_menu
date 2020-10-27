@@ -13,4 +13,4 @@ dependencies = {
 }
 
 picture = "thumbnail.png"
-supported_version = "2.7.*"
+supported_version = "2.8.*"
