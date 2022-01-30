@@ -650,10 +650,8 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			NOT = {
-				has_country_flag = dmm_keyboard_capslock
-			}
 			NOR = {
+				has_country_flag = dmm_keyboard_capslock
 				has_country_flag = dmm_keyboard_acute
 				has_country_flag = dmm_keyboard_grave
 				has_country_flag = dmm_keyboard_circumflex
@@ -816,10 +814,8 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			NOT = {
-				has_country_flag = dmm_keyboard_capslock
-			}
 			NOR = {
+				has_country_flag = dmm_keyboard_capslock
 				has_country_flag = dmm_keyboard_acute
 				has_country_flag = dmm_keyboard_grave
 				has_country_flag = dmm_keyboard_circumflex
@@ -982,10 +978,8 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			NOT = {
-				has_country_flag = dmm_keyboard_capslock
-			}
 			NOR = {
+				has_country_flag = dmm_keyboard_capslock
 				has_country_flag = dmm_keyboard_acute
 				has_country_flag = dmm_keyboard_grave
 				has_country_flag = dmm_keyboard_circumflex
@@ -1204,10 +1198,8 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			NOT = {
-				has_country_flag = dmm_keyboard_capslock
-			}
 			NOR = {
+				has_country_flag = dmm_keyboard_capslock
 				has_country_flag = dmm_keyboard_acute
 				has_country_flag = dmm_keyboard_grave
 				has_country_flag = dmm_keyboard_circumflex
@@ -1406,10 +1398,8 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			NOT = {
-				has_country_flag = dmm_keyboard_capslock
-			}
 			NOR = {
+				has_country_flag = dmm_keyboard_capslock
 				has_country_flag = dmm_keyboard_acute
 				has_country_flag = dmm_keyboard_grave
 				has_country_flag = dmm_keyboard_circumflex
@@ -1608,10 +1598,8 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			NOT = {
-				has_country_flag = dmm_keyboard_capslock
-			}
 			NOR = {
+				has_country_flag = dmm_keyboard_capslock
 				has_country_flag = dmm_keyboard_acute
 				has_country_flag = dmm_keyboard_grave
 				has_country_flag = dmm_keyboard_circumflex
@@ -1774,10 +1762,8 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			NOT = {
-				has_country_flag = dmm_keyboard_capslock
-			}
 			NOR = {
+				has_country_flag = dmm_keyboard_capslock
 				has_country_flag = dmm_keyboard_acute
 				has_country_flag = dmm_keyboard_grave
 				has_country_flag = dmm_keyboard_circumflex
@@ -1940,10 +1926,8 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			NOT = {
-				has_country_flag = dmm_keyboard_capslock
-			}
 			NOR = {
+				has_country_flag = dmm_keyboard_capslock
 				has_country_flag = dmm_keyboard_acute
 				has_country_flag = dmm_keyboard_grave
 				has_country_flag = dmm_keyboard_circumflex
@@ -2162,10 +2146,8 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			NOT = {
-				has_country_flag = dmm_keyboard_capslock
-			}
 			NOR = {
+				has_country_flag = dmm_keyboard_capslock
 				has_country_flag = dmm_keyboard_acute
 				has_country_flag = dmm_keyboard_grave
 				has_country_flag = dmm_keyboard_circumflex
@@ -2364,10 +2346,8 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			NOT = {
-				has_country_flag = dmm_keyboard_capslock
-			}
 			NOR = {
+				has_country_flag = dmm_keyboard_capslock
 				has_country_flag = dmm_keyboard_acute
 				has_country_flag = dmm_keyboard_grave
 				has_country_flag = dmm_keyboard_circumflex
